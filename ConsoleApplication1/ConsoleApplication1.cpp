@@ -9,5 +9,8 @@ int main()
 {
     std::cout << "Hello World!\n";
     printf("ayeyaheyaheyaheyahe\n");
+    printf("I am going insane\n");
+    printf("moshroom\n");
+    printf("santa naver came this christmas...\n")
     return 0;
 }
