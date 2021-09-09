@@ -2,9 +2,12 @@
 //
 
 #include <iostream>
+#include <conio.h>
+#include <stdio.h>
 
 int main()
 {
     std::cout << "Hello World!\n";
+    printf("ayeyaheyaheyaheyahe\n");
+    return 0;
 }
-
