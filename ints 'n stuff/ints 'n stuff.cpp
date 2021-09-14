@@ -1,4 +1,13 @@
-//
+/*
+Project Name:1 - 10 with one variable
+Author:Brooks Sammarco
+File Name: ints 'n stuff 
+Purpose: writing code that counts to ten using one int
+Pseudocode: prints 10 lines of code adding to an int to count to ten 
+Matinence Log:
+9/13/21: wrote all the lines of code 
+9/14/21: wrote the comments 
+*/
 
 #include <iostream>
 #include <conio.h>
