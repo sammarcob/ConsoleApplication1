@@ -1,5 +1,15 @@
-// variables and constants 'n stuff.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+/*
+Project Name: Variables and Constants 
+Author:Brooks Sammarco
+File Name: variables and constants 'n stuff.cpp
+Purpose: print bools, ints, chars, strings and doubles.
+Pseudocode: initializes prints 1 bool, 3 ints, 3 chars, 3 strings and 3 doubles.
+Matinence Log:
+9/16/21: wrote the ints and strings
+9/17/21: wrote the bool, doubles and chars
+9/20/21: wrote the constants and comments
+*/
+
 
 #include <iostream>
 #include <string>
@@ -46,5 +56,17 @@ int main()
 	_getch();
 	bool toast = false;
 	cout << ("%i\n", toast);
+	_getch();
+	system("CLS");
+	const float g = 9.8; //acceleration from gravity in m/s²
+	const float p = 3.0e8; //speed of light in m/s
+	const float n = 6.02214076; //avogadro’s number
+	const float j = 1.38064852; //boltzmann's constant
+	const float m = 6.62607004; //Planck's Constant
+	cout << g << endl;
+	cout << p << endl;
+	cout << n << endl;
+	cout << j << endl;
+	cout << m << endl;
 	return 0;
 }
