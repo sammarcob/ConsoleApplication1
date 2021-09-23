@@ -1,5 +1,15 @@
-// a little division 'n stuff.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+/*
+Name:  (Put your name here)
+Problem:  (Put the whole problem statement here, or use your own words.)
+Pseudocode:  (State your algorithm in English here.)
+		Output message to the screen
+		Declare and initialize variables
+		Do some math and output results to screen
+		Show modulus and output to screen
+	Notes:  (Put any notes about your thoughts here)
+	Maintenance log:
+*/
+
 
 #include <stdio.h>
 #include <conio.h>
