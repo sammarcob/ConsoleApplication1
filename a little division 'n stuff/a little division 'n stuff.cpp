@@ -29,7 +29,7 @@ int main()
 	int g = 1;
 	int h = 4;
 	int i;
-	float j = 1.1;
+	float j = 8.8;
 	float k = 2.2;
 	float l;
 	float m = 4.4;
@@ -49,7 +49,17 @@ int main()
 	printf("g+h= %i\n", i);
 	_getch();
 	system("CLS");
-
+	printf("float problems\n");
+	_getch();
+	l = j / k;
+	printf("j/k= %f\n", l);
+	_getch();
+	o = n - m;
+	printf("n-m= %f\n", o);
+	_getch();
+	r = p + q;
+	printf("p+q= %f\n", r);
+	_getch();
 
 
 	
