@@ -29,6 +29,9 @@ int main()
 	int g = 1;
 	int h = 4;
 	int i;
+	int s = 2;
+	int t = 8;
+	int u;
 	float j = 8.8;
 	float k = 2.2;
 	float l;
@@ -38,9 +41,12 @@ int main()
 	float p = 7.7;
 	float q = 8.8;
 	float r;
+	float v = 2.3;
+	float w = 10.1;
+	float x;
 
-	c = a / b;
-	printf("a/b= %i\n", c);
+	c = a * b;
+	printf("a*b= %i\n", c);
 	_getch();
 	f = d - e;
 	printf("d-e= %i\n", f);
@@ -48,11 +54,13 @@ int main()
 	i = g + h;
 	printf("g+h= %i\n", i);
 	_getch();
+	u = t / s;
+	printf("t/s= %i\n", u);
 	system("CLS");
-	printf("float problems\n");
+	printf("float problems:\n");
 	_getch();
-	l = j / k;
-	printf("j/k= %f\n", l);
+	l = j * k;
+	printf("j*k= %f\n", l);
 	_getch();
 	o = n - m;
 	printf("n-m= %f\n", o);
@@ -60,6 +68,11 @@ int main()
 	r = p + q;
 	printf("p+q= %f\n", r);
 	_getch();
+	x = w / v;
+	printf("w/v= %f\n", x);
+	_getch();
+	system("CLS");
+	printf("mixed problems:\n");
 
 
 	
