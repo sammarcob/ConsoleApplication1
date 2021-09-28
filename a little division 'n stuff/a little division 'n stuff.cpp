@@ -47,32 +47,37 @@ int main()
 
 	c = a * b;
 	printf("a*b= %i\n", c);
-	_getch();
 	f = d - e;
 	printf("d-e= %i\n", f);
-	_getch();
 	i = g + h;
 	printf("g+h= %i\n", i);
-	_getch();
 	u = t / s;
 	printf("t/s= %i\n", u);
+	c = a % b;
+	printf("a%%b= %i", c);
+	_getch();
 	system("CLS");
 	printf("float problems:\n");
 	_getch();
 	l = j * k;
 	printf("j*k= %f\n", l);
-	_getch();
 	o = n - m;
 	printf("n-m= %f\n", o);
-	_getch();
 	r = p + q;
 	printf("p+q= %f\n", r);
-	_getch();
 	x = w / v;
 	printf("w/v= %f\n", x);
+	l = (int)w % (int)n;
+	printf("w%%n= %f", l);
 	_getch();
 	system("CLS");
 	printf("mixed problems:\n");
+	_getch();
+	l = j / b;
+	printf("j/b= %f\n", l);
+	c = d % (int)k;
+	printf("d%%k= %i\n", c);
+	
 
 
 	
