@@ -1,13 +1,12 @@
 /*
-Name:  (Put your name here)
-Problem:  (Put the whole problem statement here, or use your own words.)
-Pseudocode:  (State your algorithm in English here.)
-		Output message to the screen
-		Declare and initialize variables
-		Do some math and output results to screen
-		Show modulus and output to screen
-	Notes:  (Put any notes about your thoughts here)
-	Maintenance log:
+Project Name: a little division
+Author:Brooks Sammarco
+File Name: a little division 'n stuff.cpp
+Purpose: write a multiplication, addition, subtraction, division and modulous question for int and float, then 
+write 2 mixed problems for division and modulous.
+Pseudocode: establishes a ton of ints and floats, then writes 12 questions. a float multiplication, float division,
+float addition, 
+Matinence Log:
 */
 
 
@@ -18,8 +17,6 @@ using namespace std;
 
 int main()
 {
-	printf("int problems:\n");
-	_getch();
 	int a = 6;
 	int b = 2;
 	int c;
@@ -44,7 +41,8 @@ int main()
 	float v = 2.3;
 	float w = 10.1;
 	float x;
-
+	printf("int problems:\n");
+	_getch();
 	c = a * b;
 	printf("a*b= %i\n", c);
 	f = d - e;
@@ -57,6 +55,7 @@ int main()
 	printf("a%%b= %i", c);
 	_getch();
 	system("CLS");
+
 	printf("float problems:\n");
 	_getch();
 	l = j * k;
@@ -71,17 +70,13 @@ int main()
 	printf("w%%n= %f", l);
 	_getch();
 	system("CLS");
+
 	printf("mixed problems:\n");
 	_getch();
 	l = j / b;
 	printf("j/b= %f\n", l);
 	c = d % (int)k;
 	printf("d%%k= %i\n", c);
-	
-
-
-	
-
 	printf("press any key to continue");
 	_getch();
 	return 0;
