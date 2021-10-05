@@ -1,7 +1,12 @@
 /*
-
-
-
+Author: Brooks Sammarco
+Project Name: More random stuff
+File Name: More random stuff 'n stuff.cpp
+Purpose: lets you choose the maximum and minimums for a float, int, and a char
+Pseudocode: chooses a random float, then allows you to input a max and min for a random, float, char and int.
+Maintenance Log:
+10/4/21: started coding (wrote the random float and the chosen max and min int)
+10/5/21: finish coding everything and write the maitenance log
 */
 
 #include <iostream>
