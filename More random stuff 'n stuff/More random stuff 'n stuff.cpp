@@ -1,5 +1,7 @@
 /*
 
+
+
 */
 
 #include <iostream>
@@ -28,6 +30,7 @@ int main()
 
 	f = (float)rand() / (float)RAND_MAX;
 	printf("Random float(excluside of 1.0): %f\n", f);
+	
 	_getch();
 	system("CLS");
 	
@@ -37,21 +40,30 @@ int main()
 	cin >> minint;
 	i = minint + rand() % (maxint - minint);
 	printf("random int: %i\n", i);
+	
+	_getch();
+	system("CLS");
 
+	printf("input a maximum for the float and hit enter:\n");
+	cin >> maxfloat;
+	printf("input a minimum for the float and hit enter:\n");
+	cin >> minfloat;
+	f = minfloat + (float)(rand()) / ((float) RAND_MAX / (maxfloat - minfloat));
+	printf("Random float: %f\n", f);
+	
+	_getch();
+	system("CLS");
 
+	printf("input a maximum for the character and hit enter:\n");
+	cin >> maxchar;
+	printf("input a minimum for the character and hit enter:\n");
+	cin >> minchar;
+	c = minchar + rand() % (maxchar - minchar + 1);
+	printf("random character: %c\n", c);
+	
+	_getch();
 
 	return 0;
-	/*
-	f = (float)rand() / (float)RAND_MAX;
-	printf("input a minimum number, then hit enter:\n");
-	cin >> minfloat;
-	fseek(stdin, 0, SEEK_END);
-	printf("input a max number, then hit enter\n");
-	cin >> maxfloat;
-	fseek(stdin, 0, SEEK_END);
-	f = minfloat + rand() % (maxfloat - minfloat);
-	printf("%f", f);
-	*/
 }
 
 
