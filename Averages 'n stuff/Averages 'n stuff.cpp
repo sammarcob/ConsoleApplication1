@@ -1,5 +1,12 @@
 /*
-
+Author: Brooks Sammarco
+Project Name: Averages
+File Name: averages 'n stuff.cpp
+Purpose: tells you your speed and gas usage
+Pseudocode: asks for your name, miles travled, time spent and gas spent, then calculates your speed and gas efficiency 
+Maintenance Log:
+10/11/21: established some floats 
+10/12/21: wrote the rest of the code
 */
 
 #include <iostream>
