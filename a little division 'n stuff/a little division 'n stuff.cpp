@@ -1,12 +1,13 @@
 /*
 Project Name: a little division
-Author:Brooks Sammarco
+Author: Brooks Sammarco
 File Name: a little division 'n stuff.cpp
 Purpose: write a multiplication, addition, subtraction, division and modulous question for int and float, then 
 write 2 mixed problems for division and modulous.
 Pseudocode: establishes a ton of ints and floats, then writes 12 questions. a float multiplication, float division,
-float addition, 
+float addition.
 Matinence Log:
+9/27/21: wrote all the code
 */
 
 
