@@ -1,5 +1,5 @@
 /*
-Project Name:1 - 10 with one variable
+Project Name: 1 - 10 with one variable
 Author:Brooks Sammarco
 File Name: ints 'n stuff 
 Purpose: writing code that counts to ten using one int
