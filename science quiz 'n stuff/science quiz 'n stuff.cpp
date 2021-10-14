@@ -1,5 +1,12 @@
 /*
-
+Author: Brooks Sammarco
+Project Name: Science quiz using if
+File Name: science quiz 'n stuff.cpp
+Purpose: write a multiple choice science quiz with ifs 
+Pseudocode: write code that asks for a name, states 3 questions with 4 awnsers per question that affect an overall score that is 
+			displayed at the end of the quiz.
+Maintenance Log:
+10/14/21: i wrote the whole thing in one day
 */
 
 #include <iostream>
