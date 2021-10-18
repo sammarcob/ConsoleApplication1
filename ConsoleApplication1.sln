@@ -23,6 +23,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Averages 'n stuff", "Averag
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "science quiz 'n stuff", "science quiz 'n stuff\science quiz 'n stuff.vcxproj", "{F107EAAB-F008-4491-A569-B1A2CD7527AF}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "switch computer programming quiz 'n stuff", "switch computer programming quiz 'n stuff\switch computer programming quiz 'n stuff.vcxproj", "{F1A8C994-7326-4648-A952-F8F7A454E081}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -111,6 +113,14 @@ Global
 		{F107EAAB-F008-4491-A569-B1A2CD7527AF}.Release|x64.Build.0 = Release|x64
 		{F107EAAB-F008-4491-A569-B1A2CD7527AF}.Release|x86.ActiveCfg = Release|Win32
 		{F107EAAB-F008-4491-A569-B1A2CD7527AF}.Release|x86.Build.0 = Release|Win32
+		{F1A8C994-7326-4648-A952-F8F7A454E081}.Debug|x64.ActiveCfg = Debug|x64
+		{F1A8C994-7326-4648-A952-F8F7A454E081}.Debug|x64.Build.0 = Debug|x64
+		{F1A8C994-7326-4648-A952-F8F7A454E081}.Debug|x86.ActiveCfg = Debug|Win32
+		{F1A8C994-7326-4648-A952-F8F7A454E081}.Debug|x86.Build.0 = Debug|Win32
+		{F1A8C994-7326-4648-A952-F8F7A454E081}.Release|x64.ActiveCfg = Release|x64
+		{F1A8C994-7326-4648-A952-F8F7A454E081}.Release|x64.Build.0 = Release|x64
+		{F1A8C994-7326-4648-A952-F8F7A454E081}.Release|x86.ActiveCfg = Release|Win32
+		{F1A8C994-7326-4648-A952-F8F7A454E081}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
