@@ -109,7 +109,7 @@ system("CLS");
 
 	if (score < 0)
 	{
-		printf("great job bozo you got %i points.", score);
+		printf("great job bozo you got %i points.\n", score);
 		printf("try again next year %s.", name.c_str());
 	}
 	else if (score > 0)
