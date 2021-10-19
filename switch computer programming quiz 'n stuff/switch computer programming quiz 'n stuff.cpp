@@ -38,7 +38,7 @@ int main()
         printf("wrong awnser bozo\n");
         break;
     case 2:
-        printf("")
+        printf("loser");
     }
 
     return 0;
