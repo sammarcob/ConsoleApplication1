@@ -26,20 +26,60 @@ int main()
     _getch();
     system("CLS");
 
-    printf("- please input the code to print a sentence in the language c++\n");
+    printf("- please input the code to print a sentence:\n");
     printf("1. say(hello);\n");
     printf("2. printf(\"hello\")\n");
     printf("3. tell=*hello*:\n");
-    printf("4. bozo.bozo@bozo.com       bozo");
+    printf("4. bozo.bozo@bozo.com       bozo\n");
     cin >> ans1;
     switch (ans1)
     {
     case 1:
         printf("wrong awnser bozo\n");
+        score = score - 0.25;
         break;
     case 2:
-        printf("loser haha loser loser");
+        printf("correct\n");
+        score = score + 1;
+        break;
+    case 3:
+        printf("wrong awnser bozo\n");
+        score = score - 0.25;
+        break;
+    case 4:
+        printf("wrong awnser bozo\n");
+        score = score - 0.25;
+        break;
     }
+    _getch();
+    system("CLS");
 
+    printf("- please input number the code that tells the code that it has ended:\n");
+    printf("1. end;\n 2. stop\n 3. return 0;\n 4. dont'n\n");
+    cin >> ans2;
+    switch (ans2)
+    {
+    case 1:
+        printf("wrong awnser bozo\n");
+        score = score - 0.25;
+        break;
+    case 2:
+        printf("wrong awnser bozo\n");
+        score = score - 0.25;
+        break;
+    case 3:
+        printf("correct\n");
+        score = score + 1;
+        break;
+    case 4:
+        printf("wrong awnser bozo\n");
+        score = score - 0.25;
+        break;
+    }
+    _getch();
+    system("CLS");
+
+    printf("- please input the number next to the code to change the name of a variable:\n");
+    printf("1. intchange**\n 2. cin >>")
     return 0;
 }
