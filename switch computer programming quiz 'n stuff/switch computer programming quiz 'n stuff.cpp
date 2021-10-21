@@ -1,5 +1,13 @@
 /*
-
+Author: Brooks Sammarco
+Project Name: switch somputer programming quiz
+File Name: switch computer programming quiz 'n stuff.cpp
+Purpose: write a multiple choice computer programming quiz with switch
+Pseudocode: write code that asks for a name, states 3 questions with 4 awnsers per question that affect an overall score that is
+            displayed at the end of the quiz using switch.
+Maintenance Log:
+10/20/21: wrote out two of the three questions
+10/21/21: finish code and comments
 */
 
 
@@ -51,7 +59,6 @@ int main()
         score = score - 0.25;
         break;
     }
-    _getch();
     system("CLS");
 
     printf("- please input number the code that tells the code that it has ended:\n");
@@ -76,10 +83,39 @@ int main()
         score = score - 0.25;
         break;
     }
-    _getch();
     system("CLS");
 
     printf("- please input the number next to the code to change the name of a variable:\n");
-    printf("1. intchange**\n 2. cin >>")
+    printf("1. intchange**\n 2. cin >>\n 3. switch,\n 4. convertg;;\n");
+    cin >> ans3;
+    switch (ans3)
+    {
+    case 1:
+        printf("wrong awnser bozo\n");
+        score = score - 0.25;
+        break;
+    case 2:
+        printf("correct\n");
+        score = score + 1;
+        break;
+    case 3:
+        printf("wrong awnser bozo\n");
+        score = score - 0.25;
+        break;
+    case 4:
+        printf("wrong awnser bozo\n");
+        score = score - 0.25;
+        break;
+    }
+    system("CLS");
+
+    if (score < 0)
+    {
+        printf("nice job bozo you got %f", score);
+    }
+    else if (score > 0)
+    {
+        printf("good job %s, you got %f points", name.c_str(), score);
+    }
     return 0;
 }
