@@ -25,6 +25,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "science quiz 'n stuff", "sc
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "switch computer programming quiz 'n stuff", "switch computer programming quiz 'n stuff\switch computer programming quiz 'n stuff.vcxproj", "{F1A8C994-7326-4648-A952-F8F7A454E081}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Choose your own adventure using if and switch 'n stuff", "Choose your own adventure using if and switch 'n stuff\Choose your own adventure using if and switch 'n stuff.vcxproj", "{246DE39C-444A-4AC5-86D5-3E598FF1C5F3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -121,6 +123,14 @@ Global
 		{F1A8C994-7326-4648-A952-F8F7A454E081}.Release|x64.Build.0 = Release|x64
 		{F1A8C994-7326-4648-A952-F8F7A454E081}.Release|x86.ActiveCfg = Release|Win32
 		{F1A8C994-7326-4648-A952-F8F7A454E081}.Release|x86.Build.0 = Release|Win32
+		{246DE39C-444A-4AC5-86D5-3E598FF1C5F3}.Debug|x64.ActiveCfg = Debug|x64
+		{246DE39C-444A-4AC5-86D5-3E598FF1C5F3}.Debug|x64.Build.0 = Debug|x64
+		{246DE39C-444A-4AC5-86D5-3E598FF1C5F3}.Debug|x86.ActiveCfg = Debug|Win32
+		{246DE39C-444A-4AC5-86D5-3E598FF1C5F3}.Debug|x86.Build.0 = Debug|Win32
+		{246DE39C-444A-4AC5-86D5-3E598FF1C5F3}.Release|x64.ActiveCfg = Release|x64
+		{246DE39C-444A-4AC5-86D5-3E598FF1C5F3}.Release|x64.Build.0 = Release|x64
+		{246DE39C-444A-4AC5-86D5-3E598FF1C5F3}.Release|x86.ActiveCfg = Release|Win32
+		{246DE39C-444A-4AC5-86D5-3E598FF1C5F3}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
