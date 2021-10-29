@@ -1,5 +1,12 @@
 /*
-
+Author: Brooks Sammarco
+Project Name: 
+File Name: choose your own adventure using if and switch 'n stuff.cpp
+Purpose: create an adventure that you can go on with at least 9 endings
+Pseudocode: starts the story, creates 2 paths, then 2 paths per path, then 2 final paths per path again except for one that has 3 paths
+Maintenance Log:
+10/28/21: wrote most of the code
+10/29/21: finished code and wrote comments
 */
 
 
@@ -157,7 +164,7 @@ int main()
 			printf("you relax and let him cuff you\n");
 			printf("he puts you in the car and starts driving to the police station\n");
 			printf("you notice that he left his gameboy in the seat next to you. what game do you play?\n");
-			printf("1. pokemon\n 2. cool guy tycoon\n");
+			printf("1. pokemon\n 2. cool guy tycoon\n 3. burger king app\n");
 			cin >> input3;
 
 			if (input3 == 1)
@@ -174,6 +181,18 @@ int main()
 				printf("-press any button to continue-");
 				_getch();
 				printf("you win the game good job tycoon good game good job i like tycoon also you are released from prison and cool");
+				return 0;
+			}
+			else if (input3 == 3)
+			{
+				system("CLS");
+				printf("you load up burger king app\n-press any button to contunue-\n");
+				_getch();
+				printf("you order a burger and a slice of cheese.\n");
+				printf("suddenly, a burger king delivery van t-bones the police car and you get turned into a puddle\n");
+				printf("you are fully awake but you are puddle now\n");
+				printf("good job bozo\n");
+				_getch();
 				return 0;
 			}
 		}
