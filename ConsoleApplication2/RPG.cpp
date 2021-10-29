@@ -10,9 +10,12 @@ Matinence Log:
 
 
 #include <iostream>
-#include <stdio.h>
+#include <stdlib.h> 
+#include <time.h>
 #include <conio.h>
 #include <string>
+#include <stdio.h>
+using namespace std;
 
 int main()
 {
@@ -24,15 +27,12 @@ int main()
     printf("'now i have to go across my house to look for my toaster'\n");
     printf("'darn this sucks'\n");
     _getch();
-    printf("'there will probably be terrifying forks and spoons along the way maybe'\n");
-    _getch();
-    printf("'it will probably be fine'\n");
-    _getch();
     system("CLS");
-    printf("This is an RPG by Brooks Sammarco about trying to make some toast\n");
-    printf("Hopefully it will be cool and funny\n");
-    _getch();
-    printf("And good...");
+
+    int Health = 100;
+    int Butter = 0;
+    int Damage = 5;
+
     return 0;
 }
 
