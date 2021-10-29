@@ -90,10 +90,10 @@ int main()
 			system("CLS");
 			printf("you happily shlurp down the watery, foamy blue death liquid\n");
 			printf("you feel the burn slip through your body.\n");
-			printf("-press a button to continue-");
+			printf("-press a button to continue-\n");
 			_getch();
 			printf("you fall... the frog seems confused but then takes out his gameboy and starts playing a game\n");
-			printf("you can hear that its you favorite game Cool Guy tycoon and you are filled with anger that he is playing without you");
+			printf("you can hear that its you favorite game Cool Guy tycoon and you are filled with anger that he is playing without you\n");
 			printf("what do you do\n");
 			printf("1. ignore that you are melting and start punching him\n 2. die a slow, sad death\n");
 			cin >> input3;
@@ -128,7 +128,7 @@ int main()
 		_getch();
 		system("CLS");
 		printf("a police man shows up and arrests you. what do you do\n");
-		printf("1. bribe him not to with a mcdonalds hashbrown\n 2. go silently");
+		printf("1. bribe him not to with a mcdonalds hashbrown\n 2. go silently\n");
 		cin >> input2;
 
 		if (input2 == 1)
@@ -178,9 +178,9 @@ int main()
 			{
 				system("CLS");
 				printf("you start playing the coolest game ever Cool guy Tycoon\n");
-				printf("-press any button to continue-");
+				printf("-press any button to continue-\n");
 				_getch();
-				printf("you win the game good job tycoon good game good job i like tycoon also you are released from prison and cool");
+				printf("you win the game good job tycoon good game good job i like tycoon also you are released from prison and cool\n");
 				return 0;
 			}
 			else if (input3 == 3)
