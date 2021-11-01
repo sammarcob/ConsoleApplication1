@@ -1,6 +1,6 @@
 /*
 Author: Brooks Sammarco
-Project Name: 
+Project Name: Choose you own adventure using if and switch
 File Name: choose your own adventure using if and switch 'n stuff.cpp
 Purpose: create an adventure that you can go on with at least 9 endings
 Pseudocode: starts the story, creates 2 paths, then 2 paths per path, then 2 final paths per path again except for one that has 3 paths
