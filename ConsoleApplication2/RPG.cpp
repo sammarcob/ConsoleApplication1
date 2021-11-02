@@ -3,9 +3,10 @@ Project Name: RPG intro
 Author:Brooks Sammarco
 File Name: RPG.cpp
 Purpose: Introduction to my RPG
-Pseudocode: Prints 16 lines of code 
+Pseudocode: asks for your name, lets you choose a weapon with different attack power.
 Matinence Log:
-9/16/21:wrote all the lines of code and the comments
+9/16/21: wrote all the lines of code and the comments
+11/1/21: wrote the code for the weapons and damage. also wrote the random number generator from 1 - 6
 */
 
 
@@ -25,7 +26,7 @@ int main()
     printf("'but my toaster is over there'\n");
     _getch();
     printf("'now i have to go across my house to look for my toaster'\n");
-    printf("'darn'\n");
+    printf("'darn. too bad my house is a literal mansion'\n");
     _getch();
     system("CLS");
 
@@ -42,8 +43,19 @@ int main()
 
     printf("to toast Bred you have to have to have a name so lets hear it:\n");
     cin >> name;
-    printf("alright. %s is an okay name i guess it will work\n", name.c_str());
-    printf("-press any key to continue-");
+    if (name == "Brooks")
+    {
+        printf("Ah! Brooks is a great name!\n");
+    }
+    else if (name == "brooks")
+    {
+        printf("Ah! brooks is a great name!\n");
+    }
+    else
+    {
+        printf("Alright %s is an okay name... I guess it will work\n", name.c_str());
+    }
+    printf("-press any key to continue-\n");
     _getch();
     system("CLS");
 
@@ -60,8 +72,12 @@ int main()
         printf("knife... alright.\n");
         damage = damage + 7;
     }
-    printf("-press any key to continue-");
-   
+    printf("-press any key to continue-\n");
+    _getch();
+    system("CLS");
+    printf("weapon: %s\n", weapon.c_str());
+    printf("weapon damage: %i\n", damage);
+    _getch();
 
     return 0;
 }
