@@ -79,6 +79,34 @@ int main()
     printf("weapon damage: %i\n", damage);
     _getch();
 
+    if (_6SidedDie == 1)
+    {
+        printf("ballss\n");
+    }
+    else if (_6SidedDie == 2)
+    {
+        printf("balls\n");
+    }
+    else if (_6SidedDie == 3)
+    {
+        printf("ball\n");
+    }
+    else if (_6SidedDie == 4)
+    {
+        printf("bal\n");
+    }
+    else if (_6SidedDie == 5)
+    {
+        printf("ba\n");
+    }
+    else if (_6SidedDie == 6)
+    {
+        printf("b\n");
+    }
+    _getch();
+
+
+
     return 0;
 }
 

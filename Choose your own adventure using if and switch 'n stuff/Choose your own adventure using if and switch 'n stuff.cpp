@@ -30,11 +30,7 @@ int main()
 	printf("please input you name\n");
 	cin >> name;
 	system("CLS");
-	printf("you are in Swra Worrs (storm strooper in str wars)\n");
-	printf("-press any button to continue-\n");
-	_getch();
-	system("CLS");
-
+	
 	printf("you see a guy and he's dancing, what do yuou do?\n 1. shoot him\n 2. shoot him\n");
 	cin >> input1;
 	if (input1 == 1)
