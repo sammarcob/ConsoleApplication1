@@ -81,27 +81,27 @@ int main()
 
     if (_6SidedDie == 1)
     {
-        printf("ballss\n");
+        printf("1\n");
     }
     else if (_6SidedDie == 2)
     {
-        printf("balls\n");
+        printf("2\n");
     }
     else if (_6SidedDie == 3)
     {
-        printf("ball\n");
+        printf("3\n");
     }
     else if (_6SidedDie == 4)
     {
-        printf("bal\n");
+        printf("4\n");
     }
     else if (_6SidedDie == 5)
     {
-        printf("ba\n");
+        printf("5\n");
     }
     else if (_6SidedDie == 6)
     {
-        printf("b\n");
+        printf("6\n");
     }
     _getch();
 
