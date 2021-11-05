@@ -29,6 +29,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Choose your own adventure u
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ACSII Art 'n stuff", "ACSII Art 'n stuff\ACSII Art 'n stuff.vcxproj", "{9D503255-99F0-407F-A9C8-DF624F040CD5}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Non-looping Maze", "Non-looping Maze\Non-looping Maze.vcxproj", "{48F17357-A376-42B1-B9C4-093F1423DB4E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -141,6 +143,14 @@ Global
 		{9D503255-99F0-407F-A9C8-DF624F040CD5}.Release|x64.Build.0 = Release|x64
 		{9D503255-99F0-407F-A9C8-DF624F040CD5}.Release|x86.ActiveCfg = Release|Win32
 		{9D503255-99F0-407F-A9C8-DF624F040CD5}.Release|x86.Build.0 = Release|Win32
+		{48F17357-A376-42B1-B9C4-093F1423DB4E}.Debug|x64.ActiveCfg = Debug|x64
+		{48F17357-A376-42B1-B9C4-093F1423DB4E}.Debug|x64.Build.0 = Debug|x64
+		{48F17357-A376-42B1-B9C4-093F1423DB4E}.Debug|x86.ActiveCfg = Debug|Win32
+		{48F17357-A376-42B1-B9C4-093F1423DB4E}.Debug|x86.Build.0 = Debug|Win32
+		{48F17357-A376-42B1-B9C4-093F1423DB4E}.Release|x64.ActiveCfg = Release|x64
+		{48F17357-A376-42B1-B9C4-093F1423DB4E}.Release|x64.Build.0 = Release|x64
+		{48F17357-A376-42B1-B9C4-093F1423DB4E}.Release|x86.ActiveCfg = Release|Win32
+		{48F17357-A376-42B1-B9C4-093F1423DB4E}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

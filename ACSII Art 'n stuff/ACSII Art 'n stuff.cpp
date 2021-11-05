@@ -1,4 +1,14 @@
-
+/*
+Author: Brooks Sammarco
+pair programmer: Slater Swart
+Project Name: ACSII Art
+File Name: ACSII Art 'n stuff.cpp
+Purpose: make an art museum with 3 pictures
+Pseudocode: introduce the museum and it's pictures, then let the player choose what picture thy want to see.
+Maintenance Log:
+11/4/21: wrote all the code and found art.
+11/5/21: wrote comments
+*/
 
 #include <iostream>
 #include <stdlib.h> 
