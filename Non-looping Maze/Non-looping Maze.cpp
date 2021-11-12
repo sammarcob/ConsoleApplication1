@@ -25,27 +25,109 @@ int main()
     _getch();
     system("CLS");
 
-    printf("1. right\n2. down\n");
+    printf("right\ndown\n");
     cin >> decision;
     if (decision == "right")
     {
         system("CLS");
-        printf("1. right\n2. down\n");
+        printf("right\ndown\n");
         cin >> decision;
         if (decision == "right")
         {
-            printf("you reached a dead end");
+            system("CLS");
+            printf("you reached a dead end\n");
             return 0;
+        }
+        else if (decision == "down")
+        {
+            system("CLS");
+            printf("left\nright\n");
+            cin >> decision;
+            if (decision == "right")
+            {
+                system("CLS");
+                printf("you reached a dead end\n");
+                return 0;
+            }
+            else if (decision == "left")
+            {
+                system("CLS");
+                printf("down\n");
+                cin >> decision;
+                if (decision == "down")
+                {
+                    system("CLS");
+                    printf("right\n");
+                    cin >> decision;
+                    if (decision == "right");
+                    {
+                        system("CLS");
+                        printf("right\n");
+                        cin >> decision;
+                        if (decision == "right")
+                        {
+                            system("CLS");
+                            printf("you win");
+                            return 0;
+                        }
+                    }
+                }
+            }
+
         }
     }
     else if (decision == "down")
     {
         system("CLS");
-        printf("1. right\n2. down\n");
+        printf("right\ndown\n");
         cin >> decision;
+        if (decision == "right")
+        {
+            system("CLS");
+            printf("right\nup\n");
+            cin >> decision;
+            if (decision == "right")
+            {
+                system("CLS");
+                printf("good job bozo you lost\n");
+                return 0;
+            }
+            else if (decision == "up")
+            {
+                system("CLS");
+                printf("right\nleft\n");
+                cin >> decision;
+                if (decision == "right")
+                {
+                    system("CLS");
+                    printf("good job bozo it's a dead end\n");
+                    return 0;
+                }
+                else if (decision == "left")
+                {
+                    system("CLS");
+                    printf("dead end bozo\n");
+                    return 0;
+                }
+            }
+        }
+        else if (decision == "down")
+        {
+            system("CLS");
+            printf("right\n");
+            cin >> decision;
+            if (decision == "right")
+            {
+                system("CLS");
+                printf("right");
+                cin >> decision;
+                if (decision == "right")
+                {
+                    system("CLS");
+                    printf("Good job you win\n");
+                    return 0;
+                }
+            }
+        }
     }
-
-
- 
-
-    return 0;
+}
