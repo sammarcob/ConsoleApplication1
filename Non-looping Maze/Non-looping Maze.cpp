@@ -1,5 +1,13 @@
 /*
-
+Author: Brooks Sammarco
+Project Name: non looping maze
+File Name: Non-looping Maze.cpp
+Purpose: code to navigate a maze
+Pseudocode: write a ton of layerd if statements with some dead ends that coorisponds to the maze on the goalsheet
+Maintenance Log:
+11/11/21: started and wrote 2 of the possible endings
+11/12/21: finished writing the whole thing
+11/15/21: wrote the comments because i forgor 
 */
 
 #include <iostream>
