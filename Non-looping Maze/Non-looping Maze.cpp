@@ -60,7 +60,7 @@ int main()
             else if (decision == "left")
             {
                 system("CLS");
-                printf("down\n");
+                printf("down\nup\n");
                 cin >> decision;
                 if (decision == "down")
                 {
@@ -79,6 +79,13 @@ int main()
                             return 0;
                         }
                     }
+                }
+                else if (decision == "up")
+                {
+                    system("CLS");
+                    printf("it's a dead end :(\n");
+                    return 0;
+                    
                 }
             }
 
