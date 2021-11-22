@@ -28,7 +28,7 @@ int main()
     
   system("CLS");
   printf("please input your ID (numbers)\n");
-  cin >> id;
+  cin >> id; 
     while (1) {
         system("CLS");
         printf("Q1. what is the capital of washington?\n");
