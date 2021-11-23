@@ -10,7 +10,7 @@ using namespace std;
 
 int main()
 {
-    int num;
+    int num = 0;
     int m = 0;
     int d = 0;
     int c = 0;
@@ -25,8 +25,104 @@ int main()
     int ix = 0;
     int iv = 0;
     string input;
-    string output = "";
 
-    printf("please input your number between 1 - 3999");
+    string repeat;
 
+    while (1)
+    {
+        string output = "";
+        system("CLS");
+        printf("enter a number between 1 and 3999\n");
+      
+        cin >> num;
+        if (num > 3999)
+        {
+            printf("read bozo\n");
+            continue;
+        }
+        while (num >= 1000)
+        {
+            output += "M";
+            num -= 1000;
+        }
+        while (num >= 900)
+        {
+            output += "CM";
+            num -= 900;
+        }
+        while(num >= 500)
+        {
+            output += "D";
+            num -= 500;
+        }
+        while(num >= 400)
+        {
+            output += "CD";
+            num -= 400;
+        }
+        while(num >= 100)
+        {
+            output += "C";
+            num -= 100;
+        }
+        while(num >= 90)
+        {
+            output += "XC";
+            num -= 90;
+        }
+        while(num >= 50)
+        {
+            output += "L";
+            num -= 50;
+        }
+        while (num >= 40)
+        {
+            output += "XL";
+            num -= 40;
+        }
+        while (num >= 10)
+        {
+            output += "X";
+            num -= 10;
+        }
+        while (num >= 9)
+        {
+            output += "IX";
+            num -= 9;
+        }
+        while(num >= 5)
+        {
+            output += "V";
+            num -= 5;
+        }
+        while (num >= 4)
+        {
+            output += "IV";
+            num -= 4;
+        }
+        while (num >= 1)
+        {
+            output += "I";
+            num -= 1;
+        }
+
+        printf("%s\n", output.c_str());
+        _getch();
+        system("CLS");
+
+        printf("would you like to input another number?\n");
+        printf("y\n\nn\n");
+        
+        cin >> repeat;
+        if (repeat == "y")
+        {
+            num = 0;
+            continue;
+        }
+        else if (repeat == "n")
+        {
+            break;
+        }
+    }
+    return 0;
 }
