@@ -3,8 +3,9 @@ Author: Brooks Sammarco
 Project Name: looping quiz
 File Name: looping quiz'n stuff.cpp
 Purpose: make a quiz that loops you back so you get every question right 
-Pseudocode: 
+Pseudocode: 3 if statement questions inside while statements  
 Maintenance Log:
+11/22/21: wrote it all
 */
 
 #include <iostream>

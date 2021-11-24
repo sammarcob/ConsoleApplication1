@@ -1,3 +1,14 @@
+/*
+Author: Brooks Sammarco
+Project Name: Convert to roman numerals
+File Name: convert to roman numerals 'n stuff.cpp
+Purpose: lets you convert numbers to roman numerals
+Pseudocode: inputs a number, then goes down a string of while statements to replace the numbers with their respective numerals
+Maintenance Log:
+11/23/21: did some brain storming and wrote some ints and strings
+11/24/21 wrote the whiles and finished the code
+*/
+
 #include <iostream>
 #include <stdlib.h> 
 #include <time.h>
