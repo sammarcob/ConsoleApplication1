@@ -35,6 +35,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "looping quiz 'n stuff", "lo
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "convert to roman numerals 'n stuff", "convert to roman numerals 'n stuff\convert to roman numerals 'n stuff.vcxproj", "{3DB92437-258E-4F8F-BA17-A5563DDFDAA2}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ASCII art and animation", "ASCII art and animation\ASCII art and animation.vcxproj", "{858AFAE2-AF4A-48DC-A901-0F128AE05954}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -171,6 +173,14 @@ Global
 		{3DB92437-258E-4F8F-BA17-A5563DDFDAA2}.Release|x64.Build.0 = Release|x64
 		{3DB92437-258E-4F8F-BA17-A5563DDFDAA2}.Release|x86.ActiveCfg = Release|Win32
 		{3DB92437-258E-4F8F-BA17-A5563DDFDAA2}.Release|x86.Build.0 = Release|Win32
+		{858AFAE2-AF4A-48DC-A901-0F128AE05954}.Debug|x64.ActiveCfg = Debug|x64
+		{858AFAE2-AF4A-48DC-A901-0F128AE05954}.Debug|x64.Build.0 = Debug|x64
+		{858AFAE2-AF4A-48DC-A901-0F128AE05954}.Debug|x86.ActiveCfg = Debug|Win32
+		{858AFAE2-AF4A-48DC-A901-0F128AE05954}.Debug|x86.Build.0 = Debug|Win32
+		{858AFAE2-AF4A-48DC-A901-0F128AE05954}.Release|x64.ActiveCfg = Release|x64
+		{858AFAE2-AF4A-48DC-A901-0F128AE05954}.Release|x64.Build.0 = Release|x64
+		{858AFAE2-AF4A-48DC-A901-0F128AE05954}.Release|x86.ActiveCfg = Release|Win32
+		{858AFAE2-AF4A-48DC-A901-0F128AE05954}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
