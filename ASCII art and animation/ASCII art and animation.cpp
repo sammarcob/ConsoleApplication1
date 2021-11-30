@@ -1,5 +1,13 @@
 /*
-
+Author: Brooks Sammarco
+Project Name: ASCII art and animation
+File Name: ASCII art and animation.cpp
+Purpose: creates a museum with 3 exhibits that you can go through and look at (1 being animated)
+Pseudocode: an if statement in a big while statement letting you choose which picture you want to look at, then after you see it, you
+           have the option to break, or continue to the top of the while again.
+Maintenance Log:
+11/29/21: wrote everything 
+11/30/21: wrote the comments
 */
 
 #include <iostream>
