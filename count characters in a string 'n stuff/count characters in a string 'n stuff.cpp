@@ -25,16 +25,27 @@ int main()
 	cin >> text;
 	getline(cin, text, '~');
 
-	printf("your text is %s characters long", text.length());
+	printf("your text is %s characters long", text.length(), text.c_str());
 
 	for (int i = 0; i < text.length(); i++)
 	{
-		if (text[i] == '')
+		if (text[i] == ' ')
 		{
-
-
-		
+			spaces++;
+		}
+		else if (text[i] == '\t')
+		{
+			tabs++;
+		}
+		else if (text [i]=='\n')
+		{
+			newline++;
+		}
+		else if(text[i]>='0' || text[i]<='9')
+		{
+			numbers++;
 		}
 	}
+	printf("%i spaces, %i numbers, %i new lines, %i tabs.\n", spaces, numbers, newline, tabs);
 	return 0;
 }

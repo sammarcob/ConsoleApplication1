@@ -36,7 +36,7 @@ int main()
 
     printf("- please input the code to print a sentence:\n");
     printf("1. say(hello);\n");
-    printf("2. printf(\"hello\")\n");
+    printf("2. printf(\"hello\");\n");
     printf("3. tell=*hello*:\n");
     printf("4. bozo.bozo@bozo.com       bozo\n");
     cin >> ans1;
