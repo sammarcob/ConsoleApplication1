@@ -59,11 +59,11 @@ int main()
 	}
 	system("CLS");
 
-	printf("Bozo ate 300 carrots. Why\n");
-	printf("1. Because he was hungry\n");
-	printf("2. Because he like carrots a lot\n");
-	printf("3. Because he was poor and starving\n");
-	printf("4. Because he is Bozo\n");
+	printf("Bozo ate 300 carrots because he was deficient in ___.\n");
+	printf("1. money\n");
+	printf("2. friends\n");
+	printf("3. love\n");
+	printf("4. Vitamin A\n");
 	cin >> input2;
 	if (input2 == 1)
 	{
