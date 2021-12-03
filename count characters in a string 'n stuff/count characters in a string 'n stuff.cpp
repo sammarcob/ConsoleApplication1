@@ -21,11 +21,10 @@ int main()
 	int tabs = 0;
 
 	printf("enter a sentence.\n");
-	printf("press the tild key, then enter when you are done\n");
-	cin >> text;
+	printf("press tild key, then enter when you are done\n");
 	getline(cin, text, '~');
 
-	printf("your text is %s characters long", text.length(), text.c_str());
+	printf("your text is %i characters long", text.length());
 
 	for (int i = 0; i < text.length(); i++)
 	{
@@ -41,7 +40,7 @@ int main()
 		{
 			newline++;
 		}
-		else if(text[i]>='0' || text[i]<='9')
+		else if(text[i]>='0' && text[i]<='9')
 		{
 			numbers++;
 		}
