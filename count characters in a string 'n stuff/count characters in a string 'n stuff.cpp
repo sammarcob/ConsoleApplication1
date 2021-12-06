@@ -1,5 +1,12 @@
 /*
-
+Author: Brooks Sammarco
+Project Name: count characters in a string
+File Name: count characters in a string 'n stuff.cpp
+Purpose: write code that counts the number of spaces, tabs, newlines and numbers in a sentence 
+Pseudocode: asks you to enter a sentence followed by ~ and enter, then goes down a for statement checking for certain things.
+Maintenance Log:
+12/2/21: started writing the code (ints, strings, getline)
+12/3/21: finished code
 */
 
 #include <iostream>
