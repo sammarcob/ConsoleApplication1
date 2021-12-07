@@ -35,7 +35,7 @@ int main()
             cin >> choice;
             if (choice == "u")
             {
-                break;
+                continue;
             }
             else if (choice == "r")
             {
