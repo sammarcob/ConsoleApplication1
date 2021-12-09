@@ -79,6 +79,13 @@ int main()
     printf("weapon damage: %i\n", damage);
     _getch();
 
+
+
+
+
+    return 0;
+
+    /*
     if (_6SidedDie == 1)
     {
         printf("1\n");
@@ -104,10 +111,5 @@ int main()
         printf("6\n");
     }
     _getch();
-
-
-
-    return 0;
+    */  
 }
-
- 
