@@ -36,9 +36,9 @@ int main()
     printf("welcome to the maze. while you are in it. please do not use capslock\n");
     _getch();
 
-    while(room9 == false)
+    while(!room9)
     {
-        if (room1 == true)
+        if (room1)
         {
             system("CLS");
             printf("R\n\nD");

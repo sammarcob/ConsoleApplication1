@@ -16,6 +16,7 @@ Matinence Log:
 #include <conio.h>
 #include <string>
 #include <stdio.h>
+#include <windows.h>
 using namespace std;
 
 int main()
@@ -29,7 +30,8 @@ int main()
     printf("'darn. too bad my house is a literal mansion'\n");
     _getch();
     system("CLS");
-
+    bool start = true;
+    bool credits;
     int health = 100;
     int damage = 0;
     string name;
@@ -41,6 +43,20 @@ int main()
     srand((unsigned)time(NULL));
     _6SidedDie = min + rand() % (max - min + 1);
 
+    // main menu
+    printf("Start||||||||||Credits");
+    while (!start || !credits)
+    {
+        if (start = true)
+        {
+            printf("Start||||||||||Credits");
+            printf("^^^^^      ");
+
+        }
+
+    }
+
+
     printf("to toast Bred you have to have to have a name so lets hear it:\n");
     cin >> name;
     if (name == "Brooks")
@@ -50,6 +66,14 @@ int main()
     else if (name == "brooks")
     {
         printf("Ah! brooks is a great name!\n");
+    }
+    else if (name == "joey")
+    {
+        printf("uhm... alright. if you insist.\n");
+    }
+    else if (name == "Joey")
+    {
+        printf("uhm... alright. if you insist.\n");
     }
     else
     {
@@ -75,6 +99,7 @@ int main()
     printf("-press any key to continue-\n");
     _getch();
     system("CLS");
+     
     printf("weapon: %s\n", weapon.c_str());
     printf("weapon damage: %i\n", damage);
     _getch();
