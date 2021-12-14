@@ -19,6 +19,14 @@ Matinence Log:
 #include <windows.h>
 using namespace std;
 
+void gotoxy(int x, int y)
+{
+    COORD coord;
+    coord.X = x;
+    coord.Y = y;
+    SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), coord);
+}
+
 int main()
 {
     printf("'oh i need my Bred so i can toast it'\n");
@@ -30,12 +38,14 @@ int main()
     printf("'darn. too bad my house is a literal mansion'\n");
     _getch();
     system("CLS");
-    bool start = true;
-    bool credits;
+    bool start = false;
+    bool credits = false;
     int health = 100;
     int damage = 0;
     string name;
     string weapon;
+    string input;
+    string input2;
     int min = 1;
     int max = 6;
     int _6SidedDie;
@@ -44,65 +54,126 @@ int main()
     _6SidedDie = min + rand() % (max - min + 1);
 
     // main menu
-    printf("Start||||||||||Credits");
-    while (!start || !credits)
+    printf("Start||||||||||Credits\n");
+    printf("^^^^^                 \n");
+    while (!start && !credits)
     {
-        if (start = true)
+    
+        if (!start)
         {
-            printf("Start||||||||||Credits");
-            printf("^^^^^      ");
+            _flushall();
+            input = _getch();
 
+            if (input == "a")
+            {
+                system("CLS");
+                printf("Start||||||||||Credits\n");
+                printf("^^^^^                 \n");
+                input2 = _getch();
+                if (input2 == " ")
+                {
+                    start = true;
+                }
+                else
+                {
+                    continue;
+                }
+            }
+            else if (input == "d")
+            {
+                system("CLS");
+                printf("Start||||||||||Credits\n");
+                printf("               ^^^^^^^\n");
+                input2 = _getch();
+                if (input2 == " ")
+                {
+                    credits = true;
+                }
+                else
+                {
+                    continue;
+                }
+            }
         }
 
     }
+    if (start == true)
+    {
+        printf("to toast Bred you have to have to have a name so lets hear it:\n");
+        cin >> name;
+        if (name == "Brooks")
+        {
+            printf("Ah! Brooks is a great name!\n");
+        }
+        else if (name == "brooks")
+        {
+            printf("Ah! brooks is a great name!\n");
+        }
+        else if (name == "joey")
+        {
+            printf("uhm... alright. if you insist.\n");
+        }
+        else if (name == "Joey")
+        {
+            printf("uhm... alright. if you insist.\n");
+        }
+        else
+        {
+            printf("Alright %s is an okay name... I guess it will work\n", name.c_str());
+        }
+        printf("-press any key to continue-\n");
+        _getch();
+        system("CLS");
 
+        printf("if you're going to toast bread you're going to need your butter spreading weapon of choice\n");
+        printf("do you spread with a spoon or a knife\n");
+        cin >> weapon;
+        if (weapon == "spoon")
+        {
+            printf("Ah, the spoon. Fantastic choice. Obviously you are no beginner to this.\n");
+            damage = damage + 5;
+        }
+        else if (weapon == "knife")
+        {
+            printf("knife... alright.\n");
+            damage = damage + 7;
+        }
+        printf("-press any key to continue-\n");
+        _getch();
+        system("CLS");
 
-    printf("to toast Bred you have to have to have a name so lets hear it:\n");
-    cin >> name;
-    if (name == "Brooks")
-    {
-        printf("Ah! Brooks is a great name!\n");
+        printf("weapon: %s\n", weapon.c_str());
+        printf("weapon damage: %i\n", damage);
+        _getch();
     }
-    else if (name == "brooks")
+    else if (credits == true)
     {
-        printf("Ah! brooks is a great name!\n");
-    }
-    else if (name == "joey")
-    {
-        printf("uhm... alright. if you insist.\n");
-    }
-    else if (name == "Joey")
-    {
-        printf("uhm... alright. if you insist.\n");
-    }
-    else
-    {
-        printf("Alright %s is an okay name... I guess it will work\n", name.c_str());
-    }
-    printf("-press any key to continue-\n");
-    _getch();
-    system("CLS");
+        printf("Code by Brooks Sammarco\n\n\n");
+        printf("Story by Brooks Sammarco\n\n\n");
+        printf("Coolness by Brooks Sammarco\n\n\n");
 
-    printf("if you're going to toast bread you're going to need your butter spreading weapon of choice\n");
-    printf("do you spread with a spoon or a knife\n");
-    cin >> weapon;
-    if (weapon == "spoon")
-    {
-        printf("Ah, the spoon. Fantastic choice. Obviously you are no beginner to this.\n");
-        damage = damage + 5;
+        printf("gumby\n");
+        Sleep(100);
+        printf("gumby\n");
+        Sleep(80);
+        printf("gumby\n");
+        Sleep(60);
+        printf("gumby\n");
+        Sleep(40);
+        printf("gumby\n");
+        Sleep(20);
+        printf("gumby\n");
+        Sleep(10);
+        printf("gumby\n");
+        Sleep(9);
+        printf("gumby\n");
+        Sleep(8);
+        printf("gumby\n");
+        Sleep(7);
+        printf("gumby\n\n\n");
+        Sleep(1000);
+        printf("gumby\n");
     }
-    else if (weapon == "knife")
-    {
-        printf("knife... alright.\n");
-        damage = damage + 7;
-    }
-    printf("-press any key to continue-\n");
-    _getch();
-    system("CLS");
-     
-    printf("weapon: %s\n", weapon.c_str());
-    printf("weapon damage: %i\n", damage);
-    _getch();
 
 
 
