@@ -38,7 +38,7 @@ int main()
     printf("'darn. too bad my house is a literal mansion'\n");
     _getch();
     system("CLS");
-    bool start = false;
+    bool start = true;
     bool credits = false;
     int health = 100;
     int damage = 0;
@@ -57,49 +57,38 @@ int main()
         // main menu
         printf("Start||||||||||Credits\n");
         printf("^^^^^                 \n");
-        while (!start && !credits)
+        while (true)
         {
+            _flushall();
+            input = _getch();
 
-            if (!start)
+            if (input == "a" || input == "A")
             {
-                _flushall();
-                input = _getch();
-
-                if (input == "a" || input == "A")
-                {
-                    system("CLS");
-                    printf("Start||||||||||Credits\n");
-                    printf("^^^^^                 \n");
-                    input2 = _getch();
-                    if (input2 == " ")
-                    {
-                        start = true;
-                    }
-                    else
-                    {
-                        continue;
-                    }
-                }
-                else if (input == "d" || input == "D")
-                {
-                    system("CLS");
-                    printf("Start||||||||||Credits\n");
-                    printf("               ^^^^^^^\n");
-                    input2 = _getch();
-                    if (input2 == " ")
-                    {
-                        credits = true;
-                    }
-                    else
-                    {
-                        continue;
-                    }
-                }
+                system("CLS");
+                printf("Start||||||||||Credits\n");
+                printf("^^^^^                 \n");
+                
+                start = true;
+                credits = false;
             }
+            else if (input == "d" || input == "D")
+            {
+                system("CLS");
+                printf("Start||||||||||Credits\n");
+                printf("               ^^^^^^^\n");
 
+                start = false;
+                credits = true;
+            }
+            else if (input == " " || input == "\n")
+            {
+                break;
+            }
         }
         if (start == true)
         {
+            start = true;
+            credits = false;
             printf("to toast Bred you have to have to have a name so lets hear it:\n");
             cin >> name;
             if (name == "Brooks")
@@ -114,7 +103,7 @@ int main()
             {
                 printf("uhm... alright. if you insist.\n");
             }
-            else if (name == "Joey")
+            else if (name == "Joey" || "Trail" || "trail")
             {
                 printf("uhm... alright. if you insist.\n");
             }
@@ -139,7 +128,7 @@ int main()
                 printf("knife... alright.\n");
                 damage = damage + 7;
             }
-            else if(weapon)
+            else if(weapon == "fork")
             {
                 printf("Fork?-- i mean, good choice");
                 damage = damage + 6;
@@ -194,8 +183,32 @@ int main()
             continue;
         }
     }
+    int x = 0;
+    int y = 0;
+    string choice;
     system("CLS");
-    printf("game time\n");
+    while (true)
+    {
+        if (x == 1 && y == 5)
+        {
+            printf("you have a door below you and a door to your right\n\n do you go right(d) or down(s)?. Use WASD to input your answer");
+            cin >> choice;
+            if (choice == "d")
+            {
+                x + 1;
+                continue;
+            }
+            else if (choice == "s")
+            {
+                y - 1;
+                continue;
+            }
+        }
+
+        // to be filled with rooms
+    }
+   
+
 
 
 
