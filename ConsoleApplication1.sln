@@ -43,6 +43,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "looping made 'n stuff", "lo
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fraction reducer 'n stuff", "fraction reducer 'n stuff\fraction reducer 'n stuff.vcxproj", "{547FC409-A8C1-4A23-BC09-FE3A3B67E1A7}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "square root reducer 'n stuff", "square root reducer 'n stuff\square root reducer 'n stuff.vcxproj", "{00C29163-AB0C-43A4-A9B7-53AEEFE0B183}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -211,6 +213,14 @@ Global
 		{547FC409-A8C1-4A23-BC09-FE3A3B67E1A7}.Release|x64.Build.0 = Release|x64
 		{547FC409-A8C1-4A23-BC09-FE3A3B67E1A7}.Release|x86.ActiveCfg = Release|Win32
 		{547FC409-A8C1-4A23-BC09-FE3A3B67E1A7}.Release|x86.Build.0 = Release|Win32
+		{00C29163-AB0C-43A4-A9B7-53AEEFE0B183}.Debug|x64.ActiveCfg = Debug|x64
+		{00C29163-AB0C-43A4-A9B7-53AEEFE0B183}.Debug|x64.Build.0 = Debug|x64
+		{00C29163-AB0C-43A4-A9B7-53AEEFE0B183}.Debug|x86.ActiveCfg = Debug|Win32
+		{00C29163-AB0C-43A4-A9B7-53AEEFE0B183}.Debug|x86.Build.0 = Debug|Win32
+		{00C29163-AB0C-43A4-A9B7-53AEEFE0B183}.Release|x64.ActiveCfg = Release|x64
+		{00C29163-AB0C-43A4-A9B7-53AEEFE0B183}.Release|x64.Build.0 = Release|x64
+		{00C29163-AB0C-43A4-A9B7-53AEEFE0B183}.Release|x86.ActiveCfg = Release|Win32
+		{00C29163-AB0C-43A4-A9B7-53AEEFE0B183}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
