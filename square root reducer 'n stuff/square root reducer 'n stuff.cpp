@@ -20,10 +20,30 @@ Maintenance Log:
 #include <math.h>
 using namespace std;
 
+int rootReducer(int num1)
+{
+	int factor = 1;
+	for (int i = 1; i <= num1; i++)
+	{
+		if (num1 % (i * i) == 0)
+		{
+			factor = i;
+		}
+	}
+	return factor;
+}
+
 int main()
 {
+	int num1;
+	int factor;
 
+	printf("input the number you want to try to reduce\n");
+	cin >> num1;
+	factor = rootReducer(num1);
+	num1 / 
+	system("CLS");
+	cout << factor << endl;
+	return 0;
 }
-trail you suck 
 
-like bals
