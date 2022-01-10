@@ -37,13 +37,15 @@ int main()
 {
 	int num1;
 	int factor;
-
+	char sqrtSymbol = 251;
+	
 	printf("input the number you want to try to reduce\n");
 	cin >> num1;
 	factor = rootReducer(num1);
-	num1 / 
+	num1 = num1 / factor;
+	num1 = num1 / factor;
 	system("CLS");
-	cout << factor << endl;
+	cout << factor << sqrtSymbol << num1 << endl;
 	return 0;
 }
 
