@@ -1,12 +1,13 @@
 /*
 Author: Brooks Sammarco
 pair programming partner: Slater Swart
-Project Name: 
-File Name: 
-Purpose: 
-Pseudocode: 
+Project Name: square root reducer
+File Name: square root reducer 'n stuff
+Purpose: give you the square roots of any whole number you input
+Pseudocode: finds the factor and input, then reduces them both to find the square roots
 Maintenance Log:
-
+1/7/22: wrote the rot reducer function 
+1/10/22: finished 
 */
 
 #include <iostream>
