@@ -13,6 +13,11 @@ using namespace std;
 string fortuneCookie(int ranFortune)
 {
     string fortune;
+    
+    
+
+   
+
     switch (ranFortune)
     {
     case 1:
@@ -51,5 +56,41 @@ string fortuneCookie(int ranFortune)
 
 int main()
 {
+    string choice;
     
+    
+    bool yes = true;
+
+    int min = 1;
+    int max = 10;
+
+
+    srand(0);
+    srand((unsigned)time(NULL));
+    
+
+    while (yes = true)
+    {
+        system("CLS");
+        
+        printf("press any key to read your fortune\n");
+        _getch();
+        system("CLS");
+        int ranFortune = min + rand() % (max - min + 1);
+        string fortune = fortuneCookie(ranFortune);
+        cout << fortune << endl;
+        Sleep(100);
+        printf("would you like to read another?\n\ny\n\nn\n");
+        cin >> choice;
+        if (choice == "y")
+        {
+            yes = true;
+        }
+        else if (choice == "n")
+        {
+            break;
+        }
+        
+    }
+    return 0;
 }
