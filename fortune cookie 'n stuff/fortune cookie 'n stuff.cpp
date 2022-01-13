@@ -73,7 +73,7 @@ int main()
     {
         system("CLS");
         
-        printf("press any key to read your fortune\n");
+        printf("press enter to read your fortune\n");
         _getch();
         system("CLS");
         int ranFortune = min + rand() % (max - min + 1);
