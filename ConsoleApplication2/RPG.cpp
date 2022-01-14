@@ -27,6 +27,58 @@ void gotoxy(int x, int y)
     SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), coord);
 }
 
+int theEnemies(int ranEnemy)
+{
+    int min = 1;
+    int max = 6;
+    int enemyHealth;
+    int enemyDamage;
+    string enemy;
+
+    srand(0);
+    srand((unsigned)time(NULL));
+
+    ranEnemy = min + rand() % (max - min + 1);
+
+    if (ranEnemy == 1)
+    {
+        enemy = "Jelly";
+        enemyHealth = ;
+        enemyDamage = ;
+    }
+    else if (ranEnemy == 2)
+    {
+        enemy = "butter";
+        enemyHealth = ;
+        enemyDamage = ;
+    }
+    else if (ranEnemy == 3)
+    {
+        enemy = "Jam";
+        enemyHealth = ;
+        enemyDamage = ;
+    }
+    else if (ranEnemy == 4)
+    {
+        enemy = "Joe(your roomate)";
+        enemyHealth = ;
+        enemyDamage = ;
+    }
+    else if (ranEnemy == 5)
+    {
+        enemy = "Marmalade";
+        enemyHealth = ;
+        enemyDamage = ;
+    }
+    else if (ranEnemy == 6)
+    {
+        enemy = "";
+        enemyHealth = ;
+        enemyDamage = ;
+    }
+    return enemy;
+}
+
 int main()
 {
     printf("'oh i need my Bred so i can toast it'\n");

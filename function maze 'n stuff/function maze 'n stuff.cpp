@@ -10,16 +10,21 @@
 #include <math.h>
 using namespace std;
 
-int room1(int room)
+int rooms(int room)
 {
 
+
+    return room;
 }
 
 int main()
 {
     int room;
-    while (2 > 1)
+    while (room != 16)
     {
-        
+        if (room == 1)
+        {
+            room = rooms(room);
+        }
     }
 }
