@@ -27,6 +27,88 @@ void gotoxy(int x, int y)
     SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), coord);
 }
 
+string jelly()
+{
+    string enemy = "Jelly";
+    int enemyHealh = 7;
+    int enemyDamage = 7;
+}
+string butter()
+{
+    string enemy = "Butter";
+    int enemyHealh = 5;
+    int enemyDamage = 2; //high chance of dodging 
+}
+string jam()
+{
+    string enemy = "Jam";
+    int enemyHealh = 9;
+    int enemyDamage = 8;
+}
+string joe()
+{
+    string enemy = "Joe(your roomate)";
+    int enemyHealh = 14;
+    int enemyDamage = 0; //he just talks your head off
+}
+string molassas()
+{
+    string enemy = "Molassas";
+    int enemyHealh = 10;
+    int enemyDamage = 8; //slow
+}
+string nutella()
+{
+    string enemy = "Nutella";
+    int enemyHealh = 7;
+    int enemyDamage = 6;
+}
+
+string enemies(int ranEnemy)
+{
+    
+    int enemyHealth;
+    int enemyDamage;
+    string enemy;
+
+    srand(0);
+    srand((unsigned)time(NULL));
+
+    ranEnemy = min + rand() % (max - min + 1);
+
+    if (ranEnemy == 1)
+    {
+        enemy = "Jelly";
+        
+    }
+    else if (ranEnemy == 2)
+    {
+        enemy = "butter";
+        
+    }
+    else if (ranEnemy == 3)
+    {
+        enemy = "Jam";
+        
+    }
+    else if (ranEnemy == 4)
+    {
+        enemy = "Joe(your roomate)";
+        
+    }
+    else if (ranEnemy == 5)
+    {
+        enemy = "Marmalade";
+        
+    }
+    else if (ranEnemy == 6)
+    {
+        enemy = "Nutella";
+        
+    }
+    return enemy;
+}
+
 int main()
 {
     printf("'oh i need my Bred so i can toast it'\n");
