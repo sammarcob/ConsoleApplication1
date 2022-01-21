@@ -1,0 +1,5 @@
+﻿1>------ Build started: Project: Fraction Reducer 'n stuff, Configuration: Debug x64 ------
+1>Fraction Reducer 'n stuff.cpp
+1>F:\Trail Sammarco\Desktop\Brooks GitHub\Fraction Reducer 'n stuff\Fraction Reducer 'n stuff.cpp(15,13): error C2082: redefinition of formal parameter 'n'
+1>Done building project "Fraction Reducer 'n stuff.vcxproj" -- FAILED.
+========== Build: 0 succeeded, 1 failed, 0 up-to-date, 0 skipped ==========
