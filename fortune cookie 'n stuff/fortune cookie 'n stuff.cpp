@@ -1,3 +1,13 @@
+/*
+Author: Brooks Sammarco
+Project Name: fortune cookie
+File Name: fortune cookie 'n stuff.cpp
+Purpose: gives you a random fortune 
+Pseudocode: has a random number generator that outputs a number that coorisponds to a fortune in a different function.
+Maintenance Log:
+1/7/22: wrote the fortunes
+1/8/22: finished
+*/
 
 #include <iostream>
 #include <stdlib.h> 

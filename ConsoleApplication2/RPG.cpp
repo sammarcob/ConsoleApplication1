@@ -27,46 +27,47 @@ void gotoxy(int x, int y)
     SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), coord);
 }
 
-string jelly()
+struct jelly
 {
     string enemy = "Jelly";
     int enemyHealh = 7;
     int enemyDamage = 7;
-}
-string butter()
+};
+struct butter
 {
     string enemy = "Butter";
     int enemyHealh = 5;
     int enemyDamage = 2; //high chance of dodging 
-}
-string jam()
+};
+struct jam
 {
     string enemy = "Jam";
     int enemyHealh = 9;
     int enemyDamage = 8;
-}
-string joe()
+};
+struct joe
 {
     string enemy = "Joe(your roomate)";
     int enemyHealh = 14;
     int enemyDamage = 0; //he just talks your head off
-}
-string molassas()
+};
+struct molassas
 {
     string enemy = "Molassas";
     int enemyHealh = 10;
     int enemyDamage = 8; //slow
-}
-string nutella()
+};
+struct nutella
 {
     string enemy = "Nutella";
     int enemyHealh = 7;
     int enemyDamage = 6;
-}
+};
 
 string enemies(int ranEnemy)
 {
-    
+    int min = 1;
+    int max = 6;
     int enemyHealth;
     int enemyDamage;
     string enemy;
@@ -108,9 +109,16 @@ string enemies(int ranEnemy)
     }
     return enemy;
 }
-
+struct stats&
+{
+    string name; 
+    string weapon;
+    int health;
+    int damage = 0
+};
 int main()
 {
+    struct stats r;
     printf("'oh i need my Bred so i can toast it'\n");
     _getch();
     printf("'oh i have some Bred'\n");
@@ -128,12 +136,8 @@ int main()
     string weapon;
     string input;
     string input2;
-    int min = 1;
-    int max = 6;
-    int _6SidedDie;
-    srand(0);
-    srand((unsigned)time(NULL));
-    _6SidedDie = min + rand() % (max - min + 1);
+    
+    
     while (1 < 2)
     {
         // main menu
@@ -297,31 +301,5 @@ int main()
 
     return 0;
 
-    /*
-    if (_6SidedDie == 1)
-    {
-        printf("1\n");
-    }
-    else if (_6SidedDie == 2)
-    {
-        printf("2\n");
-    }
-    else if (_6SidedDie == 3)
-    {
-        printf("3\n");
-    }
-    else if (_6SidedDie == 4)
-    {
-        printf("4\n");
-    }
-    else if (_6SidedDie == 5)
-    {
-        printf("5\n");
-    }
-    else if (_6SidedDie == 6)
-    {
-        printf("6\n");
-    }
-    _getch();
-    */  
+     
 }

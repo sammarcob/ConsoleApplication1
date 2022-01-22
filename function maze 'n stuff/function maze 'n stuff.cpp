@@ -1,3 +1,12 @@
+/*
+Author: Brooks Sammarco
+Project Name: function maze
+File Name: function maze 'n stuff.cpp
+Purpose: be able to travel freely between 16 different rooms.
+Pseudocode: inside a loop, it calls various functions based off of what room you are in.
+Maintenance Log:
+1/20/22: wrote everything (finished)
+*/
 
 #include <iostream>
 #include <stdlib.h> 
