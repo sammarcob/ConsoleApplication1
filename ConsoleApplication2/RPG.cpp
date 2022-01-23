@@ -10,13 +10,15 @@ Matinence Log:
 */
 
 
-#include <iostream>
 #include <stdlib.h> 
 #include <time.h>
 #include <conio.h>
 #include <string>
 #include <stdio.h>
 #include <windows.h>
+#include <vector>
+#include <iostream>
+#include <math.h>
 using namespace std;
 
 void gotoxy(int x, int y)
@@ -27,43 +29,56 @@ void gotoxy(int x, int y)
     SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), coord);
 }
 
-struct jelly
+void jelly(struct stats&)
 {
+    struct stats r;
     string enemy = "Jelly";
     int enemyHealh = 7;
     int enemyDamage = 7;
+    printf("Jelly attacks!");
 };
-struct butter
+void butter(struct stats&)
 {
+    struct stats r;
     string enemy = "Butter";
     int enemyHealh = 5;
     int enemyDamage = 2; //high chance of dodging 
 };
-struct jam
+void jam(struct stats&)
 {
+    struct stats r;
     string enemy = "Jam";
     int enemyHealh = 9;
     int enemyDamage = 8;
 };
-struct joe
+void joe(struct stats&)
 {
+    struct stats r;
     string enemy = "Joe(your roomate)";
     int enemyHealh = 14;
     int enemyDamage = 0; //he just talks your head off
 };
-struct molassas
+void molassas(struct stats&)
 {
+    struct stats r;
     string enemy = "Molassas";
     int enemyHealh = 10;
     int enemyDamage = 8; //slow
 };
-struct nutella
+void nutella(struct stats&)
 {
+    struct stats r;
     string enemy = "Nutella";
-    int enemyHealh = 7;
-    int enemyDamage = 6;
+    int enemyHealh = 3;
+    int enemyDamage = 2;
+    printf("Nutella is here!\n\nHe's...\n\n");
+    Sleep(40);
+    printf("Kinda cool\n\nHe's better on straight white bread though\n");
+    _getch();
+    system("CLS");
+    
 };
-
+/*
 string enemies(int ranEnemy)
 {
     int min = 1;
@@ -109,12 +124,13 @@ string enemies(int ranEnemy)
     }
     return enemy;
 }
-struct stats&
+*/
+struct stats
 {
-    string name; 
+    string name;
     string weapon;
     int health;
-    int damage = 0
+    int damage = 0;
 };
 int main()
 {
@@ -132,8 +148,7 @@ int main()
     bool credits = false;
     int health = 100;
     int damage = 0;
-    string name;
-    string weapon;
+    
     string input;
     string input2;
     
@@ -176,26 +191,26 @@ int main()
             start = true;
             credits = false;
             printf("to toast Bred you have to have to have a name so lets hear it:\n");
-            cin >> name;
-            if (name == "Brooks")
+            cin >> r.name;
+            if (r.name == "Brooks")
             {
                 printf("Ah! Brooks is a great name!\n");
             }
-            else if (name == "brooks")
+            else if (r.name == "brooks")
             {
                 printf("Ah! brooks is a great name!\n");
             }
-            else if (name == "joey")
+            else if (r.name == "joey")
             {
                 printf("uhm... alright. if you insist.\n");
             }
-            else if (name == "Joey" || "Trail" || "trail")
+            else if (r.name == "Joey" || "Trail" || "trail")
             {
                 printf("uhm... alright. if you insist.\n");
             }
             else
             {
-                printf("Alright %s is an okay name... I guess it will work\n", name.c_str());
+                printf("Alright %s is an okay name... I guess it will work\n", r.name.c_str());
             }
             printf("-press any key to continue-\n");
             _getch();
@@ -203,18 +218,18 @@ int main()
 
             printf("if you're going to toast bread you're going to need your butter spreading weapon of choice\n");
             printf("do you spread with a spoon, knife or fork\n");
-            cin >> weapon;
-            if (weapon == "spoon")
+            cin >> r.weapon;
+            if (r.weapon == "spoon")
             {
                 printf("Ah, the spoon. Fantastic choice. Obviously you are no beginner to this.\n");
                 damage = damage + 5;
             }
-            else if (weapon == "knife")
+            else if (r.weapon == "knife")
             {
                 printf("knife... alright.\n");
                 damage = damage + 7;
             }
-            else if(weapon == "fork")
+            else if(r.weapon == "fork")
             {
                 printf("Fork?-- i mean, good choice");
                 damage = damage + 6;
@@ -229,7 +244,7 @@ int main()
             _getch();
             system("CLS");
 
-            printf("weapon: %s\n", weapon.c_str());
+            printf("weapon: %s\n", r.weapon.c_str());
             printf("weapon damage: %i\n", damage);
             _getch();
             break;
@@ -269,14 +284,15 @@ int main()
             continue;
         }
     }
-    int x = 0;
-    int y = 0;
+    int x = 1;
+    int y = 5;
     string choice;
     system("CLS");
     while (true)
     {
         if (x == 1 && y == 5)
         {
+            printf("You walk out of your kitchen and out into the first room. It's your living room you must search every room . ");
             printf("you have a door below you and a door to your right\n\n do you go right(d) or down(s)?. Use WASD to input your answer");
             cin >> choice;
             if (choice == "d")
@@ -290,8 +306,11 @@ int main()
                 continue;
             }
         }
-
-        // to be filled with rooms
+        else if (x == 2 && y == 5)
+        {
+            nutella(struct stats&); // maybe try to do the struct thing like function maze
+        }
+        
     }
    
 
