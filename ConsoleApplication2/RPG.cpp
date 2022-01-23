@@ -29,7 +29,41 @@ void gotoxy(int x, int y)
     SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), coord);
 }
 
-void jelly(struct stats&)
+enum direction { dUp, dDown, dLeft, dRight };
+
+struct room
+{
+    coords coordinates;
+    
+    void move(direction moveDirection)
+    {
+        
+        if (moveDirection == dUp && coordinates.y < 5)
+        {
+            coordinates.y++;
+        }
+        else if (moveDirection == dDown && coordinates.y > 1)
+        {
+            coordinates.y--;
+        }
+        else if (moveDirection == dLeft && coordinates.x > 1)
+        {
+            coordinates.x--;
+        }
+        else if (moveDirection == dRight && coordinates.x < 5)
+        {
+            coordinates.x++;
+        }
+    }
+};
+
+struct coords
+{
+    int x;
+    int y;
+};
+
+void jelly(struct stats& r)
 {
     struct stats r;
     string enemy = "Jelly";
@@ -37,35 +71,35 @@ void jelly(struct stats&)
     int enemyDamage = 7;
     printf("Jelly attacks!");
 };
-void butter(struct stats&)
+void butter(struct stats& r)
 {
     struct stats r;
     string enemy = "Butter";
     int enemyHealh = 5;
     int enemyDamage = 2; //high chance of dodging 
 };
-void jam(struct stats&)
+void jam(struct stats& r)
 {
     struct stats r;
     string enemy = "Jam";
     int enemyHealh = 9;
     int enemyDamage = 8;
 };
-void joe(struct stats&)
+void joe(struct stats& r)
 {
     struct stats r;
     string enemy = "Joe(your roomate)";
     int enemyHealh = 14;
     int enemyDamage = 0; //he just talks your head off
 };
-void molassas(struct stats&)
+void molassas(struct stats& r)
 {
     struct stats r;
     string enemy = "Molassas";
     int enemyHealh = 10;
     int enemyDamage = 8; //slow
 };
-void nutella(struct stats&)
+void nutella(struct stats& r)
 {
     struct stats r;
     string enemy = "Nutella";
@@ -79,9 +113,7 @@ void nutella(struct stats&)
     
 };
 /*
-string enemies(int ranEnemy)
-{
-    int min = 1;
+string enemies(int ranEnemyt min = 1;
     int max = 6;
     int enemyHealth;
     int enemyDamage;
@@ -284,32 +316,30 @@ int main()
             continue;
         }
     }
-    int x = 1;
-    int y = 5;
+    room currentRoom;
+    currentRoom.coordinates.x = 1;
+    currentRoom.coordinates.y = 5; 
     string choice;
     system("CLS");
     while (true)
     {
-        if (x == 1 && y == 5)
+        if (currentRoom.coordinates.x == 1 && currentRoom.coordinates.y == 5)   
         {
-            printf("You walk out of your kitchen and out into the first room. It's your living room you must search every room . ");
+            printf("You walk out of your kitchen and out into the first room. It's your living room you must search every room .");
             printf("you have a door below you and a door to your right\n\n do you go right(d) or down(s)?. Use WASD to input your answer");
             cin >> choice;
             if (choice == "d")
             {
-                x + 1;
+                currentRoom.move(dRight);
                 continue;
             }
             else if (choice == "s")
             {
-                y - 1;
+                currentRoom.move(dDown);
                 continue;
             }
         }
-        else if (x == 2 && y == 5)
-        {
-            nutella(struct stats&); // maybe try to do the struct thing like function maze
-        }
+        
         
     }
    

@@ -58,7 +58,7 @@ void tRoom15(struct rooms& r);
 
 int main()
 {
-    struct rooms r;
+    rooms r;
 
     printf("There are 16 rooms arranged as follows:\n\n 1  2  3  4\n 5  6  7  8\n 9 10 11 12\n13 14 15 16\n");
     _getch();
