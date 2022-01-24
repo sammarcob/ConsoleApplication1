@@ -287,7 +287,8 @@ int main()
             continue;
         }
     }
-    room currentRoom;
+    // rooms
+    room currentRoom; 
     currentRoom.coordinates.x = 1;
     currentRoom.coordinates.y = 5; 
     string choice;
