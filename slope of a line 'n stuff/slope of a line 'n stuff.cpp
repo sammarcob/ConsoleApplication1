@@ -1,11 +1,11 @@
 
 /*
 Author: Brooks Sammarco
-Project Name: personal data
-File Name: personal data 'n stuff.cpp
-Purpose: collects and varifies personal info
-Pseudocode: has a struct that has strings and ints for the data. inside a big while loop, the main function asks for the user to input the data cia cin, then the data
-is read back to them before asking if the data is correct. if it is, it breaks and returns 0, if the user says its incorrect, it continues the while loop and has them put the data in again.
+Project Name: slope of a line
+File Name: slope of a line 'n stuff.cpp
+Purpose: inputs 2 points and finds the slope of the line connecting them
+Pseudocode: has you input the x and y coordinates for both points, then runs it through an equation that finds the slope of the two points. it also determines
+if the slope in infnite by checking if both points have the same x value. it also checks if the points are in the same place.
 Maintenance Log:
 1/22/22: wrote it all.
 */

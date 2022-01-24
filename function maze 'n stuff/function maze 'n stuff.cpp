@@ -5,7 +5,8 @@ File Name: function maze 'n stuff.cpp
 Purpose: be able to travel freely between 16 different rooms.
 Pseudocode: inside a loop, it calls various functions based off of what room you are in.
 Maintenance Log:
-1/20/22: wrote everything (finished)
+1/19/22: started on the structs and bools.
+1/20/22: finished
 */
 
 #include <iostream>
