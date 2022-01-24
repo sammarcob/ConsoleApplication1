@@ -21,6 +21,14 @@ Matinence Log:
 #include <math.h>
 using namespace std;
 
+struct stats
+{
+    string name;
+    string weapon;
+    int health;
+    int damage = 0;
+};
+
 void gotoxy(int x, int y)
 {
     COORD coord;
@@ -30,6 +38,12 @@ void gotoxy(int x, int y)
 }
 
 enum direction { dUp, dDown, dLeft, dRight };
+
+struct coords
+{
+    int x;
+    int y;
+};
 
 struct room
 {
@@ -57,15 +71,11 @@ struct room
     }
 };
 
-struct coords
-{
-    int x;
-    int y;
-};
+
 
 void jelly(struct stats& r)
 {
-    struct stats r;
+    
     string enemy = "Jelly";
     int enemyHealh = 7;
     int enemyDamage = 7;
@@ -73,35 +83,35 @@ void jelly(struct stats& r)
 };
 void butter(struct stats& r)
 {
-    struct stats r;
+    
     string enemy = "Butter";
     int enemyHealh = 5;
     int enemyDamage = 2; //high chance of dodging 
 };
 void jam(struct stats& r)
 {
-    struct stats r;
+    
     string enemy = "Jam";
     int enemyHealh = 9;
     int enemyDamage = 8;
 };
 void joe(struct stats& r)
 {
-    struct stats r;
+    
     string enemy = "Joe(your roomate)";
     int enemyHealh = 14;
     int enemyDamage = 0; //he just talks your head off
 };
 void molassas(struct stats& r)
 {
-    struct stats r;
+    
     string enemy = "Molassas";
     int enemyHealh = 10;
     int enemyDamage = 8; //slow
 };
 void nutella(struct stats& r)
 {
-    struct stats r;
+    
     string enemy = "Nutella";
     int enemyHealh = 3;
     int enemyDamage = 2;
@@ -113,7 +123,7 @@ void nutella(struct stats& r)
     
 };
 
-int enemies()
+void enemies(struct stats& r)
 {
     stats r;
     int ranEnemy;
@@ -123,21 +133,39 @@ int enemies()
     srand((unsigned)time(NULL));
 
     ranEnemy = min + rand() % (max - min + 1);
-
+    if (ranEnemy = 1)
+    {
+        nutella(r);
+    }
+    else if (ranEnemy = 2)
+    {
+        molassas(r);
+    }
+    else if (ranEnemy = 3)
+    {
+        jelly(r);
+    }
+    else if (ranEnemy = 4)
+    {
+        joe(r);
+    }
+    else if (ranEnemy = 5)
+    {
+        jam(r);
+    }
+    else if (ranEnemy = 6)
+    {
+        butter(r);
+    }
     
-    return ranEnemy;
+
 }
 
-struct stats
-{
-    string name;
-    string weapon;
-    int health;
-    int damage = 0;
-};
+
+
 int main()
 {
-    struct stats r;
+    stats r;
     printf("'oh i need my Bred so i can toast it'\n");
     _getch();
     printf("'oh i have some Bred'\n");
@@ -298,7 +326,9 @@ int main()
         if (currentRoom.coordinates.x == 1 && currentRoom.coordinates.y == 5)   
         {
             printf("You walk out of your kitchen and out into the first room. It's your living room you must search every room .");
+            enemies(r);
             printf("you have a door below you and a door to your right\n\n do you go right(d) or down(s)?. Use WASD to input your answer");
+
             cin >> choice;
             if (choice == "d")
             {
@@ -851,7 +881,8 @@ int main()
     }
    
 
-
+    printf("you made it to room 25");
+    _getch();
 
 
 
