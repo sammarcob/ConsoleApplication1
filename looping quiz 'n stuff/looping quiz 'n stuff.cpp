@@ -33,7 +33,7 @@ int main()
     while (1) {
         system("CLS");
         printf("Q1. what is the capital of washington?\n");
-        printf("1. beijing\n2. olympia\n3. zimbabwe");
+        printf("1. beijing\n2. olympia\n3. zimbabwe\n4. egypt\n");
         cin >> ans;
         system("CLS");
         if (ans == "1")
@@ -55,9 +55,15 @@ int main()
             _getch();
             continue;
         }
+        else if (ans == "4")
+        {
+            printf("wrong answer bozo\n");
+            _getch();
+            continue;
+        }
         else
         {
-            break;
+            continue;
         }
     }
 

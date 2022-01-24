@@ -215,31 +215,30 @@ void enemies(struct stats& r)
     int ranEnemy;
     int min = 1;
     int max = 6;
-    srand(0);
-    srand((unsigned)time(NULL));
+    
 
     ranEnemy = min + rand() % (max - min + 1);
-    if (ranEnemy = 1)
+    if (ranEnemy == 1)
     {
         peanutButter(r);
     }
-    else if (ranEnemy = 2)
+    else if (ranEnemy == 2)
     {
         molassas(r);
     }
-    else if (ranEnemy = 3)
+    else if (ranEnemy == 3)
     {
         jelly(r);
     }
-    else if (ranEnemy = 4)
+    else if (ranEnemy == 4)
     {
         chad(r);
     }
-    else if (ranEnemy = 5)
+    else if (ranEnemy == 5)
     {
         jam(r);
     }
-    else if (ranEnemy = 6)
+    else if (ranEnemy == 6)
     {
         butter(r);
     }
@@ -263,6 +262,8 @@ int main()
     system("CLS");
     bool start = true;
     bool credits = false;
+    srand(0);
+    srand((unsigned)time(NULL));
     
     
     string input;
