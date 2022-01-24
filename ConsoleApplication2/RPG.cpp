@@ -23,10 +23,10 @@ using namespace std;
 
 struct stats
 {
-    string name;
-    string weapon;
-    int health;
-    int damage = 0;
+    string pName;
+    string pWeapon;
+    int pHealth = 100;
+    int pDamage = 0;
 };
 
 void gotoxy(int x, int y)
@@ -74,50 +74,136 @@ struct room
 
 
 void jelly(struct stats& r)
-{
-    
+{   
+    system("CLS");
+
+    printf("you enter the room to see a tiny, shiny blob on the ground\nyou examine it closer and rotates to look at you\n it's big, pitch black eyes look hollow.\n");
+    printf("it almost feels as if it is taking note of possible weaknesses...\n you slowly walk away from it.");
     string enemy = "Jelly";
     int enemyHealh = 7;
     int enemyDamage = 7;
     printf("Jelly attacks!");
 };
 void butter(struct stats& r)
-{
-    
+{   
+    system("CLS");
+
+    printf("butter: 'hey man hey hey hey hey hey hey hey hey hey hey, i bet you cant touch me, hhehehehheheHEHEHEHHAHAHAHAHAHAHAHAH'\n");
+    printf("butter slides across the floor and slams into a table, knocking over some of your childhood pictures\n");
+    printf("butter: 'awwww mannn sorry @s maaaaaaaaannnnnnn i really godda goooo maaaaa- SEE YA!\n");
+    printf("butter slides to the other side of the room and smashes through the wall\n");
     string enemy = "Butter";
     int enemyHealh = 5;
     int enemyDamage = 2; //high chance of dodging 
 };
 void jam(struct stats& r)
 {
-    
+    system("CLS");
+
+    printf("Jam is here!\n\nDude, he's so freaking cool.");
+    _getch();
+    printf("dude jam is so cool dude\n");
+    _getch();
+    printf("dude i wish i was as cool as jam bro...\n");
     string enemy = "Jam";
     int enemyHealh = 9;
     int enemyDamage = 8;
 };
-void joe(struct stats& r)
+void chad(struct stats& r)
 {
-    
-    string enemy = "Joe(your roomate)";
+    system("CLS");
+
+    printf("Chad walks into the room\n");
+    _getch();
+    printf("chad: 'dude'\nyou: 'hey chad'\nchad: 'yo whats up dude, what's been going on dude'\nyou: 'not much'\nchad: 'dude. that's so cool dude'\n");
+    printf("chad: 'anyways dude, i found a half eaten burrito on the sidewalk yesterday dude. You want to chow down dude?'\n");
+    Sleep(40);
+    printf("you have to get out of here...");
+    _getch();
+    string enemy = "Chad(your roomate)";
     int enemyHealh = 14;
     int enemyDamage = 0; //he just talks your head off
 };
 void molassas(struct stats& r)
 {
+    system("CLS");
+
+    printf("you walk into the room.\nIt's quiet...\n");
+    Sleep(60);
+    system("CLS");
+    printf("h");
+    Sleep(10);
+    system("CLS");
+    printf("hh");
+    Sleep(10);
+    system("CLS");
+    printf("hhh");
+    Sleep(10);
+    system("CLS");
+    printf("hhhh");
+    Sleep(10);
+    system("CLS");
+    printf("hhhhe");
+    Sleep(10);
+    system("CLS");
+    printf("hhhhee");
+    Sleep(10);
+    system("CLS");
+    printf("hhhheee");
+    Sleep(10);
+    system("CLS");
+    printf("hhhheeee");
+    Sleep(10);
+    system("CLS");
+    printf("hhhheeeey");
+    Sleep(10);
+    system("CLS");
+    printf("hhhheeeeyy");
+    Sleep(10);
+    system("CLS");
+    printf("hhhheeeeyyy");
+    Sleep(10);
+    system("CLS");
+    printf("hhhheeeeyyyy");
     
+    printf("you turn you head to see none other than molassas\n");
+    _getch();
+    system("CLS");
+    printf("s");
+    Sleep(10);
+    system("CLS");
+    printf("ss");
+    Sleep(10);
+    system("CLS");
+    printf("sso");
+    Sleep(10);
+    system("CLS");
+    printf("ssoo");
+    Sleep(10);
+    system("CLS");
+    printf("ssoo w");
+    Sleep(10);
+    system("CLS");
+    printf("ssoo ww-");
+
+    system("CLS");
+    printf("fed up, you head towards the door...");
+
     string enemy = "Molassas";
     int enemyHealh = 10;
     int enemyDamage = 8; //slow
 };
-void nutella(struct stats& r)
+void peanutButter(struct stats& r)
 {
-    
-    string enemy = "Nutella";
+    system("CLS");
+
+    string enemy = "peanut butter";
     int enemyHealh = 3;
     int enemyDamage = 2;
-    printf("Nutella is here!\n\nHe's...\n\n");
-    Sleep(40);
-    printf("Kinda cool\n\nHe's better on straight white bread though\n");
+    printf("You start to open the door but have to stopped when enveloped in a blinding golden light\nyou: 'it- it cant be!'\n");
+    printf("you manage to open the door all the way.\nyour eyes dialate... standing in the middle of the room is none other than Peanut Butter...\n");
+    printf("Peanut Butter: 'hello young one.'\nyou:'l-l-lord peunut butter!'\nPeanut Butter: 'I taste very good on toast. you should try it sometime'\n");
+    printf("with that you bow your head with gratitude an make your way out of the room\n");
     _getch();
     system("CLS");
     
@@ -125,7 +211,7 @@ void nutella(struct stats& r)
 
 void enemies(struct stats& r)
 {
-    stats r;
+    
     int ranEnemy;
     int min = 1;
     int max = 6;
@@ -135,7 +221,7 @@ void enemies(struct stats& r)
     ranEnemy = min + rand() % (max - min + 1);
     if (ranEnemy = 1)
     {
-        nutella(r);
+        peanutButter(r);
     }
     else if (ranEnemy = 2)
     {
@@ -147,7 +233,7 @@ void enemies(struct stats& r)
     }
     else if (ranEnemy = 4)
     {
-        joe(r);
+        chad(r);
     }
     else if (ranEnemy = 5)
     {
@@ -177,8 +263,7 @@ int main()
     system("CLS");
     bool start = true;
     bool credits = false;
-    int health = 100;
-    int damage = 0;
+    
     
     string input;
     string input2;
@@ -222,26 +307,26 @@ int main()
             start = true;
             credits = false;
             printf("to toast Bred you have to have to have a name so lets hear it:\n");
-            cin >> r.name;
-            if (r.name == "Brooks")
+            cin >> r.pName;
+            if (r.pName == "Brooks")
             {
                 printf("Ah! Brooks is a great name!\n");
             }
-            else if (r.name == "brooks")
+            else if (r.pName == "brooks")
             {
                 printf("Ah! brooks is a great name!\n");
             }
-            else if (r.name == "joey")
+            else if (r.pName == "joey")
             {
                 printf("uhm... alright. if you insist.\n");
             }
-            else if (r.name == "Joey" || "Trail" || "trail")
+            else if (r.pName == "Joey" || "Trail" || "trail")
             {
                 printf("uhm... alright. if you insist.\n");
             }
             else
             {
-                printf("Alright %s is an okay name... I guess it will work\n", r.name.c_str());
+                printf("Alright %s is an okay name... I guess it will work\n", r.pName.c_str());
             }
             printf("-press any key to continue-\n");
             _getch();
@@ -249,21 +334,21 @@ int main()
 
             printf("if you're going to toast bread you're going to need your butter spreading weapon of choice\n");
             printf("do you spread with a spoon, knife or fork\n");
-            cin >> r.weapon;
-            if (r.weapon == "spoon")
+            cin >> r.pWeapon;
+            if (r.pWeapon == "spoon")
             {
                 printf("Ah, the spoon. Fantastic choice. Obviously you are no beginner to this.\n");
-                damage = damage + 5;
+                r.pDamage = r.pDamage + 5;
             }
-            else if (r.weapon == "knife")
+            else if (r.pWeapon == "knife")
             {
                 printf("knife... alright.\n");
-                damage = damage + 7;
+                r.pDamage = r.pDamage + 7;
             }
-            else if(r.weapon == "fork")
+            else if(r.pWeapon == "fork")
             {
                 printf("Fork?-- i mean, good choice");
-                damage = damage + 6;
+                r.pDamage = r.pDamage + 6;
             }
             else
             {
@@ -275,8 +360,8 @@ int main()
             _getch();
             system("CLS");
 
-            printf("weapon: %s\n", r.weapon.c_str());
-            printf("weapon damage: %i\n", damage);
+            printf("weapon: %s\n", r.pWeapon.c_str());
+            printf("weapon damage: %i\n", r.pDamage);
             _getch();
             break;
         }
@@ -325,7 +410,9 @@ int main()
     {
         if (currentRoom.coordinates.x == 1 && currentRoom.coordinates.y == 5)   
         {
-            printf("You walk out of your kitchen and out into the first room. It's your living room you must search every room .");
+            system("CLS");
+            printf("you walk into the room...\n");
+            Sleep(50);
             enemies(r);
             printf("you have a door below you and a door to your right\n\n do you go right(d) or down(s)?. Use WASD to input your answer");
 
@@ -345,7 +432,11 @@ int main()
         else if (currentRoom.coordinates.x == 2 && currentRoom.coordinates.y == 5)
         {
             //2
-            printf("room 2\n");
+            system("CLS");
+            printf("you walk into the room...\n");
+            Sleep(50);
+            enemies(r);
+
             cin >> choice;
             if (choice == "d")
             {
@@ -367,7 +458,11 @@ int main()
         else if (currentRoom.coordinates.x == 3 && currentRoom.coordinates.y == 5)
         {
             //3
-            printf("room 3\n");
+            system("CLS");
+            printf("you walk into the room...\n");
+            Sleep(50);
+            enemies(r);
+
             cin >> choice;
             if (choice == "d")
             {
@@ -389,7 +484,11 @@ int main()
         else if (currentRoom.coordinates.x == 4 && currentRoom.coordinates.y == 5)
         {
             //4
-            printf("room 4\n");
+            system("CLS");
+            printf("you walk into the room...\n");
+            Sleep(50);
+            enemies(r);
+
             cin >> choice;
             if (choice == "d")
             {
@@ -410,7 +509,11 @@ int main()
         else if (currentRoom.coordinates.x == 5 && currentRoom.coordinates.y == 5)
         {
             //5
-            printf("room 5\n");
+            system("CLS");
+            printf("you walk into the room...\n");
+            Sleep(50);
+            enemies(r);
+
             cin >> choice;
              if (choice == "s")
             {
@@ -426,7 +529,11 @@ int main()
         else if (currentRoom.coordinates.x == 1 && currentRoom.coordinates.y == 4)
         {
             //6
-            printf("room 6\n");
+            system("CLS");
+            printf("you walk into the room...\n");
+            Sleep(50);
+            enemies(r);
+
             cin >> choice;
             if (choice == "d")
             {
@@ -448,7 +555,11 @@ int main()
         else if (currentRoom.coordinates.x == 2 && currentRoom.coordinates.y == 4)
         {
             //7
-            printf("room 7\n");
+            system("CLS");
+            printf("you walk into the room...\n");
+            Sleep(50);
+            enemies(r);
+
             cin >> choice;
             if (choice == "d")
             {
@@ -474,7 +585,11 @@ int main()
         else if (currentRoom.coordinates.x == 3 && currentRoom.coordinates.y == 4)
         {
             //8
-            printf("room 8\n");
+            system("CLS");
+            printf("you walk into the room...\n");
+            Sleep(50);
+            enemies(r);
+
             cin >> choice;
             if (choice == "d")
             {
@@ -500,7 +615,11 @@ int main()
         else if (currentRoom.coordinates.x == 4 && currentRoom.coordinates.y == 4)
         {
             //9
-            printf("room 9\n");
+            system("CLS");
+            printf("you walk into the room...\n");
+            Sleep(50);
+            enemies(r);
+
             cin >> choice;
             if (choice == "d")
             {
@@ -526,7 +645,11 @@ int main()
         else if (currentRoom.coordinates.x == 5 && currentRoom.coordinates.y == 4)
         {
             //10
-            printf("room 10\n");
+            system("CLS");
+            printf("you walk into the room...\n");
+            Sleep(50);
+            enemies(r);
+
             cin >> choice;
             if (choice == "s")
             {
@@ -547,7 +670,11 @@ int main()
         else if (currentRoom.coordinates.x == 1 && currentRoom.coordinates.y == 3)
         {
             //11
-            printf("room 11\n");
+            system("CLS");
+            printf("you walk into the room...\n");
+            Sleep(50);
+            enemies(r);
+
             cin >> choice;
             if (choice == "d")
             {
@@ -568,7 +695,11 @@ int main()
         else if (currentRoom.coordinates.x == 2 && currentRoom.coordinates.y == 3)
         {
             //12
-            printf("room 12\n");
+            system("CLS");
+            printf("you walk into the room...\n");
+            Sleep(50);
+            enemies(r);
+
             cin >> choice;
             if (choice == "d")
             {
@@ -594,7 +725,11 @@ int main()
         else if (currentRoom.coordinates.x == 3 && currentRoom.coordinates.y == 3)
         {
             //13
-            printf("room 13\n");
+            system("CLS");
+            printf("you walk into the room...\n");
+            Sleep(50);
+            enemies(r);
+
             cin >> choice;
             if (choice == "d")
             {
@@ -620,7 +755,11 @@ int main()
         else if (currentRoom.coordinates.x == 4 && currentRoom.coordinates.y == 3)
         {
             //14
-            printf("room 14\n");
+            system("CLS");
+            printf("you walk into the room...\n");
+            Sleep(50);
+            enemies(r);
+
             cin >> choice;
             if (choice == "d")
             {
@@ -646,7 +785,11 @@ int main()
         else if (currentRoom.coordinates.x == 5 && currentRoom.coordinates.y == 3)
         {
             //15
-            printf("room 15\n");
+            system("CLS");
+            printf("you walk into the room...\n");
+            Sleep(50);
+            enemies(r);
+
             cin >> choice;
             if (choice == "s")
             {
@@ -667,7 +810,11 @@ int main()
         else if (currentRoom.coordinates.x == 1 && currentRoom.coordinates.y == 2)
         {
             //16
-            printf("room 16\n");
+            system("CLS");
+            printf("you walk into the room...\n");
+            Sleep(50);
+            enemies(r);
+
             cin >> choice;
             if (choice == "d")
             {
@@ -688,7 +835,11 @@ int main()
         else if (currentRoom.coordinates.x == 2 && currentRoom.coordinates.y == 2)
         {
             //17
-            printf("room 17\n");
+            system("CLS");
+            printf("you walk into the room...\n");
+            Sleep(50);
+            enemies(r);
+
             cin >> choice;
             if (choice == "d")
             {
@@ -714,7 +865,11 @@ int main()
         else if (currentRoom.coordinates.x == 3 && currentRoom.coordinates.y == 2)
         {
             //18
-            printf("room 18\n");
+            system("CLS");
+            printf("you walk into the room...\n");
+            Sleep(50);
+            enemies(r);
+
             cin >> choice;
             if (choice == "d")
             {
@@ -740,7 +895,11 @@ int main()
         else if (currentRoom.coordinates.x == 4 && currentRoom.coordinates.y == 2)
         {
             //19
-            printf("room 19\n");
+            system("CLS");
+            printf("you walk into the room...\n");
+            Sleep(50);
+            enemies(r);
+
             cin >> choice;
             if (choice == "d")
             {
@@ -766,7 +925,11 @@ int main()
         else if (currentRoom.coordinates.x == 5 && currentRoom.coordinates.y == 2)
         {
             //20
-            printf("room 20\n");
+            system("CLS");
+            printf("you walk into the room...\n");
+            Sleep(50);
+            enemies(r);
+
             cin >> choice;
             if (choice == "s")
             {
@@ -787,7 +950,11 @@ int main()
         else if (currentRoom.coordinates.x == 1 && currentRoom.coordinates.y == 1)
         {
             //21
-            printf("room 21\n");
+            system("CLS");
+            printf("you walk into the room...\n");
+            Sleep(50);
+            enemies(r);
+
             cin >> choice;
             if (choice == "d")
             {
@@ -804,7 +971,11 @@ int main()
         else if (currentRoom.coordinates.x == 2 && currentRoom.coordinates.y == 1)
         {
             //22
-            printf("room 22\n");
+            system("CLS");
+            printf("you walk into the room...\n");
+            Sleep(50);
+            enemies(r);
+
             cin >> choice;
             if (choice == "d")
             {
@@ -825,7 +996,11 @@ int main()
         else if (currentRoom.coordinates.x == 3 && currentRoom.coordinates.y == 1)
         {
             //23
-            printf("room 23\n");
+            system("CLS");
+            printf("you walk into the room...\n");
+            Sleep(50);
+            enemies(r);
+
             cin >> choice;
             if (choice == "d")
             {
@@ -846,7 +1021,11 @@ int main()
         else if (currentRoom.coordinates.x == 4 && currentRoom.coordinates.y == 1)
         {
             //24
-            printf("room 24\n");
+            system("CLS");
+            printf("you walk into the room...\n");
+            Sleep(50);
+            enemies(r);
+
             cin >> choice;
             if (choice == "d")
             {
@@ -867,8 +1046,9 @@ int main()
         else if (currentRoom.coordinates.x == 5 && currentRoom.coordinates.y == 1)
         {
             //25
+            system("CLS");
             printf("room 25\n");
-            printf("congrats\n");
+            printf("congrats. you found the toaster!\n");
             _getch();
             break;
         }
