@@ -112,51 +112,22 @@ void nutella(struct stats& r)
     system("CLS");
     
 };
-/*
-string enemies(int ranEnemyt min = 1;
-    int max = 6;
-    int enemyHealth;
-    int enemyDamage;
-    string enemy;
 
+int enemies()
+{
+    stats r;
+    int ranEnemy;
+    int min = 1;
+    int max = 6;
     srand(0);
     srand((unsigned)time(NULL));
 
     ranEnemy = min + rand() % (max - min + 1);
 
-    if (ranEnemy == 1)
-    {
-        enemy = "Jelly";
-        
-    }
-    else if (ranEnemy == 2)
-    {
-        enemy = "butter";
-        
-    }
-    else if (ranEnemy == 3)
-    {
-        enemy = "Jam";
-        
-    }
-    else if (ranEnemy == 4)
-    {
-        enemy = "Joe(your roomate)";
-        
-    }
-    else if (ranEnemy == 5)
-    {
-        enemy = "Marmalade";
-        
-    }
-    else if (ranEnemy == 6)
-    {
-        enemy = "Nutella";
-        
-    }
-    return enemy;
+    
+    return ranEnemy;
 }
-*/
+
 struct stats
 {
     string name;
@@ -338,9 +309,544 @@ int main()
                 currentRoom.move(dDown);
                 continue;
             }
+            //1
         }
+        else if (currentRoom.coordinates.x == 2 && currentRoom.coordinates.y == 5)
+        {
+            //2
+            printf("room 2\n");
+            cin >> choice;
+            if (choice == "d")
+            {
+                currentRoom.move(dRight);
+                continue;
+            }
+            else if (choice == "s")
+            {
+                currentRoom.move(dDown);
+                continue;
+            }
+            
+            else if (choice == "a")
+            {
+                currentRoom.move(dLeft);
+                continue;
+            }
+        }
+        else if (currentRoom.coordinates.x == 3 && currentRoom.coordinates.y == 5)
+        {
+            //3
+            printf("room 3\n");
+            cin >> choice;
+            if (choice == "d")
+            {
+                currentRoom.move(dRight);
+                continue;
+            }
+            else if (choice == "s")
+            {
+                currentRoom.move(dDown);
+                continue;
+            }
+            
+            else if (choice == "a")
+            {
+                currentRoom.move(dLeft);
+                continue;
+            }
+        }
+        else if (currentRoom.coordinates.x == 4 && currentRoom.coordinates.y == 5)
+        {
+            //4
+            printf("room 4\n");
+            cin >> choice;
+            if (choice == "d")
+            {
+                currentRoom.move(dRight);
+                continue;
+            }
+            else if (choice == "s")
+            {
+                currentRoom.move(dDown);
+                continue;
+            }
+            else if (choice == "a")
+            {
+                currentRoom.move(dLeft);
+                continue;
+            }
+        }
+        else if (currentRoom.coordinates.x == 5 && currentRoom.coordinates.y == 5)
+        {
+            //5
+            printf("room 5\n");
+            cin >> choice;
+             if (choice == "s")
+            {
+                currentRoom.move(dDown);
+                continue;
+            }
+            else if (choice == "a")
+            {
+                currentRoom.move(dLeft);
+                continue;
+            }
+        }
+        else if (currentRoom.coordinates.x == 1 && currentRoom.coordinates.y == 4)
+        {
+            //6
+            printf("room 6\n");
+            cin >> choice;
+            if (choice == "d")
+            {
+                currentRoom.move(dRight);
+                continue;
+            }
+            else if (choice == "s")
+            {
+                currentRoom.move(dDown);
+                continue;
+            }
+            else if (choice == "w")
+            {
+                currentRoom.move(dUp);
+                continue;
+            }
+            
+        }
+        else if (currentRoom.coordinates.x == 2 && currentRoom.coordinates.y == 4)
+        {
+            //7
+            printf("room 7\n");
+            cin >> choice;
+            if (choice == "d")
+            {
+                currentRoom.move(dRight);
+                continue;
+            }
+            else if (choice == "s")
+            {
+                currentRoom.move(dDown);
+                continue;
+            }
+            else if (choice == "w")
+            {
+                currentRoom.move(dUp);
+                continue;
+            }
+            else if (choice == "a")
+            {
+                currentRoom.move(dLeft);
+                continue;
+            }
+        }
+        else if (currentRoom.coordinates.x == 3 && currentRoom.coordinates.y == 4)
+        {
+            //8
+            printf("room 8\n");
+            cin >> choice;
+            if (choice == "d")
+            {
+                currentRoom.move(dRight);
+                continue;
+            }
+            else if (choice == "s")
+            {
+                currentRoom.move(dDown);
+                continue;
+            }
+            else if (choice == "w")
+            {
+                currentRoom.move(dUp);
+                continue;
+            }
+            else if (choice == "a")
+            {
+                currentRoom.move(dLeft);
+                continue;
+            }
+        }
+        else if (currentRoom.coordinates.x == 4 && currentRoom.coordinates.y == 4)
+        {
+            //9
+            printf("room 9\n");
+            cin >> choice;
+            if (choice == "d")
+            {
+                currentRoom.move(dRight);
+                continue;
+            }
+            else if (choice == "s")
+            {
+                currentRoom.move(dDown);
+                continue;
+            }
+            else if (choice == "w")
+            {
+                currentRoom.move(dUp);
+                continue;
+            }
+            else if (choice == "a")
+            {
+                currentRoom.move(dLeft);
+                continue;
+            }
+        }
+        else if (currentRoom.coordinates.x == 5 && currentRoom.coordinates.y == 4)
+        {
+            //10
+            printf("room 10\n");
+            cin >> choice;
+            if (choice == "s")
+            {
+                currentRoom.move(dDown);
+                continue;
+            }
+            else if (choice == "w")
+            {
+                currentRoom.move(dUp);
+                continue;
+            }
+            else if (choice == "a")
+            {
+                currentRoom.move(dLeft);
+                continue;
+            }
+        }
+        else if (currentRoom.coordinates.x == 1 && currentRoom.coordinates.y == 3)
+        {
+            //11
+            printf("room 11\n");
+            cin >> choice;
+            if (choice == "d")
+            {
+                currentRoom.move(dRight);
+                continue;
+            }
+            else if (choice == "s")
+            {
+                currentRoom.move(dDown);
+                continue;
+            }
+            else if (choice == "w")
+            {
+                currentRoom.move(dUp);
+                continue;
+            }
+        }
+        else if (currentRoom.coordinates.x == 2 && currentRoom.coordinates.y == 3)
+        {
+            //12
+            printf("room 12\n");
+            cin >> choice;
+            if (choice == "d")
+            {
+                currentRoom.move(dRight);
+                continue;
+            }
+            else if (choice == "s")
+            {
+                currentRoom.move(dDown);
+                continue;
+            }
+            else if (choice == "w")
+            {
+                currentRoom.move(dUp);
+                continue;
+            }
+            else if (choice == "a")
+            {
+                currentRoom.move(dLeft);
+                continue;
+            }
+        }
+        else if (currentRoom.coordinates.x == 3 && currentRoom.coordinates.y == 3)
+        {
+            //13
+            printf("room 13\n");
+            cin >> choice;
+            if (choice == "d")
+            {
+                currentRoom.move(dRight);
+                continue;
+            }
+            else if (choice == "s")
+            {
+                currentRoom.move(dDown);
+                continue;
+            }
+            else if (choice == "w")
+            {
+                currentRoom.move(dUp);
+                continue;
+            }
+            else if (choice == "a")
+            {
+                currentRoom.move(dLeft);
+                continue;
+            }
+        }
+        else if (currentRoom.coordinates.x == 4 && currentRoom.coordinates.y == 3)
+        {
+            //14
+            printf("room 14\n");
+            cin >> choice;
+            if (choice == "d")
+            {
+                currentRoom.move(dRight);
+                continue;
+            }
+            else if (choice == "s")
+            {
+                currentRoom.move(dDown);
+                continue;
+            }
+            else if (choice == "w")
+            {
+                currentRoom.move(dUp);
+                continue;
+            }
+            else if (choice == "a")
+            {
+                currentRoom.move(dLeft);
+                continue;
+            }
+        }
+        else if (currentRoom.coordinates.x == 5 && currentRoom.coordinates.y == 3)
+        {
+            //15
+            printf("room 15\n");
+            cin >> choice;
+            if (choice == "s")
+            {
+                currentRoom.move(dDown);
+                continue;
+            }
+            else if (choice == "w")
+            {
+                currentRoom.move(dUp);
+                continue;
+            }
+            else if (choice == "a")
+            {
+                currentRoom.move(dLeft);
+                continue;
+            }
+        }
+        else if (currentRoom.coordinates.x == 1 && currentRoom.coordinates.y == 2)
+        {
+            //16
+            printf("room 16\n");
+            cin >> choice;
+            if (choice == "d")
+            {
+                currentRoom.move(dRight);
+                continue;
+            }
+            else if (choice == "s")
+            {
+                currentRoom.move(dDown);
+                continue;
+            }
+            else if (choice == "w")
+            {
+                currentRoom.move(dUp);
+                continue;
+            }
+        }
+        else if (currentRoom.coordinates.x == 2 && currentRoom.coordinates.y == 2)
+        {
+            //17
+            printf("room 17\n");
+            cin >> choice;
+            if (choice == "d")
+            {
+                currentRoom.move(dRight);
+                continue;
+            }
+            else if (choice == "s")
+            {
+                currentRoom.move(dDown);
+                continue;
+            }
+            else if (choice == "w")
+            {
+                currentRoom.move(dUp);
+                continue;
+            }
+            else if (choice == "a")
+            {
+                currentRoom.move(dLeft);
+                continue;
+            }
+        }
+        else if (currentRoom.coordinates.x == 3 && currentRoom.coordinates.y == 2)
+        {
+            //18
+            printf("room 18\n");
+            cin >> choice;
+            if (choice == "d")
+            {
+                currentRoom.move(dRight);
+                continue;
+            }
+            else if (choice == "s")
+            {
+                currentRoom.move(dDown);
+                continue;
+            }
+            else if (choice == "w")
+            {
+                currentRoom.move(dUp);
+                continue;
+            }
+            else if (choice == "a")
+            {
+                currentRoom.move(dLeft);
+                continue;
+            }
+        }
+        else if (currentRoom.coordinates.x == 4 && currentRoom.coordinates.y == 2)
+        {
+            //19
+            printf("room 19\n");
+            cin >> choice;
+            if (choice == "d")
+            {
+                currentRoom.move(dRight);
+                continue;
+            }
+            else if (choice == "s")
+            {
+                currentRoom.move(dDown);
+                continue;
+            }
+            else if (choice == "w")
+            {
+                currentRoom.move(dUp);
+                continue;
+            }
+            else if (choice == "a")
+            {
+                currentRoom.move(dLeft);
+                continue;
+            }
+        }
+        else if (currentRoom.coordinates.x == 5 && currentRoom.coordinates.y == 2)
+        {
+            //20
+            printf("room 20\n");
+            cin >> choice;
+            if (choice == "s")
+            {
+                currentRoom.move(dDown);
+                continue;
+            }
+            else if (choice == "w")
+            {
+                currentRoom.move(dUp);
+                continue;
+            }
+            else if (choice == "a")
+            {
+                currentRoom.move(dLeft);
+                continue;
+            }
+        }
+        else if (currentRoom.coordinates.x == 1 && currentRoom.coordinates.y == 1)
+        {
+            //21
+            printf("room 21\n");
+            cin >> choice;
+            if (choice == "d")
+            {
+                currentRoom.move(dRight);
+                continue;
+            }
+            else if (choice == "w")
+            {
+                currentRoom.move(dUp);
+                continue;
+            }
+            
+        }
+        else if (currentRoom.coordinates.x == 2 && currentRoom.coordinates.y == 1)
+        {
+            //22
+            printf("room 22\n");
+            cin >> choice;
+            if (choice == "d")
+            {
+                currentRoom.move(dRight);
+                continue;
+            }
+            else if (choice == "w")
+            {
+                currentRoom.move(dUp);
+                continue;
+            }
+            else if (choice == "a")
+            {
+                currentRoom.move(dLeft);
+                continue;
+            }
+        }
+        else if (currentRoom.coordinates.x == 3 && currentRoom.coordinates.y == 1)
+        {
+            //23
+            printf("room 23\n");
+            cin >> choice;
+            if (choice == "d")
+            {
+                currentRoom.move(dRight);
+                continue;
+            }
+            else if (choice == "w")
+            {
+                currentRoom.move(dUp);
+                continue;
+            }
+            else if (choice == "a")
+            {
+                currentRoom.move(dLeft);
+                continue;
+            }
+        }
+        else if (currentRoom.coordinates.x == 4 && currentRoom.coordinates.y == 1)
+        {
+            //24
+            printf("room 24\n");
+            cin >> choice;
+            if (choice == "d")
+            {
+                currentRoom.move(dRight);
+                continue;
+            }
+            else if (choice == "w")
+            {
+                currentRoom.move(dUp);
+                continue;
+            }
+            else if (choice == "a")
+            {
+                currentRoom.move(dLeft);
+                continue;
+            }
+        }
+        else if (currentRoom.coordinates.x == 5 && currentRoom.coordinates.y == 1)
+        {
+            //25
+            printf("room 25\n");
+            printf("congrats\n");
+            _getch();
+            break;
+        }
+
         
-        
+       
+
+
+
     }
    
 
