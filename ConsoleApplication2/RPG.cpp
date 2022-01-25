@@ -226,6 +226,7 @@ void peanutButter( stats& r)
     printf("You start to open the door but have to stopped when enveloped in a blinding golden light\nyou: 'it- it cant be!'\n");
     _getch();
     printf("you manage to open the door all the way.\nyour eyes dialate... standing in the middle of the room is none other than Peanut Butter...\n");
+    _getch();
     printf("Peanut Butter: 'hello young one.'\nyou:'l-l-lord peunut butter!'\nPeanut Butter: 'I taste very good on toast. you should try it sometime'\n");
     _getch();
     printf("with that you bow your head with gratitude an make your way out of the room\n");
