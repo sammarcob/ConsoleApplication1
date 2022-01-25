@@ -25,7 +25,7 @@ int main()
     
     
     vector<float> numVec;
-    vector<stats> vStats;
+    vector<stats> vStats; cock
 
     stats enemy2;
     enemy2.damage = 1000;
