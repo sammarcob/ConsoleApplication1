@@ -1024,7 +1024,7 @@ int main()
                 enemies(r, enemylist);
                 _getch();
                 system("CLS");
-                printf("you have a door below you, above you, to your left and a door above you\n\n do you go left(a)), up(w) or down(s)?. Use WASD to input your answer\n");
+                printf("you have a door below you, above you, to your left and a door above you\n\n do you go left(a), up(w) or down(s)?. Use WASD to input your answer\n");
 
                 cin >> choice;
                 if (choice == "s")
