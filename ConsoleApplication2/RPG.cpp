@@ -7,6 +7,9 @@ Pseudocode: asks for your name, lets you choose a weapon with different attack p
 Matinence Log:
 9/16/21: wrote all the lines of code and the comments
 11/1/21: wrote the code for the weapons and damage. also wrote the random number generator from 1 - 6
+1/22/22: wrote code for the npc
+1/24/22: wrote room code
+1/25/22: touched up npc fuctions
 */
 
 

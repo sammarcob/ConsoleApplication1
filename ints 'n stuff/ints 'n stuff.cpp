@@ -10,11 +10,49 @@ Matinence Log:
 */
 
 #include <iostream>
+#include <stdlib.h> 
+#include <time.h>
 #include <conio.h>
+#include <string>
 #include <stdio.h>
+#include <windows.h>
+#include <vector>
+#include <math.h>
+using namespace std;
+string capitalize(string original)
+{
+    original[0] = toupper(original[0]);
+
+    for (int i = 0; i < original.length(); i++)
+    {
+        if (original[i - 1] == ' ')
+        {
+            original[i] = toupper(original[i]);
+        }
+    }
+    return original;
+}
+
 int main()
 {
-	int i = 1;
+    string word;
+	string original;
+	
+    printf("enter sentence\n");
+    cin >> word;
+	
+	word = capitalize(original);
+	cout << word << endl;
+	_getch();
+	
+}
+
+//word = capitalize(original);
+//cout << original << endl;
+//_getch();
+
+/*
+int i = 1;
 	printf("%i\n", i);
 	printf("%i\n", i + 1);
 	printf("%i\n", i + 2);
@@ -27,4 +65,4 @@ int main()
 	printf("%i\n", i + 9);
 	_getch();
 	return 0;
-} 
+*/
