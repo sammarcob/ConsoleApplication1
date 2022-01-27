@@ -55,7 +55,7 @@ string wordReverser(string name)
 {
 	string reversedWord= "";
 
-	for (int r=name.length(); r>-1; r--)
+	for (int r=name.length() - 1;r>-1; r--)
 	{
 		reversedWord += name[r];
 	}

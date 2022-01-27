@@ -10,33 +10,93 @@
 #include <math.h>
 using namespace std;
 
-struct stats
+enum cardSuit {spades, diamonds, clubs, hearts};
+enum cardColor {black, red};
+
+struct card
 {
-    int damage = 200;
-    int health = 100;
+    cardSuit suit;
+    cardColor color;
+    int value;
+
 
 };
 
+card randCard(int seed)
+{
+    
+    int min = 1;
+    int max = 52;
+    int randNum;
+    randNum = min + seed % (max - min + 1);
+
+    card newCard;
+
+    newCard.suit = (cardSuit)(randNum % 4);
+    newCard.value = (randNum % 13) + 1;
+    newCard.color = (cardColor)(randNum % 2);
+
+    
+    return newCard;
+}
+
+void cardStats(card c)
+{
+    printf(" you got a ");
+    if (c.color == red)
+    {
+        printf("red ");
+    }
+    else if (c.color == black)
+    {
+        printf("black ");
+    }
+    cout << c.value;
+
+    if (c.suit == spades)
+    {
+        printf(" of spades");
+    }
+    else if (c.suit == diamonds)
+    {
+        printf(" of diamonds");
+    }
+    else if (c.suit == clubs)
+    {
+        printf(" of clubs");
+    }
+    else if (c.suit == hearts)
+    {
+        printf(" of hearts");
+    }
+}
+
+
 int main()
 {
-    float num = 1.5;
-    float num2 = 2.5;
-    float num3 = 3.5;
+    srand((unsigned)time(NULL));
+    card c = randCard(rand());
     
-    
-    vector<float> numVec;
-    vector<stats> vStats; cock
+    cardStats(c);
+    Sleep(10);
+    c = randCard(rand());
+    cout << "\n";
+    cardStats(c);
+    Sleep(10);
+    c = randCard(rand());
+    cout << "\n";
+    cardStats(c);
+    Sleep(10);
+    c = randCard(rand());
+    cout << "\n";
+    cardStats(c);
+    Sleep(10);
+    c = randCard(rand());
+    cout << "\n";
+    cardStats(c);
 
-    stats enemy2;
-    enemy2.damage = 1000;
-    stats enemy1;
-    numVec.push_back(num2);
-    vStats.push_back(enemy1);
-    vStats.push_back(enemy2);
-    
 
-
-    cout << vStats[0].health;
+    _getch();
 
     return 0;
 }
