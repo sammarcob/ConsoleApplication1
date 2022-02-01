@@ -20,93 +20,48 @@ Maintenance Log:
 #include <math.h>
 using namespace std;
 
-string fortuneCookie(int ranFortune)
+
+
+int ran()
 {
-    string fortune;
-
-
-
-
-
-    switch (ranFortune)
-    {
-    case 1:
-        fortune = "you will have good luck";
-        break;
-    case 2:
-        fortune = "you will have bad luck";
-        break;
-    case 3:
-        fortune = "you will smell good tomorrow";
-        break;
-    case 4:
-        fortune = "you will find a lucky penny";
-        break;
-    case 5:
-        fortune = "joey will call you cool in the near future";
-        break;
-    case 6:
-        fortune = "watch your back";
-        break;
-    case 7:
-        fortune = "rebember to be nice to people";
-        break;
-    case 8:
-        fortune = "watch your step";
-        break;
-    case 9:
-        fortune = "dont jump to conclusions";
-        break;
-    case 10:
-        fortune = "do a good turn daily";
-        break;
-    }
-    return fortune;
-}
-
-int ran(int i)
-{
+    int i;
     srand(0);
     srand((unsigned)time(NULL));
     int min = 1;
     int max = 20;
 
-    int ranFortune = min + rand() % (max - min + 1);
+    i = min + rand() % (max - min + 1);
+
+    
+
+    return i;
 }
 
 int main()
 {
 
-
     string choice;
-
-
     bool yes = true;
+    vector<string>fort{ "do a good turn daily", "dont jump to conclusions", "watch your step", "rebember to be nice to people", "watch your back",
+                        "joey will call you cool in the near future", "you will find a lucky penny", "you will smell good tomorrow", "you will have bad luck", "you will have good luck",
+                        "the end is nigh", "follow your dreams", "your friend will call you", "a dubious friend may be an enemy in camouflage", "a fresh start will put you on your way",
+                        "a lifetime of happiness lies ahead of you", "a lifetime friend shall soon be made", "all the effort you are making will ultimately pay off", 
+                        "all the troubles you have will pass away very quickly", "an important person will offer you support" }; //20 fortunes
 
-    int min = 1;
-    int max = 10;
-
-
-    srand(0);
-    srand((unsigned)time(NULL));
-
-
-    while (yes = true)
+   
+    while (1 < 2)
     {
-        system("CLS");
-
-        printf("press enter to read your fortune\n");
+        int i = ran();
+        cout << fort[i] << endl;
         _getch();
         system("CLS");
-        int ranFortune = min + rand() % (max - min + 1);
-        string fortune = fortuneCookie(ranFortune);
-        cout << fortune << endl;
-        Sleep(100);
-        printf("would you like to read another?\n\ny\n\nn\n");
+        
+        printf("would you like to read another?\n y / n\n");
         cin >> choice;
+        system("CLS");
         if (choice == "y")
         {
-            yes = true;
+            continue;
         }
         else if (choice == "n")
         {
@@ -114,5 +69,7 @@ int main()
         }
 
     }
+    
+    
     return 0;
 }
