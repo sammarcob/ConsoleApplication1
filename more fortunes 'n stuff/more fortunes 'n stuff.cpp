@@ -1,12 +1,12 @@
 /*
 Author: Brooks Sammarco
-Project Name: fortune cookie
-File Name: fortune cookie 'n stuff.cpp
+Project Name: more fortunes
+File Name: more fortunes 'n stuff.cpp
 Purpose: gives you a random fortune
-Pseudocode: has a random number generator that outputs a number that coorisponds to a fortune in a different function.
+Pseudocode: has a random number generator that outputs a number that coorisponds to a fortune in a vector
 Maintenance Log:
-1/7/22: wrote the fortunes
-1/8/22: finished
+2/1/22: wrote the whole thing
+2/3/22: made some corrections
 */
 
 #include <iostream>
@@ -22,24 +22,10 @@ using namespace std;
 
 
 
-int ran()
-{
-    int i;
-    srand(0);
-    srand((unsigned)time(NULL));
-    int min = 1;
-    int max = 20;
-
-    i = min + rand() % (max - min + 1);
-
-    
-
-    return i;
-}
-
 int main()
 {
-
+    srand(0);
+    srand((unsigned)time(NULL));
     string choice;
     bool yes = true;
     vector<string>fort{ "do a good turn daily", "dont jump to conclusions", "watch your step", "rebember to be nice to people", "watch your back",
@@ -51,7 +37,8 @@ int main()
    
     while (1 < 2)
     {
-        int i = ran();
+
+        int i = rand() % 20;
         cout << fort[i] << endl;
         _getch();
         system("CLS");

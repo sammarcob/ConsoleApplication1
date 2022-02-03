@@ -1,4 +1,4 @@
-// multiply vector values by scalar.cpp : This file contains the 'main' function. Program execution begins and ends there.
+// multiplication table flash cards.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
 #include <iostream>

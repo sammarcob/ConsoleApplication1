@@ -65,6 +65,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "multiply vector values by s
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "more fortunes 'n stuff", "more fortunes 'n stuff\more fortunes 'n stuff.vcxproj", "{8BE12AF5-4B33-4167-A49F-D67AEF831338}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sine and cosine loopup tables 'n stuff", "sine and cosine loopup tables 'n stuff\sine and cosine loopup tables 'n stuff.vcxproj", "{E77D8B15-995E-4C83-B446-ABF16F167C3A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "multiplication table flash cards 'n stuff", "multiplication table flash cards 'n stuff\multiplication table flash cards 'n stuff.vcxproj", "{D951C2E1-DBE3-48A5-8D9A-2BDAB227AD03}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -321,6 +325,22 @@ Global
 		{8BE12AF5-4B33-4167-A49F-D67AEF831338}.Release|x64.Build.0 = Release|x64
 		{8BE12AF5-4B33-4167-A49F-D67AEF831338}.Release|x86.ActiveCfg = Release|Win32
 		{8BE12AF5-4B33-4167-A49F-D67AEF831338}.Release|x86.Build.0 = Release|Win32
+		{E77D8B15-995E-4C83-B446-ABF16F167C3A}.Debug|x64.ActiveCfg = Debug|x64
+		{E77D8B15-995E-4C83-B446-ABF16F167C3A}.Debug|x64.Build.0 = Debug|x64
+		{E77D8B15-995E-4C83-B446-ABF16F167C3A}.Debug|x86.ActiveCfg = Debug|Win32
+		{E77D8B15-995E-4C83-B446-ABF16F167C3A}.Debug|x86.Build.0 = Debug|Win32
+		{E77D8B15-995E-4C83-B446-ABF16F167C3A}.Release|x64.ActiveCfg = Release|x64
+		{E77D8B15-995E-4C83-B446-ABF16F167C3A}.Release|x64.Build.0 = Release|x64
+		{E77D8B15-995E-4C83-B446-ABF16F167C3A}.Release|x86.ActiveCfg = Release|Win32
+		{E77D8B15-995E-4C83-B446-ABF16F167C3A}.Release|x86.Build.0 = Release|Win32
+		{D951C2E1-DBE3-48A5-8D9A-2BDAB227AD03}.Debug|x64.ActiveCfg = Debug|x64
+		{D951C2E1-DBE3-48A5-8D9A-2BDAB227AD03}.Debug|x64.Build.0 = Debug|x64
+		{D951C2E1-DBE3-48A5-8D9A-2BDAB227AD03}.Debug|x86.ActiveCfg = Debug|Win32
+		{D951C2E1-DBE3-48A5-8D9A-2BDAB227AD03}.Debug|x86.Build.0 = Debug|Win32
+		{D951C2E1-DBE3-48A5-8D9A-2BDAB227AD03}.Release|x64.ActiveCfg = Release|x64
+		{D951C2E1-DBE3-48A5-8D9A-2BDAB227AD03}.Release|x64.Build.0 = Release|x64
+		{D951C2E1-DBE3-48A5-8D9A-2BDAB227AD03}.Release|x86.ActiveCfg = Release|Win32
+		{D951C2E1-DBE3-48A5-8D9A-2BDAB227AD03}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

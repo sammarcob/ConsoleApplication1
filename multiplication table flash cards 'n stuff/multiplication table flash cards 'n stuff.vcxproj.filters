@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="multiply vector values by scalar.cpp">
+    <ClCompile Include="multiplication table flash cards %27n stuff.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{8ecc28ed-dc65-4d18-85cf-5b403347bb29}</ProjectGuid>
-    <RootNamespace>multiplyvectorvaluesbyscalar</RootNamespace>
+    <ProjectGuid>{19b25229-1245-4545-93aa-800cf0cc622c}</ProjectGuid>
+    <RootNamespace>multiplicationtableflashcards</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,7 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="multiply vector values by scalar.cpp" />
+    <ClCompile Include="multiplication table flash cards.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
