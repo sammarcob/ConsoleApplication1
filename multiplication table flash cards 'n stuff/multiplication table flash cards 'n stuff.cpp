@@ -6,7 +6,8 @@ Purpose: quizzes you on your multiplication tables
 Pseudocode: 
 Maintenance Log:
 2/3/22: wrote the for loops
-2/4/22: 
+2/4/22: wrote some more stuff
+2/7/22: FINISHED
 */
 
 #include <iostream>
@@ -39,16 +40,18 @@ int main()
     }
     
     
+    
     printf("do you want a flash card?\n(y/n)");
     cin >> choice;
     if (choice == "y")
     {
        while (true)
        {
-                int wer = 1 + (rand() % 12);
-                int qwerty = 1 + (rand() % 12);
+           system("CLS");
+                int wer = (rand() % 12);
+                int qwerty = (rand() % 12);
 
-                printf("%d * %d\n", wer, qwerty);
+                printf("%d * %d\n", wer + 1, qwerty + 1);
                 cin >> ans;
 
                 if (ans == numbers[wer][qwerty])
@@ -64,7 +67,7 @@ int main()
                         return 0;
                     }
                 }
-                else (ans != numbers[wer][qwerty])
+                else
                 {
                     printf("wrong awnser\n");
                     _getch();
@@ -79,5 +82,6 @@ int main()
         _getch();
         return 0;
     }
+    
     return 0;
 }
