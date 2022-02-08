@@ -9,7 +9,7 @@
 #include <vector>
 #include <iostream>
 #include <math.h>
-#define _USE_MATH_DEFINE;
+#define _USE_MATH_DEFINE
 using namespace std;
 
 int main()
