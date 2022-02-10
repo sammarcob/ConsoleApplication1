@@ -1,5 +1,4 @@
 
-
 #include <stdlib.h> 
 #include <time.h>
 #include <conio.h>
@@ -9,37 +8,31 @@
 #include <vector>
 #include <iostream>
 #include <math.h>
-#define _USE_MATH_DEFINE
 using namespace std;
+
+int shuffle()
+{
+    
+    vector<int>cards;
+    for (int i = 0; i < 51; i++)
+    {
+        cards.push_back(i);
+    }
+
+    for (int i = 51; i >= 0; i--)
+    {
+        int tempStore;
+        int ran = (rand() % 52);
+        cards[i] = tempStore;
+        cards[i] = ran
+    }
+}
 
 int main()
 {
-    vector < vector<int>> a
-    {
-        {4, 5, 6},
-        {3, 7, 9},
-        {2, 6, 5}
-    };
+    srand(0);
+    srand((unsigned)time(NULL));
 
-    vector < vector<int>> b
-    {
-        {6, 14, 39},
-        {67, 24, 7},
-        {32, 46, 15}
-    };
 
-    vector <vector<int>> c;
-    for (int i = 0; i < 3; i++)
-    {
-        vector<int> temp; 
-        for (int f = 0; f < 3; f++)
-        {
-            for (int r = 0; r < 3; r++)
-            {
-                temp[i] += a[f][r] * b[i][r];
-            }
-        }
-    }
-
-        return 0;
+    return 0;
 }

@@ -71,6 +71,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "multiplication table flash 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "card shuffler and dealer 'n stuff", "card shuffler and dealer 'n stuff\card shuffler and dealer 'n stuff.vcxproj", "{3DD89AB4-FBE1-4052-8A4B-4D1281990643}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "matrix multiplication 'n stuff", "matrix multiplication 'n stuff\matrix multiplication 'n stuff.vcxproj", "{DACEFDE5-38B7-4DB5-8FE8-2F3E3545072D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -351,6 +353,14 @@ Global
 		{3DD89AB4-FBE1-4052-8A4B-4D1281990643}.Release|x64.Build.0 = Release|x64
 		{3DD89AB4-FBE1-4052-8A4B-4D1281990643}.Release|x86.ActiveCfg = Release|Win32
 		{3DD89AB4-FBE1-4052-8A4B-4D1281990643}.Release|x86.Build.0 = Release|Win32
+		{DACEFDE5-38B7-4DB5-8FE8-2F3E3545072D}.Debug|x64.ActiveCfg = Debug|x64
+		{DACEFDE5-38B7-4DB5-8FE8-2F3E3545072D}.Debug|x64.Build.0 = Debug|x64
+		{DACEFDE5-38B7-4DB5-8FE8-2F3E3545072D}.Debug|x86.ActiveCfg = Debug|Win32
+		{DACEFDE5-38B7-4DB5-8FE8-2F3E3545072D}.Debug|x86.Build.0 = Debug|Win32
+		{DACEFDE5-38B7-4DB5-8FE8-2F3E3545072D}.Release|x64.ActiveCfg = Release|x64
+		{DACEFDE5-38B7-4DB5-8FE8-2F3E3545072D}.Release|x64.Build.0 = Release|x64
+		{DACEFDE5-38B7-4DB5-8FE8-2F3E3545072D}.Release|x86.ActiveCfg = Release|Win32
+		{DACEFDE5-38B7-4DB5-8FE8-2F3E3545072D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
