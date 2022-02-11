@@ -12,13 +12,14 @@ using namespace std;
 
 enum cardSuit {spades, diamonds, clubs, hearts};
 enum cardColor {black, red};
+enum designation {ace = 1, two, three, four, five, six, seven, eight, nine, ten, jack, queen, king};
 
 struct card
 {
     cardSuit suit;
     cardColor color;
     int value;
-
+    designation cDesignation;
 
 };
 
