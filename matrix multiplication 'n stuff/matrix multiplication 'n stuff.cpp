@@ -36,6 +36,7 @@ int main()
             {
                 temp[i] += a[f][r] * b[i][r];
             }
+            c.push_back(temp); // maybe?
         }
     }
 
