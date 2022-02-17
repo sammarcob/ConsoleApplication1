@@ -30,10 +30,17 @@ int main()
 
     vector < vector<int>> b
     {
-        {6, 14, 39},
-        {67, 24, 7},
-        {32, 46, 15}
+        {6, 4, 9},
+        {6, 2, 7},
+        {3, 4, 5}
     };
+
+    /*vector < vector<int>> a
+    {
+        {1, 0, 0},
+        {0, 1, 0},
+        {0, 0, 1}
+    };*/
 
     vector <vector<int>> c
     {
@@ -43,15 +50,15 @@ int main()
         { 0, 0, 0 }
     };
 
-    for (int i = 0; i < 3; i++)
+    for (int row = 0; row < 3; row++)
     {
         
         
-        for (int f = 0; f < 3; f++)
+        for (int col = 0; col < 3; col++)
         {
             for (int r = 0; r < 3; r++)
             {
-                c[f][r] += a[i][r] * b[f][i];
+                c[row][col] += a[row][r] * b[col][row];
             }
             
         }
@@ -62,8 +69,9 @@ int main()
     {
         for (int george = 0; george < c[i].size(); george++)
         {
-            cout << c[i][george] << endl;
+            cout << c[i][george] << '\t';
         }
+        cout << "\n";
     }
 
     return 0;

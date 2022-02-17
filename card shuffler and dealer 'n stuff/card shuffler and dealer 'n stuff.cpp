@@ -151,7 +151,7 @@ int main()
     }
     _getch();
     system("CLS");
-    printf("hand 2: \n");
+    printf("hand 2: \n"); // basically the same thing, but for hand 2
     for (int i = 0; i < 12; i++)
     {
         if (hands[1][i].cDesignation == ace)
@@ -226,7 +226,7 @@ int main()
     }
     _getch();
     system("CLS");
-    printf("hand 3: \n");
+    printf("hand 3: \n"); // basically the same thing, but for hand 3
     for (int i = 0; i < 12; i++)
     {
         if (hands[2][i].cDesignation == ace)
@@ -298,10 +298,10 @@ int main()
         {
             printf("of hearts(red),");
         }
-    }
+    }//
     _getch();
     system("CLS");
-    printf("hand 4: \n");
+    printf("hand 4: \n"); // basically the same thing, but for hand 4
     for (int i = 0; i < 12; i++)
     {
         if (hands[3][i].cDesignation == ace)
@@ -373,7 +373,7 @@ int main()
         {
             printf("of hearts(red),");
         }
-    }
+    } //
     _getch();
     system("CLS");
     

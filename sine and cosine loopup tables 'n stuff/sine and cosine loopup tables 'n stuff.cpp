@@ -22,26 +22,49 @@ using namespace std;
 
 int main()
 {
+    string input;
     float choice;
     vector<float>sine;
-    for (int i = 0; i < 359; i++)
+    for (int i = 0; i < 360; i++)
     {
         sine.push_back(sin(i * M_PI / 180.0));
     }
 
 
     vector<float>cosine;
-    for (int i = 0; i < 359; i++)
+    for (int i = 0; i < 360; i++)
     {
         cosine.push_back(cos(i * M_PI / 180.0));
     }
 
-    printf("please input the ange you want to know the sine and cosine of:\n");
-    cin >> choice;
-    system("CLS");
+    while (true)
+    {
+        system("CLS");
+        printf("please input the ange you want to know the sine and cosine of:\n");
+        cin >> choice;
+        system("CLS");
 
-    cout << "sine: " << sine[choice + 1] << endl;
-    cout << "cosine: " << cosine[choice + 1] << endl;
+        cout << "sine: " << sine[choice] << endl;
+        cout << "cosine: " << cosine[choice] << endl;
+
+        _getch();
+        system("CLS");
+        printf("do you want to input another angle?\n (y/n)\n");
+        cin >> input;
+        if (input == "y")
+        {
+            continue;
+        }
+        else if (input == "n")
+        {
+            break;
+        }
+        else
+        {
+            printf("invalid input\n");
+            break;
+        }
+    }
 
     return 0;
 }
