@@ -1,3 +1,12 @@
+/*
+Author: Brooks Sammarco
+Project Name: matrix multiplication
+File Name: matrix multiplication 'n stuff.cpp
+Purpose: gives you a random fortune
+Pseudocode: multiplaisasd vector yada yada
+Maintenance Log:
+2/16/22: wrote the whole thing
+*/
 #include <stdlib.h> 
 #include <time.h>
 #include <conio.h>
@@ -26,17 +35,34 @@ int main()
         {32, 46, 15}
     };
 
-    vector <vector<int>> c;
+    vector <vector<int>> c
+    {
+
+        { 0, 0, 0 },
+        { 0, 0, 0 },
+        { 0, 0, 0 }
+    };
+
     for (int i = 0; i < 3; i++)
     {
-        vector<int> temp;
+        
+        
         for (int f = 0; f < 3; f++)
         {
             for (int r = 0; r < 3; r++)
             {
-                temp[i] += a[f][r] * b[i][r];
+                c[f][r] += a[i][r] * b[f][i];
             }
-            c.push_back(temp); // maybe?
+            
+        }
+        
+    }
+
+    for (int i = 0; i < c.size(); i++)
+    {
+        for (int george = 0; george < c[i].size(); george++)
+        {
+            cout << c[i][george] << endl;
         }
     }
 
