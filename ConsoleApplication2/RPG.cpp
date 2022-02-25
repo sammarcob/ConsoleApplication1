@@ -53,7 +53,7 @@ enum direction { dUp, dDown, dLeft, dRight };
 
 struct coords
 {
-    int x;
+    int x; 
     int y;
 };
 
