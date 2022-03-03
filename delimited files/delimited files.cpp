@@ -21,6 +21,16 @@ using namespace std;
 
 int main()
 {
-    ifstream comma("comma-delimited.txt");
+    ifstream comma;
+    ofstream tab;
+    comma.open("commaDelimited.txt");
+    tab.open("commaDelimited.txt");
+
+    if (!comma.is_open())
+    {
+        printf("comma file not found");
+    }
+
+    
 
 }
