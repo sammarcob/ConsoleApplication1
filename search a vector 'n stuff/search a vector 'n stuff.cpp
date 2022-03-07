@@ -1,13 +1,3 @@
-/*
-Author: Brooks Sammarco
-Project Name: 
-File Name:  'n stuff.cpp
-Purpose: 
-Pseudocode: 
-Maintenance Log:
-2/22/22: 
-*/
-
 #define _USE_MATH_DEFINES
 #include <stdlib.h>
 #include <time.h>
@@ -29,12 +19,6 @@ struct info
 
 int main()
 {
-    string temp;
-    ifstream comma;
-    ofstream tab;
-    comma.open("commaDelimited.txt");
-    tab.open("tabDelimited.txt");
-
     vector <info> vec;
 
     if (!comma.is_open())
@@ -45,7 +29,7 @@ int main()
     while (getline(comma, temp, ','))
     {
         info x;
-        
+        // all boned
         x.i = stoi(temp);
         tab << temp << "\t";
 
@@ -60,12 +44,18 @@ int main()
         tab << temp << "\t";
 
         getline(comma, temp);
-        
+
         x.c = temp[0];
         tab << temp << "\n";
 
         vec.push_back(x);
     }
-    
+    int respond;
+    printf("what would you like to search?\nAge: 1\nHeight: 2\nWeight: 3\nPhone Number: 4\n");
+    cin >> respond;
 
+    if (respond == 1)
+
+
+    return 0;
 }

@@ -75,9 +75,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "matrix multiplication 'n st
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "count characters in a file 'n stuff", "count characters in a file 'n stuff\count characters in a file 'n stuff.vcxproj", "{D31B54B3-AA70-47C7-AC51-5E0E16B70E59}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "delimited files", "delimited files\delimited files.vcxproj", "{D51D6D69-50E8-40AD-AE9F-06C704462371}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "delimited files 'n stuff", "delimited files\delimited files.vcxproj", "{D51D6D69-50E8-40AD-AE9F-06C704462371}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ellipse class 'n stuff", "ellipse class 'n stuff\ellipse class 'n stuff.vcxproj", "{4AC65D29-50E2-43D4-B2FA-362640D342CB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "search a vector 'n stuff", "search a vector 'n stuff\search a vector 'n stuff.vcxproj", "{84B70542-B38B-4E2B-A046-302E0EAE2689}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -391,6 +393,14 @@ Global
 		{4AC65D29-50E2-43D4-B2FA-362640D342CB}.Release|x64.Build.0 = Release|x64
 		{4AC65D29-50E2-43D4-B2FA-362640D342CB}.Release|x86.ActiveCfg = Release|Win32
 		{4AC65D29-50E2-43D4-B2FA-362640D342CB}.Release|x86.Build.0 = Release|Win32
+		{84B70542-B38B-4E2B-A046-302E0EAE2689}.Debug|x64.ActiveCfg = Debug|x64
+		{84B70542-B38B-4E2B-A046-302E0EAE2689}.Debug|x64.Build.0 = Debug|x64
+		{84B70542-B38B-4E2B-A046-302E0EAE2689}.Debug|x86.ActiveCfg = Debug|Win32
+		{84B70542-B38B-4E2B-A046-302E0EAE2689}.Debug|x86.Build.0 = Debug|Win32
+		{84B70542-B38B-4E2B-A046-302E0EAE2689}.Release|x64.ActiveCfg = Release|x64
+		{84B70542-B38B-4E2B-A046-302E0EAE2689}.Release|x64.Build.0 = Release|x64
+		{84B70542-B38B-4E2B-A046-302E0EAE2689}.Release|x86.ActiveCfg = Release|Win32
+		{84B70542-B38B-4E2B-A046-302E0EAE2689}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
