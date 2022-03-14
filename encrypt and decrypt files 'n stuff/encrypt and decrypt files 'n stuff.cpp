@@ -1,5 +1,14 @@
+/*
+Author: Brooks Sammarco
+Project Name: encrypt and decrypt files
+File Name: encrypt and decrypt files 'n stuff.cpp
+Purpose: searches a vector that is read from a file
+Pseudocode: gets the askii of each character in the file, then adds what the user inputs to each askii character, then does that but reverse
+Maintenance Log:
+3/13/22: done
+*/
 
-#include <stdlib.h> 
+#include <stdlib.h>
 #include <time.h>
 #include <conio.h>
 #include <string>

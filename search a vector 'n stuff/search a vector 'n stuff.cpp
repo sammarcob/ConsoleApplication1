@@ -1,3 +1,14 @@
+/*
+Author: Brooks Sammarco
+Project Name: search a vector
+File Name: search a vector 'n stuff.cpp
+Purpose: searches a vector that is read from a file
+Pseudocode: gets code from vecSearch, then puts it into a vector, then asks for a certain piece of data; uses that to get the
+line it's a part of 
+Maintenance Log:
+3/13/22: done
+*/
+
 #include <stdlib.h> 
 #include <time.h>
 #include <conio.h>
