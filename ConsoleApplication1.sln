@@ -83,6 +83,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "search a vector 'n stuff", 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "encrypt and decrypt files 'n stuff", "encrypt and decrypt files 'n stuff\encrypt and decrypt files 'n stuff.vcxproj", "{94862680-90F4-4C7E-B993-4152E3B9AA50}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "rectangle class 'n stuff", "rectangle class 'n stuff\rectangle class 'n stuff.vcxproj", "{AEF67C71-941B-4777-BC7C-946ACF4F00AE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -411,6 +413,14 @@ Global
 		{94862680-90F4-4C7E-B993-4152E3B9AA50}.Release|x64.Build.0 = Release|x64
 		{94862680-90F4-4C7E-B993-4152E3B9AA50}.Release|x86.ActiveCfg = Release|Win32
 		{94862680-90F4-4C7E-B993-4152E3B9AA50}.Release|x86.Build.0 = Release|Win32
+		{AEF67C71-941B-4777-BC7C-946ACF4F00AE}.Debug|x64.ActiveCfg = Debug|x64
+		{AEF67C71-941B-4777-BC7C-946ACF4F00AE}.Debug|x64.Build.0 = Debug|x64
+		{AEF67C71-941B-4777-BC7C-946ACF4F00AE}.Debug|x86.ActiveCfg = Debug|Win32
+		{AEF67C71-941B-4777-BC7C-946ACF4F00AE}.Debug|x86.Build.0 = Debug|Win32
+		{AEF67C71-941B-4777-BC7C-946ACF4F00AE}.Release|x64.ActiveCfg = Release|x64
+		{AEF67C71-941B-4777-BC7C-946ACF4F00AE}.Release|x64.Build.0 = Release|x64
+		{AEF67C71-941B-4777-BC7C-946ACF4F00AE}.Release|x86.ActiveCfg = Release|Win32
+		{AEF67C71-941B-4777-BC7C-946ACF4F00AE}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
