@@ -18,7 +18,7 @@
     <ClCompile Include="right triangle class %27n stuff.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Source.cpp">
+    <ClCompile Include="Triangle.cpp">
       <Filter>Header Files</Filter>
     </ClCompile>
   </ItemGroup>
