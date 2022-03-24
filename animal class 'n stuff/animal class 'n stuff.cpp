@@ -1,3 +1,4 @@
+
 #pragma once
 #define _USE_MATH_DEFINES
 #include "math.h"
@@ -9,15 +10,14 @@
 #include <vector>
 #include <iostream>
 #include <fstream>
-#include "triangle.h"
+#include "animal.h"
 using namespace std;
 
 int main()
 {
-    triangle t;
+    string cName;
+    float cWeight;
+    string cSpecies;
 
-    t.setMeasure(3.0, 4.0);
-    cout << "perimeter: " << t.perimeter() << "\n" << "area: " << t.area() << endl;
 
-    return 0;
 }
