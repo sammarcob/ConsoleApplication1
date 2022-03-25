@@ -1164,12 +1164,6 @@ int main()
                 _getch();
                 break;
             }
-
-
-
-
-
-
         }
 
 
