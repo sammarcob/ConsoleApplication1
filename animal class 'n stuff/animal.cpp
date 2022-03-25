@@ -36,3 +36,15 @@ string animal::getSpecies()
 {
 	return s;
 }
+void animal::setName(string name)
+{
+	n = name;
+}
+void animal::setWeight(float weight)
+{
+	w = weight;
+}
+void animal::setSpecies(string species)
+{
+	s = species;
+}

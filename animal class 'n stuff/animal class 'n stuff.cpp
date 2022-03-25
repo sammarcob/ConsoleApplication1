@@ -1,3 +1,12 @@
+/*
+Author: Brooks Sammarco
+Project Name: animal class
+File Name:
+Purpose:
+Pseudocode:
+Maintenance Log:
+
+*/
 
 #pragma once
 #define _USE_MATH_DEFINES
@@ -15,9 +24,26 @@ using namespace std;
 
 int main()
 {
-    string cName;
-    float cWeight;
-    string cSpecies;
+    animal a;
 
+    string sName;
+    float sWeight;
+    string sSpecies;
+
+    string input;
+
+    printf("please enter the name of your animal: ");
+    cin >> sName;
+    printf("please enter the weight of your animal: ");
+    cin >> sWeight;
+    printf("please enter the species of your animal: ");
+    cin >> sSpecies;
+    _getch();
+    system("CLS");
+
+    a.setData(sName, sWeight, sSpecies);
+    cout << "animal name: " << a.getName() << "\n" << "weight: " << a.getWeight() << "\n" << "species: " << a.getSpecies() << endl;
+
+    return 0;
 
 }

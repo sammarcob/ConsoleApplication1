@@ -12,15 +12,16 @@ public:
 	string getName();
 	float getWeight();
 	string getSpecies();
-	string changeName();
-	float changeWeight();
-	string changeSpecies();
+	void setName(string name);
+	void setWeight(float weight);
+	void setSpecies(string species);
 
 
 private:
 	string n;
 	float w;
 	string s;
+
 
 };
 

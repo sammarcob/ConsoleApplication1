@@ -1,3 +1,12 @@
+/*
+Author: Brooks Sammarco
+Project Name: 
+File Name: rectangle class
+Purpose: 
+Pseudocode: 
+Maintenance Log:
+
+*/
 
 #pragma once
 #define _USE_MATH_DEFINES
