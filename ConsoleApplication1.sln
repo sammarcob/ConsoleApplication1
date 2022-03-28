@@ -91,6 +91,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "animal class 'n stuff", "an
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "person class 'n stuff", "person class 'n stuff\person class 'n stuff.vcxproj", "{A4CE3DAF-EF61-4A94-8925-AB2AEB338374}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Bred game", "Bred game\Bred game.vcxproj", "{91EE3BFD-3563-48F2-90B9-8EE1D2166DC7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -451,6 +453,14 @@ Global
 		{A4CE3DAF-EF61-4A94-8925-AB2AEB338374}.Release|x64.Build.0 = Release|x64
 		{A4CE3DAF-EF61-4A94-8925-AB2AEB338374}.Release|x86.ActiveCfg = Release|Win32
 		{A4CE3DAF-EF61-4A94-8925-AB2AEB338374}.Release|x86.Build.0 = Release|Win32
+		{91EE3BFD-3563-48F2-90B9-8EE1D2166DC7}.Debug|x64.ActiveCfg = Debug|x64
+		{91EE3BFD-3563-48F2-90B9-8EE1D2166DC7}.Debug|x64.Build.0 = Debug|x64
+		{91EE3BFD-3563-48F2-90B9-8EE1D2166DC7}.Debug|x86.ActiveCfg = Debug|Win32
+		{91EE3BFD-3563-48F2-90B9-8EE1D2166DC7}.Debug|x86.Build.0 = Debug|Win32
+		{91EE3BFD-3563-48F2-90B9-8EE1D2166DC7}.Release|x64.ActiveCfg = Release|x64
+		{91EE3BFD-3563-48F2-90B9-8EE1D2166DC7}.Release|x64.Build.0 = Release|x64
+		{91EE3BFD-3563-48F2-90B9-8EE1D2166DC7}.Release|x86.ActiveCfg = Release|Win32
+		{91EE3BFD-3563-48F2-90B9-8EE1D2166DC7}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
