@@ -9,7 +9,7 @@ Matinence Log:
 */
 
 
-#pragma once
+
 #define _USE_MATH_DEFINES
 #include <stdlib.h>
 #include <time.h>
@@ -19,10 +19,13 @@ Matinence Log:
 #include <vector>
 #include <iostream>
 #include <fstream>
-#include "Functions.cpp"
+#include "Functions.h"
 using namespace std;
 
 int main()
 {
+    title();
     
+
+    return 0;
 }
