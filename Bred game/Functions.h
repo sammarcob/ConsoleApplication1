@@ -260,18 +260,23 @@ void mainMenu()
     }
 }
 
+enum direction { dUp, dDown, dLeft, dRight };
+
+COORD gotoxy(int x, int y)
+{
+    COORD coord;
+    coord.X = x;
+    coord.Y = y;
+    SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), coord);
+    return coord;
+}
+
 void rooms()
 {
-    void gotoxy(int x, int y)
-    {
-        COORD coord;
-        coord.X = x;
-        coord.Y = y;
-        SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), coord);
-    }
+    
 
     
-    enum direction { dUp, dDown, dLeft, dRight };
+    
 
     struct coords
     {
@@ -317,7 +322,7 @@ void rooms()
             system("CLS");
             printf("you walk into the room...\n");
             _getch();
-            enemies(r, enemylist);
+            //enemies(r, enemylist);
             _getch();
             system("CLS");
             printf("you have a door below you and a door to your right\n\n do you go right(d) or down(s)?. Use WASD to input your answer\n");
@@ -341,7 +346,7 @@ void rooms()
             system("CLS");
             printf("you walk into the room...\n");
             Sleep(50);
-            enemies(r, enemylist);
+            //enemies(r, enemylist);
             _getch();
             system("CLS");
             printf("you have a door below you, a door to your left and a door to your right\n\n do you go right(d), left(a) or down(s)?. Use WASD to input your answer\n");
@@ -371,7 +376,7 @@ void rooms()
             system("CLS");
             printf("you walk into the room...\n");
             Sleep(50);
-            enemies(r, enemylist);
+            //enemies(r, enemylist);
             _getch();
             system("CLS");
             printf("you have a door below you, a door to your left and a door to your right\n\n do you go right(d), left(a) or down(s)?. Use WASD to input your answer\n");
@@ -400,7 +405,7 @@ void rooms()
             system("CLS");
             printf("you walk into the room...\n");
             Sleep(50);
-            enemies(r, enemylist);
+            //enemies(r, enemylist);
             _getch();
             system("CLS");
             printf("you have a door below you, a door to your left and a door to your right\n\n do you go right(d), left(a) or down(s)?. Use WASD to input your answer\n");
@@ -428,7 +433,7 @@ void rooms()
             system("CLS");
             printf("you walk into the room...\n");
             Sleep(50);
-            enemies(r, enemylist);
+            //enemies(r, enemylist);
             _getch();
             system("CLS");
             printf("you have a door below you and a door to your left\n\n do you go left(a) or down(s)?. Use WASD to input your answer\n");
@@ -451,7 +456,7 @@ void rooms()
             system("CLS");
             printf("you walk into the room...\n");
             Sleep(50);
-            enemies(r, enemylist);
+            //enemies(r, enemylist);
             _getch();
             system("CLS");
             printf("you have a door below you, above you, and a door to your right\n\n do you go right(d), up(w) or down(s)?. Use WASD to input your answer\n");
@@ -480,7 +485,7 @@ void rooms()
             system("CLS");
             printf("you walk into the room...\n");
             Sleep(50);
-            enemies(r, enemylist);
+            //enemies(r, enemylist);
             _getch();
             system("CLS");
             printf("you have a door below you, above you, to your left and a door to your right\n\n do you go left(a), right(d), up(w) or down(s)?. Use WASD to input your answer\n");
@@ -513,7 +518,7 @@ void rooms()
             system("CLS");
             printf("you walk into the room...\n");
             Sleep(50);
-            enemies(r, enemylist);
+            //enemies(r, enemylist);
             _getch();
             system("CLS");
             printf("you have a door below you, above you, to your left and a door to your right\n\n do you go left(a), right(d), up(w) or down(s)?. Use WASD to input your answer\n");
@@ -546,7 +551,7 @@ void rooms()
             system("CLS");
             printf("you walk into the room...\n");
             Sleep(50);
-            enemies(r, enemylist);
+            //enemies(r, enemylist);
             _getch();
             system("CLS");
             printf("you have a door below you, above you, to your left and a door to your right\n\n do you go left(a), right(d), up(w) or down(s)?. Use WASD to input your answer\n");
@@ -579,7 +584,7 @@ void rooms()
             system("CLS");
             printf("you walk into the room...\n");
             Sleep(50);
-            enemies(r, enemylist);
+            //enemies(r, enemylist);
             _getch();
             system("CLS");
             printf("you have a door below you, above you, to your left and a door above you\n\n do you go left(a)), up(w) or down(s)?. Use WASD to input your answer\n");
@@ -607,7 +612,7 @@ void rooms()
             system("CLS");
             printf("you walk into the room...\n");
             Sleep(50);
-            enemies(r, enemylist);
+            //enemies(r, enemylist);
             _getch();
             system("CLS");
             printf("you have a door below you, above you, and a door to your right\n\n do you go right(d), up(w) or down(s)?. Use WASD to input your answer\n");
@@ -635,7 +640,7 @@ void rooms()
             system("CLS");
             printf("you walk into the room...\n");
             Sleep(50);
-            enemies(r, enemylist);
+            //enemies(r, enemylist);
             _getch();
             system("CLS");
             printf("you have a door below you, above you, to your left and a door to your right\n\n do you go left(a), right(d), up(w) or down(s)?. Use WASD to input your answer\n");
@@ -668,7 +673,7 @@ void rooms()
             system("CLS");
             printf("you walk into the room...\n");
             Sleep(50);
-            enemies(r, enemylist);
+            //enemies(r, enemylist);
             _getch();
             system("CLS");
             printf("you have a door below you, above you, to your left and a door to your right\n\n do you go left(a), right(d), up(w) or down(s)?. Use WASD to input your answer\n");
@@ -701,7 +706,7 @@ void rooms()
             system("CLS");
             printf("you walk into the room...\n");
             Sleep(50);
-            enemies(r, enemylist);
+            //enemies(r, enemylist);
             _getch();
             system("CLS");
             printf("you have a door below you, above you, to your left and a door to your right\n\n do you go left(a), right(d), up(w) or down(s)?. Use WASD to input your answer\n");
@@ -734,7 +739,7 @@ void rooms()
             system("CLS");
             printf("you walk into the room...\n");
             Sleep(50);
-            enemies(r, enemylist);
+            //enemies(r, enemylist);
             _getch();
             system("CLS");
             printf("you have a door below you, above you, to your left and a door above you\n\n do you go left(a)), up(w) or down(s)?. Use WASD to input your answer\n");
@@ -762,7 +767,7 @@ void rooms()
             system("CLS");
             printf("you walk into the room...\n");
             Sleep(50);
-            enemies(r, enemylist);
+            //enemies(r, enemylist);
             _getch();
             system("CLS");
             printf("you have a door below you, above you, and a door to your right\n\n do you go right(d), up(w) or down(s)?. Use WASD to input your answer\n");
@@ -790,7 +795,7 @@ void rooms()
             system("CLS");
             printf("you walk into the room...\n");
             Sleep(50);
-            enemies(r, enemylist);
+            //enemies(r, enemylist);
             _getch();
             system("CLS");
             printf("you have a door below you, above you, to your left and a door to your right\n\n do you go left(a), right(d), up(w) or down(s)?. Use WASD to input your answer\n");
@@ -823,7 +828,7 @@ void rooms()
             system("CLS");
             printf("you walk into the room...\n");
             Sleep(50);
-            enemies(r, enemylist);
+            //enemies(r, enemylist);
             _getch();
             system("CLS");
             printf("you have a door below you, above you, to your left and a door to your right\n\n do you go left(a), right(d), up(w) or down(s)?. Use WASD to input your answer\n");
@@ -856,7 +861,7 @@ void rooms()
             system("CLS");
             printf("you walk into the room...\n");
             Sleep(50);
-            enemies(r, enemylist);
+            //enemies(r, enemylist);
             _getch();
             system("CLS");
             printf("you have a door below you, above you, to your left and a door to your right\n\n do you go left(a), right(d), up(w) or down(s)?. Use WASD to input your answer\n");
@@ -889,7 +894,7 @@ void rooms()
             system("CLS");
             printf("you walk into the room...\n");
             Sleep(50);
-            enemies(r, enemylist);
+            //enemies(r, enemylist);
             _getch();
             system("CLS");
             printf("you have a door below you, above you, to your left and a door above you\n\n do you go left(a), up(w) or down(s)?. Use WASD to input your answer\n");
@@ -917,7 +922,7 @@ void rooms()
             system("CLS");
             printf("you walk into the room...\n");
             Sleep(50);
-            enemies(r, enemylist);
+            //enemies(r, enemylist);
             _getch();
             system("CLS");
             printf("you have a door above you and a door to your right\n\n do you go right(d) or up(w)?. Use WASD to input your answer\n");
@@ -941,7 +946,7 @@ void rooms()
             system("CLS");
             printf("you walk into the room...\n");
             Sleep(50);
-            enemies(r, enemylist);
+            //enemies(r, enemylist);
             _getch();
             system("CLS");
             printf("you have a door to your left, a door above you and a door to your right\n\n do you go right(d), left(a) or up(w)?. Use WASD to input your answer\n");
@@ -969,7 +974,7 @@ void rooms()
             system("CLS");
             printf("you walk into the room...\n");
             Sleep(50);
-            enemies(r, enemylist);
+            //enemies(r, enemylist);
             _getch();
             system("CLS");
             printf("you have a door to your left, a door above you and a door to your right\n\n do you go right(d), left(a) or up(w)?. Use WASD to input your answer\n");
@@ -997,7 +1002,7 @@ void rooms()
             system("CLS");
             printf("you walk into the room...\n");
             Sleep(50);
-            enemies(r, enemylist);
+            //enemies(r, enemylist);
             _getch();
             system("CLS");
             printf("you have a door to your left, a door above you and a door to your right\n\n do you go right(d), left(a) or up(w)?. Use WASD to input your answer\n");
@@ -1034,7 +1039,7 @@ void rooms()
     printf("you made it to room 25\nhowever, you just remembered that there is an even better toaster with twice as many slots to toast bread!\n but... it's on the ther side of the house\n\n");
     _getch();
     printf("you could either be satisfied with the toaster you have now, or you could make the voyage over to the other side...");
-    printf("so, what will you pick @s?\n will you 'stay' or will you 'go'\n\ntype your answer below:\n", r.pName.c_str());
+    printf("so, what will you pick?\n will you 'stay' or will you 'go'\n\ntype your answer below:\n");
     cin >> choice;
     if (choice == "stay")
     {
