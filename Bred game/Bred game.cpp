@@ -25,6 +25,9 @@ using namespace std;
 int main()
 {
     title();
+    mainMenu();
+
+
     
 
     return 0;

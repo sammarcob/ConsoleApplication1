@@ -141,6 +141,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="RPG.cpp" />
+    <ClCompile Include="npc.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="npc.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
