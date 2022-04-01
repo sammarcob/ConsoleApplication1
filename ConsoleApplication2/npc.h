@@ -6,7 +6,7 @@ using namespace std;
 class npc
 {
 public:
-	//ASK TRAIKL AHHHHH also how did you do on the mile buddy? beat spencer yet?
+	
 	void jelly(int eHealth, int eDamage, string name);
 
 

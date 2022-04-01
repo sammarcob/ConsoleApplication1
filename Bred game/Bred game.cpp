@@ -22,13 +22,21 @@ Matinence Log:
 #include "Functions.h"
 using namespace std;
 
+#include "npc.h"
+
+
+
 int main()
 {
+    npc n;
     title();
-    mainMenu();
-
-
     
+    
+    string jellyName = "";
+    int eHealth = 0;
+    int eDamage = 0;
+
+    n.jelly(eHealth, eDamage, jellyName);
 
     return 0;
 }

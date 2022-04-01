@@ -156,21 +156,6 @@ void title()
     printf("|    |         | \\   |      |    |\n");
     printf("    |___  _|   |  \\  |      ____  |___/ \n");
     system("CLS");
-    Sleep(5);
-    printf("        ___  __    __      __     _   _    ___     \n");
-    printf("   (              )              \n");
-    printf("             |                 |           \n");
-    printf("        |  (  )             (                  )        |     \n");
-    printf("                     |              |     \n");
-    printf("    |                           |         \n");
-    printf("        |            |     \n");
-    printf("        --   ---      ---      --         -   -  -     \n");
-    printf("       ____  __   __       __   __       _  \n");
-    printf(" |    |    |    |        |                   |   \ \n");
-    printf("   |____|              |__   __| |__           __  |    |\n");
-    printf("   |    |         | \    \    |      |    |\n");
-    printf("       |__  _  _|           |  \ \  |      _    __     _  |___/ \n");
-    system("CLS");
     Sleep(130);
 
 
@@ -1033,32 +1018,32 @@ void rooms()
             _getch();
             break;
         }
-    }
 
 
-    printf("you made it to room 25\nhowever, you just remembered that there is an even better toaster with twice as many slots to toast bread!\n but... it's on the ther side of the house\n\n");
-    _getch();
-    printf("you could either be satisfied with the toaster you have now, or you could make the voyage over to the other side...");
-    printf("so, what will you pick?\n will you 'stay' or will you 'go'\n\ntype your answer below:\n");
-    cin >> choice;
-    if (choice == "stay")
-    {
-        printf("are you sure??\n it's a real nice toaster!\n");
-        printf("y     n\n");
+
+        printf("you made it to room 25\nhowever, you just remembered that there is an even better toaster with twice as many slots to toast bread!\n but... it's on the ther side of the house\n\n");
+        _getch();
+        printf("you could either be satisfied with the toaster you have now, or you could make the voyage over to the other side...");
+        printf("so, what will you pick?\n will you 'stay' or will you 'go'\n\ntype your answer below:\n");
         cin >> choice;
-        if (choice == "y");
+        if (choice == "stay")
         {
-            printf("alright then... off you go.\n");
+            printf("are you sure??\n it's a real nice toaster!\n");
+            printf("y     n\n");
+            cin >> choice;
+            if (choice == "y");
+            {
+                printf("alright then... off you go.\n");
+                _getch();
+                //something to end code 
+            }
+        }
+        else if (choice == "go")
+        {
+            printf("great choice!. I just know that you'll love that toaster!\n");
             _getch();
-            return 0;
+            continue;
         }
     }
-    else if (choice == "go")
-    {
-        printf("great choice!. I just know that you'll love that toaster!\n");
-        _getch();
-        continue;
-    }
 }
-_getch();
-}
+
