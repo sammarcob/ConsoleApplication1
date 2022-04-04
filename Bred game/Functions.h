@@ -139,22 +139,8 @@ void title()
     printf("|    | |    | |      |   \ \n");
     printf("   |____| |__   __| |____  |    |\n");
     printf("|    | | \\   |      |    |\n");
-    printf("    |___  _|   |  \\  |      ____  |___/ \n");
+    printf("    |___  _|   |  \\  |   ____  |___/ \n");
     Sleep(5);
-    system("CLS");
-    printf("        _____    ____     __    ___     \n");
-    printf("   (              )        \n");
-    printf("             |            |     \n");
-    printf("        |  (  )           (   )  |     \n");
-    printf("                     |            |     \n");
-    printf("    |                      |     \n");
-    printf("        |            |     \n");
-    printf("        -----      ---      ------     \n");
-    printf("       ____  __   __       __   ___  \n");
-    printf("|    | |    |        |      |   \ \n");
-    printf("   |____|              |__   __| |____  |    |\n");
-    printf("|    |         | \\   |      |    |\n");
-    printf("    |___  _|   |  \\  |      ____  |___/ \n");
     system("CLS");
     Sleep(130);
 

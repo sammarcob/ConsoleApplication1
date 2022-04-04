@@ -24,19 +24,24 @@ using namespace std;
 
 #include "npc.h"
 
-
+struct npcData
+{
+    string name = "";
+    int eHealth = 0;
+    int eDamage = 0;
+};
 
 int main()
 {
-    npc n;
+    npc NPC;
     title();
-    
-    
-    string jellyName = "";
-    int eHealth = 0;
-    int eDamage = 0;
 
-    n.jelly(eHealth, eDamage, jellyName);
+    vector <npcData> npc(5);
+    
+
+    NPC.jelly(eHealth, eDamage, name);
+    //AHHHHHHHHHHHH BRUH 
+    cout << eHealth << eDamage;
 
     return 0;
 }
