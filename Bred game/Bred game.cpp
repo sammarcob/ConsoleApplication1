@@ -23,25 +23,18 @@ Matinence Log:
 using namespace std;
 
 #include "npc.h"
+#include "nd.h"
 
-struct npcData
-{
-    string name = "";
-    int eHealth = 0;
-    int eDamage = 0;
-};
 
 int main()
 {
+    npcData nd;
     npc NPC;
     title();
 
-    vector <npcData> npc(5);
     
-
-    NPC.jelly(eHealth, eDamage, name);
-    //AHHHHHHHHHHHH BRUH 
-    cout << eHealth << eDamage;
+    NPC.jelly(nd);
+    
 
     return 0;
 }

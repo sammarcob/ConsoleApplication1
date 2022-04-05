@@ -228,6 +228,10 @@ void mainMenu()
             start = true;
             continue;
         }
+        if (start = true)
+        {
+            rooms();
+        }
     }
 }
 

@@ -5,31 +5,39 @@
 using namespace std;
 #include "npc.h"
 
-void npc::jelly(int &eHealth, int &eDamage, string &jellyName)
+npc::npc()
 {
-	printf("i am jelly and i am weird");
-	cout << eHealth << eDamage;
-	eHealth = 10;
-	eDamage = 6;
-	jellyName = "Jelly";
+	eName = "";
+	eHealth = 0;
+	eDamage = 0;
 }
-void npc::butter(int eHealth, int eDamage, string name)
+npc::npc(string n, int h, int d)
 {
-
+	eName = n;
+	eHealth = h;
+	eDamage = d;
 }
-void npc::jam(int eHealth, int eDamage, string name)
+npc::npc(npc& npc)
 {
-
+	eName = npc.eName;
+	eHealth = npc.eHealth;
+	eDamage = npc.eDamage;
 }
-void npc::chad(int eHealth, int eDamage, string name)
+void npc::setData(string n, int h, int d)
 {
-
+	eName = n;
+	eHealth = h;
+	eDamage = d;
 }
-void npc::molassas(int eHealth, int eDamage, string name)
+string npc::getName()
 {
-
+	return eName;
 }
-void npc::peanutButter(int eHealth, int eDamage, string name) 
+int npc::getHealth()
 {
-
+	return eHealth;
+}
+int npc::getDamage()
+{
+	return eDamage;
 }
