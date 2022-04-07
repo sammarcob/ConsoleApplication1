@@ -5,7 +5,7 @@ using namespace std;
 
 struct npcData
 {
-    string name = "";
+    string eName = "";
     int eHealth = 0;
     int eDamage = 0;
 };

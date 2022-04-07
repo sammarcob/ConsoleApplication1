@@ -248,11 +248,6 @@ COORD gotoxy(int x, int y)
 
 void rooms()
 {
-    
-
-    
-    
-
     struct coords
     {
         int x;
@@ -1035,5 +1030,21 @@ void rooms()
             continue;
         }
     }
+}
+
+void intro()
+{
+    printf("you are a man with bred and no toaster...\n");
+    _getch();
+    system("CLS");
+    printf("this is a very grave situation.\n");
+    _getch();
+    system("CLS");
+    printf("you MUST find the blue key and secure the toaster!\n");
+    _getch();
+    system("CLS");
+    printf("godspeed...\n");
+    _getch();
+    system("CLS");
 }
 

@@ -19,9 +19,9 @@ Matinence Log:
 #include <vector>
 #include <iostream>
 #include <fstream>
-#include "Functions.h"
 using namespace std;
 
+#include "Functions.h"
 #include "npc.h"
 #include "nd.h"
 
@@ -31,7 +31,7 @@ int main()
     npcData nd;
     npc NPC;
     title();
-
+    intro();
     
     NPC.jelly(nd);
     

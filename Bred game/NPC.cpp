@@ -41,3 +41,11 @@ int npc::getDamage()
 {
 	return eDamage;
 }
+void npc::takeDamage()
+{
+
+}
+void npc::giveDamage()
+{
+
+}
