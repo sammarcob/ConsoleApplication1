@@ -49,3 +49,16 @@ void npc::giveDamage()
 {
 
 }
+string npc::getRanPhrase()
+{
+	if (phrases.size() > 0)
+	{
+		int i = rand() % phrases.size();
+		return phrases[i];
+	}
+	
+}
+void npc::addPhrase(string newPhrase)
+{
+	phrases.push_back(newPhrase);
+}

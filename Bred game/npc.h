@@ -1,6 +1,7 @@
 #pragma once
 #include <string>
 #include <stdio.h>
+#include <vector>
 #include "nd.h"
 
 using namespace std;
@@ -17,9 +18,12 @@ public:
 	int getDamage();
 	void takeDamage();
 	void giveDamage();
+	string getRanPhrase();
+	void addPhrase(string newPhrase);
 	
 
 private:
+	vector <string> phrases;
 	string eName;
 	int eHealth;
 	int eDamage;
