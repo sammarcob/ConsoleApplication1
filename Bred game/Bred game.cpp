@@ -30,11 +30,7 @@ int main()
 {
     npcData nd;
     npc NPC;
-    title();
-    intro();
-    
-    NPC.jelly(nd);
-    
+    GameManager();
 
     return 0;
 }

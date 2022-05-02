@@ -1016,7 +1016,7 @@ void rooms()
             printf("are you sure??\n it's a real nice toaster!\n");
             printf("y     n\n");
             cin >> choice;
-            if (choice == "y");
+            if (choice == "y")
             {
                 printf("alright then... off you go.\n");
                 _getch();
@@ -1048,3 +1048,9 @@ void intro()
     system("CLS");
 }
 
+void GameManager()
+{
+    title();
+    intro();
+    mainMenu();
+}
