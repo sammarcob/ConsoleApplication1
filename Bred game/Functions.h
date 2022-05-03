@@ -11,7 +11,19 @@
 #include <math.h>
 using namespace std;
 
+//main menu variables
+bool credits = false;
+bool start = false; //paass structs by refrence??
 
+//room variables
+struct coords 
+{
+    int x;
+    int y;
+};
+bool finish = false;
+
+// functions
 void title()
 {
     printf("        ______________     \n");
@@ -152,8 +164,7 @@ void mainMenu()
 {
     
     string input;
-    bool credits = false;
-    bool start = false;
+   
     while (true)
     {
 
@@ -248,11 +259,8 @@ COORD gotoxy(int x, int y)
 
 void rooms()
 {
-    struct coords
-    {
-        int x;
-        int y;
-    };
+    bool blueKey = false;
+    int keyChance;
 
     struct room
     {
@@ -294,8 +302,20 @@ void rooms()
             _getch();
             //enemies(r, enemylist);
             _getch();
+
+            if (blueKey == false)
+            {
+                keyChance = 1 + rand() % 25;
+                if (keyChance = 13)
+                {
+                    blueKey = true;
+                    printf("You found a Blue Key!\n I wonder what it's for....?");
+                    _getch();
+                }
+            }
             system("CLS");
             printf("you have a door below you and a door to your right\n\n do you go right(d) or down(s)?. Use WASD to input your answer\n");
+            
 
             cin >> choice;
             if (choice == "d")
@@ -318,6 +338,17 @@ void rooms()
             Sleep(50);
             //enemies(r, enemylist);
             _getch();
+
+            if (blueKey == false)
+            {
+                keyChance = 1 + rand() % 25;
+                if (keyChance = 13)
+                {
+                    blueKey = true;
+                    printf("You found a Blue Key!\n I wonder what it's for....?");
+                    _getch();
+                }
+            }
             system("CLS");
             printf("you have a door below you, a door to your left and a door to your right\n\n do you go right(d), left(a) or down(s)?. Use WASD to input your answer\n");
 
@@ -348,6 +379,17 @@ void rooms()
             Sleep(50);
             //enemies(r, enemylist);
             _getch();
+
+            if (blueKey == false)
+            {
+                keyChance = 1 + rand() % 25;
+                if (keyChance = 13)
+                {
+                    blueKey = true;
+                    printf("You found a Blue Key!\n I wonder what it's for....?");
+                    _getch();
+                }
+            }
             system("CLS");
             printf("you have a door below you, a door to your left and a door to your right\n\n do you go right(d), left(a) or down(s)?. Use WASD to input your answer\n");
 
@@ -377,6 +419,17 @@ void rooms()
             Sleep(50);
             //enemies(r, enemylist);
             _getch();
+
+            if (blueKey == false)
+            {
+                keyChance = 1 + rand() % 25;
+                if (keyChance = 13)
+                {
+                    blueKey = true;
+                    printf("You found a Blue Key!\n I wonder what it's for....?");
+                    _getch();
+                }
+            }
             system("CLS");
             printf("you have a door below you, a door to your left and a door to your right\n\n do you go right(d), left(a) or down(s)?. Use WASD to input your answer\n");
 
@@ -405,6 +458,17 @@ void rooms()
             Sleep(50);
             //enemies(r, enemylist);
             _getch();
+
+            if (blueKey == false)
+            {
+                keyChance = 1 + rand() % 25;
+                if (keyChance = 13)
+                {
+                    blueKey = true;
+                    printf("You found a Blue Key!\n I wonder what it's for....?");
+                    _getch();
+                }
+            }
             system("CLS");
             printf("you have a door below you and a door to your left\n\n do you go left(a) or down(s)?. Use WASD to input your answer\n");
 
@@ -428,6 +492,17 @@ void rooms()
             Sleep(50);
             //enemies(r, enemylist);
             _getch();
+
+            if (blueKey == false)
+            {
+                keyChance = 1 + rand() % 25;
+                if (keyChance = 13)
+                {
+                    blueKey = true;
+                    printf("You found a Blue Key!\n I wonder what it's for....?");
+                    _getch();
+                }
+            }
             system("CLS");
             printf("you have a door below you, above you, and a door to your right\n\n do you go right(d), up(w) or down(s)?. Use WASD to input your answer\n");
 
@@ -457,6 +532,17 @@ void rooms()
             Sleep(50);
             //enemies(r, enemylist);
             _getch();
+
+            if (blueKey == false)
+            {
+                keyChance = 1 + rand() % 25;
+                if (keyChance = 13)
+                {
+                    blueKey = true;
+                    printf("You found a Blue Key!\n I wonder what it's for....?");
+                    _getch();
+                }
+            }
             system("CLS");
             printf("you have a door below you, above you, to your left and a door to your right\n\n do you go left(a), right(d), up(w) or down(s)?. Use WASD to input your answer\n");
 
@@ -490,6 +576,17 @@ void rooms()
             Sleep(50);
             //enemies(r, enemylist);
             _getch();
+
+            if (blueKey == false)
+            {
+                keyChance = 1 + rand() % 25;
+                if (keyChance = 13)
+                {
+                    blueKey = true;
+                    printf("You found a Blue Key!\n I wonder what it's for....?");
+                    _getch();
+                }
+            }
             system("CLS");
             printf("you have a door below you, above you, to your left and a door to your right\n\n do you go left(a), right(d), up(w) or down(s)?. Use WASD to input your answer\n");
 
@@ -523,6 +620,17 @@ void rooms()
             Sleep(50);
             //enemies(r, enemylist);
             _getch();
+
+            if (blueKey == false)
+            {
+                keyChance = 1 + rand() % 25;
+                if (keyChance = 13)
+                {
+                    blueKey = true;
+                    printf("You found a Blue Key!\n I wonder what it's for....?");
+                    _getch();
+                }
+            }
             system("CLS");
             printf("you have a door below you, above you, to your left and a door to your right\n\n do you go left(a), right(d), up(w) or down(s)?. Use WASD to input your answer\n");
 
@@ -556,6 +664,17 @@ void rooms()
             Sleep(50);
             //enemies(r, enemylist);
             _getch();
+
+            if (blueKey == false)
+            {
+                keyChance = 1 + rand() % 25;
+                if (keyChance = 13)
+                {
+                    blueKey = true;
+                    printf("You found a Blue Key!\n I wonder what it's for....?");
+                    _getch();
+                }
+            }
             system("CLS");
             printf("you have a door below you, above you, to your left and a door above you\n\n do you go left(a)), up(w) or down(s)?. Use WASD to input your answer\n");
 
@@ -584,6 +703,17 @@ void rooms()
             Sleep(50);
             //enemies(r, enemylist);
             _getch();
+
+            if (blueKey == false)
+            {
+                keyChance = 1 + rand() % 25;
+                if (keyChance = 13)
+                {
+                    blueKey = true;
+                    printf("You found a Blue Key!\n I wonder what it's for....?");
+                    _getch();
+                }
+            }
             system("CLS");
             printf("you have a door below you, above you, and a door to your right\n\n do you go right(d), up(w) or down(s)?. Use WASD to input your answer\n");
 
@@ -612,6 +742,17 @@ void rooms()
             Sleep(50);
             //enemies(r, enemylist);
             _getch();
+
+            if (blueKey == false)
+            {
+                keyChance = 1 + rand() % 25;
+                if (keyChance = 13)
+                {
+                    blueKey = true;
+                    printf("You found a Blue Key!\n I wonder what it's for....?");
+                    _getch();
+                }
+            }
             system("CLS");
             printf("you have a door below you, above you, to your left and a door to your right\n\n do you go left(a), right(d), up(w) or down(s)?. Use WASD to input your answer\n");
 
@@ -645,6 +786,17 @@ void rooms()
             Sleep(50);
             //enemies(r, enemylist);
             _getch();
+
+            if (blueKey == false)
+            {
+                keyChance = 1 + rand() % 25;
+                if (keyChance = 13)
+                {
+                    blueKey = true;
+                    printf("You found a Blue Key!\n I wonder what it's for....?");
+                    _getch();
+                }
+            }
             system("CLS");
             printf("you have a door below you, above you, to your left and a door to your right\n\n do you go left(a), right(d), up(w) or down(s)?. Use WASD to input your answer\n");
 
@@ -678,6 +830,17 @@ void rooms()
             Sleep(50);
             //enemies(r, enemylist);
             _getch();
+
+            if (blueKey == false)
+            {
+                keyChance = 1 + rand() % 25;
+                if (keyChance = 13)
+                {
+                    blueKey = true;
+                    printf("You found a Blue Key!\n I wonder what it's for....?");
+                    _getch();
+                }
+            }
             system("CLS");
             printf("you have a door below you, above you, to your left and a door to your right\n\n do you go left(a), right(d), up(w) or down(s)?. Use WASD to input your answer\n");
 
@@ -711,6 +874,17 @@ void rooms()
             Sleep(50);
             //enemies(r, enemylist);
             _getch();
+
+            if (blueKey == false)
+            {
+                keyChance = 1 + rand() % 25;
+                if (keyChance = 13)
+                {
+                    blueKey = true;
+                    printf("You found a Blue Key!\n I wonder what it's for....?");
+                    _getch();
+                }
+            }
             system("CLS");
             printf("you have a door below you, above you, to your left and a door above you\n\n do you go left(a)), up(w) or down(s)?. Use WASD to input your answer\n");
 
@@ -739,6 +913,17 @@ void rooms()
             Sleep(50);
             //enemies(r, enemylist);
             _getch();
+
+            if (blueKey == false)
+            {
+                keyChance = 1 + rand() % 25;
+                if (keyChance = 13)
+                {
+                    blueKey = true;
+                    printf("You found a Blue Key!\n I wonder what it's for....?");
+                    _getch();
+                }
+            }
             system("CLS");
             printf("you have a door below you, above you, and a door to your right\n\n do you go right(d), up(w) or down(s)?. Use WASD to input your answer\n");
 
@@ -767,6 +952,16 @@ void rooms()
             Sleep(50);
             //enemies(r, enemylist);
             _getch();
+            if (blueKey == false)
+            {
+                keyChance = 1 + rand() % 25;
+                if (keyChance = 13)
+                {
+                    blueKey = true;
+                    printf("You found a Blue Key!\n I wonder what it's for....?");
+                    _getch();
+                }
+            }
             system("CLS");
             printf("you have a door below you, above you, to your left and a door to your right\n\n do you go left(a), right(d), up(w) or down(s)?. Use WASD to input your answer\n");
 
@@ -800,6 +995,17 @@ void rooms()
             Sleep(50);
             //enemies(r, enemylist);
             _getch();
+
+            if (blueKey == false)
+            {
+                keyChance = 1 + rand() % 25;
+                if (keyChance = 13)
+                {
+                    blueKey = true;
+                    printf("You found a Blue Key!\n I wonder what it's for....?");
+                    _getch();
+                }
+            }
             system("CLS");
             printf("you have a door below you, above you, to your left and a door to your right\n\n do you go left(a), right(d), up(w) or down(s)?. Use WASD to input your answer\n");
 
@@ -833,6 +1039,17 @@ void rooms()
             Sleep(50);
             //enemies(r, enemylist);
             _getch();
+
+            if (blueKey == false)
+            {
+                keyChance = 1 + rand() % 25;
+                if (keyChance = 13)
+                {
+                    blueKey = true;
+                    printf("You found a Blue Key!\n I wonder what it's for....?");
+                    _getch();
+                }
+            }
             system("CLS");
             printf("you have a door below you, above you, to your left and a door to your right\n\n do you go left(a), right(d), up(w) or down(s)?. Use WASD to input your answer\n");
 
@@ -866,14 +1083,29 @@ void rooms()
             Sleep(50);
             //enemies(r, enemylist);
             _getch();
+
+            if (blueKey == false)
+            {
+                keyChance = 1 + rand() % 25;
+                if (keyChance = 13)
+                {
+                    blueKey = true;
+                    printf("You found a Blue Key!\n I wonder what it's for....?");
+                    _getch();
+                }
+            }
             system("CLS");
             printf("you have a door below you, above you, to your left and a door above you\n\n do you go left(a), up(w) or down(s)?. Use WASD to input your answer\n");
 
             cin >> choice;
-            if (choice == "s")
+            if (choice == "s" && blueKey == true)
             {
                 currentRoom.move(dDown);
                 continue;
+            }
+            else if (choice == "s" && blueKey == false)
+            {
+                printf("you try to open the door, but it's locked...");
             }
             else if (choice == "w")
             {
@@ -894,6 +1126,17 @@ void rooms()
             Sleep(50);
             //enemies(r, enemylist);
             _getch();
+
+            if (blueKey == false)
+            {
+                keyChance = 1 + rand() % 25;
+                if (keyChance = 13)
+                {
+                    blueKey = true;
+                    printf("You found a Blue Key!\n I wonder what it's for....?");
+                    _getch();
+                }
+            }
             system("CLS");
             printf("you have a door above you and a door to your right\n\n do you go right(d) or up(w)?. Use WASD to input your answer\n");
 
@@ -918,6 +1161,17 @@ void rooms()
             Sleep(50);
             //enemies(r, enemylist);
             _getch();
+
+            if (blueKey == false)
+            {
+                keyChance = 1 + rand() % 25;
+                if (keyChance = 13)
+                {
+                    blueKey = true;
+                    printf("You found a Blue Key!\n I wonder what it's for....?");
+                    _getch();
+                }
+            }
             system("CLS");
             printf("you have a door to your left, a door above you and a door to your right\n\n do you go right(d), left(a) or up(w)?. Use WASD to input your answer\n");
 
@@ -946,6 +1200,17 @@ void rooms()
             Sleep(50);
             //enemies(r, enemylist);
             _getch();
+
+            if (blueKey == false)
+            {
+                keyChance = 1 + rand() % 25;
+                if (keyChance = 13)
+                {
+                    blueKey = true;
+                    printf("You found a Blue Key!\n I wonder what it's for....?");
+                    _getch();
+                }
+            }
             system("CLS");
             printf("you have a door to your left, a door above you and a door to your right\n\n do you go right(d), left(a) or up(w)?. Use WASD to input your answer\n");
 
@@ -974,14 +1239,29 @@ void rooms()
             Sleep(50);
             //enemies(r, enemylist);
             _getch();
+
+            if (blueKey == false)
+            {
+                keyChance = 1 + rand() % 25;
+                if (keyChance = 13)
+                {
+                    blueKey = true;
+                    printf("You found a Blue Key!\n I wonder what it's for....?");
+                    _getch();
+                }
+            }
             system("CLS");
             printf("you have a door to your left, a door above you and a door to your right\n\n do you go right(d), left(a) or up(w)?. Use WASD to input your answer\n");
 
             cin >> choice;
-            if (choice == "d")
+            if (choice == "d" && blueKey == true)
             {
                 currentRoom.move(dRight);
                 continue;
+            }
+            else if (choice == "d" && blueKey == false)
+            {
+                printf("you try to open the door, but it's locked...");
             }
             else if (choice == "w")
             {
@@ -998,10 +1278,12 @@ void rooms()
         {
             //25
             system("CLS");
+            printf("the door unlocks with a click and swings open!\n");
+            _getch();
             printf("room 25... finally!\n");
             printf("you found the toaster!\n");
             _getch();
-            break;
+            
         }
 
 
@@ -1020,13 +1302,16 @@ void rooms()
             {
                 printf("alright then... off you go.\n");
                 _getch();
+                finish = true;
                 //something to end code 
+                break;
             }
         }
         else if (choice == "go")
         {
             printf("great choice!. I just know that you'll love that toaster!\n");
             _getch();
+            finish = false;
             continue;
         }
     }
@@ -1053,4 +1338,11 @@ void GameManager()
     title();
     intro();
     mainMenu();
+    if (start = true)
+    {
+        while (finish = true)
+        {
+
+        }
+    }
 }

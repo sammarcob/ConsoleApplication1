@@ -28,8 +28,8 @@ using namespace std;
 
 int main()
 {
-    npcData nd;
-    npc NPC;
+    /*npcData nd;
+    npc NPC;*/
     GameManager();
 
     return 0;
