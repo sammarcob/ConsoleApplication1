@@ -28,7 +28,9 @@ using namespace std;
 
 int main()
 {
-    npcData nd;
+    srand(time(unsign))//????
+    globalVariables globeVar;
+    /*npcData nd;
     npc Jelly;
     Jelly.setData("Jelly", 7, 5);
     Jelly.addPhrase("...");
@@ -46,10 +48,9 @@ int main()
     Molassas.addPhrase("h-h-h-h-h-h-h-e-e-e-e-e-e-e-e-e-e-y-y-y-y-y-y-y-y-y...        m-m-m-m-m-m-m-m-m-a-a-a-a-a-n-n-n-n-n-n...");
     npc peanutButter;
     peanutButter.setData("Peanut Butter", 20, 0);
-    peanutButter.addPhrase("hello my child.");
+    peanutButter.addPhrase("hello my child.");*/
 
-    title();
-    intro();
+    GameManager(globeVar);
     
     
     

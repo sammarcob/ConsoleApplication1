@@ -11,17 +11,20 @@
 #include <math.h>
 using namespace std;
 
-//main menu variables
-bool credits = false;
-bool start = false; //paass structs by refrence??
+struct globalVariables
+{
+    bool credits = false;
+    bool start = false;
+    bool finish = false;
+};
 
-//room variables
+
 struct coords 
 {
     int x;
     int y;
 };
-bool finish = false;
+
 
 // functions
 void title()
@@ -160,93 +163,8 @@ void title()
     
 }
 
-void mainMenu()
-{
-    
-    string input;
-   
-    while (true)
-    {
-
-
-        system("CLS");
-        printf("Use a and d to switch between options. press space to select\n");
-        printf("Start||||||||||Credits\n");
-        printf("^^^^^                 \n");
-        while (true)
-        {
-            _flushall();
-            input = _getch();
-
-            if (input == "a" || input == "A")
-            {
-                system("CLS");
-                printf("Use a and d to switch between options. press space to select\n");
-                printf("Start||||||||||Credits\n");
-                printf("^^^^^                 \n");
-
-                start = true;
-                credits = false;
-            }
-            else if (input == "d" || input == "D")
-            {
-                system("CLS");
-                printf("Use a and d to switch between options. press space to select\n");
-                printf("Start||||||||||Credits\n");
-                printf("               ^^^^^^^\n");
-
-                start = false;
-                credits = true;
-            }
-            else if (input == " " || input == "\n")
-            {
-                break;
-            }
-        }
-        if (credits == true)
-        {
-            printf("Code by Brooks Sammarco\n\n\n");
-            printf("Story by Brooks Sammarco\n\n\n");
-            printf("Coolness by Brooks Sammarco\n\n\n");
-
-            printf("gumby\n");
-            Sleep(100);
-            printf("gumby\n");
-            Sleep(80);
-            printf("gumby\n");
-            Sleep(60);
-            printf("gumby\n");
-            Sleep(40);
-            printf("gumby\n");
-            Sleep(20);
-            printf("gumby\n");
-            Sleep(10);
-            printf("gumby\n");
-            Sleep(9);
-            printf("gumby\n");
-            Sleep(8);
-            printf("gumby\n");
-            Sleep(7);
-            printf("gumby\n\n\n");
-            Sleep(1000);
-            printf("gumby\n");
-
-            printf("press any key to continue\n");
-            _getch();
-            system("CLS");
-            // this stuff is boned probably idk
-            credits = false;
-            start = true;
-            continue;
-        }
-        if (start = true)
-        {
-            rooms();
-        }
-    }
-}
-
 enum direction { dUp, dDown, dLeft, dRight };
+
 
 COORD gotoxy(int x, int y)
 {
@@ -257,7 +175,7 @@ COORD gotoxy(int x, int y)
     return coord;
 }
 
-void rooms()
+void rooms(globalVariables& globeVar)
 {
     bool blueKey = false;
     int keyChance;
@@ -305,7 +223,7 @@ void rooms()
 
             if (blueKey == false)
             {
-                keyChance = 1 + rand() % 25;
+                keyChance = 1 + rand() % 25; // NOT WORK
                 if (keyChance = 13)
                 {
                     blueKey = true;
@@ -315,7 +233,7 @@ void rooms()
             }
             system("CLS");
             printf("you have a door below you and a door to your right\n\n do you go right(d) or down(s)?. Use WASD to input your answer\n");
-            
+
 
             cin >> choice;
             if (choice == "d")
@@ -1283,7 +1201,7 @@ void rooms()
             printf("room 25... finally!\n");
             printf("you found the toaster!\n");
             _getch();
-            
+
         }
 
 
@@ -1302,7 +1220,7 @@ void rooms()
             {
                 printf("alright then... off you go.\n");
                 _getch();
-                finish = true;
+                globeVar.finish = true;
                 //something to end code 
                 break;
             }
@@ -1311,8 +1229,96 @@ void rooms()
         {
             printf("great choice!. I just know that you'll love that toaster!\n");
             _getch();
-            finish = false;
+            globeVar.finish = false;
+            currentRoom.coordinates.x = 1;
+            currentRoom.coordinates.y = 1;
             continue;
+        }
+    }
+}
+
+void mainMenu(globalVariables& globeVar)
+{
+    
+    string input;
+   
+    while (true)
+    {
+
+
+        system("CLS");
+        printf("Use a and d to switch between options. press space to select\n");
+        printf("Start||||||||||Credits\n");
+        printf("^^^^^                 \n");
+        while (true)
+        {
+            _flushall();
+            input = _getch();
+
+            if (input == "a" || input == "A")
+            {
+                system("CLS");
+                printf("Use a and d to switch between options. press space to select\n");
+                printf("Start||||||||||Credits\n");
+                printf("^^^^^                 \n");
+
+                globeVar.start = true;
+                globeVar.credits = false;
+            }
+            else if (input == "d" || input == "D")
+            {
+                system("CLS");
+                printf("Use a and d to switch between options. press space to select\n");
+                printf("Start||||||||||Credits\n");
+                printf("               ^^^^^^^\n");
+
+                globeVar.start = false;
+                globeVar.credits = true;
+            }
+            else if (input == " " || input == "\n")
+            {
+                break;
+            }
+        }
+        if (globeVar.credits == true)
+        {
+            printf("Code by Brooks Sammarco\n\n\n");
+            printf("Story by Brooks Sammarco\n\n\n");
+            printf("Coolness by Brooks Sammarco\n\n\n");
+
+            printf("gumby\n");
+            Sleep(100);
+            printf("gumby\n");
+            Sleep(80);
+            printf("gumby\n");
+            Sleep(60);
+            printf("gumby\n");
+            Sleep(40);
+            printf("gumby\n");
+            Sleep(20);
+            printf("gumby\n");
+            Sleep(10);
+            printf("gumby\n");
+            Sleep(9);
+            printf("gumby\n");
+            Sleep(8);
+            printf("gumby\n");
+            Sleep(7);
+            printf("gumby\n\n\n");
+            Sleep(1000);
+            printf("gumby\n");
+
+            printf("press any key to continue\n");
+            _getch();
+            system("CLS");
+            // this stuff is boned probably idk
+            globeVar.credits = false;
+            globeVar.start = true;
+            continue;
+        }
+        if (globeVar.start = true)
+        {
+            rooms(globeVar);
         }
     }
 }
@@ -1333,16 +1339,16 @@ void intro()
     system("CLS");
 }
 
-void GameManager()
+void GameManager(globalVariables& globeVar)
 {
+    globalVariables globVar;
     title();
     intro();
-    mainMenu();
-    if (start = true)
+    mainMenu(globeVar);
+    if (globVar.start = true)
     {
-        while (finish = true)
-        {
+        rooms(globeVar);
+        
 
-        }
     }
 }
