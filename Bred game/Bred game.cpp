@@ -28,7 +28,7 @@ using namespace std;
 
 int main()
 {
-    srand(time(unsign))//????
+    srand((unsigned)time(NULL));
     globalVariables globeVar;
     /*npcData nd;
     npc Jelly;

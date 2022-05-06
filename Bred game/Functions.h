@@ -224,7 +224,7 @@ void rooms(globalVariables& globeVar)
             if (blueKey == false)
             {
                 keyChance = 1 + rand() % 25; // NOT WORK
-                if (keyChance = 13)
+                if (keyChance == 13)
                 {
                     blueKey = true;
                     printf("You found a Blue Key!\n I wonder what it's for....?");
@@ -260,7 +260,7 @@ void rooms(globalVariables& globeVar)
             if (blueKey == false)
             {
                 keyChance = 1 + rand() % 25;
-                if (keyChance = 13)
+                if (keyChance == 13)
                 {
                     blueKey = true;
                     printf("You found a Blue Key!\n I wonder what it's for....?");
@@ -301,7 +301,7 @@ void rooms(globalVariables& globeVar)
             if (blueKey == false)
             {
                 keyChance = 1 + rand() % 25;
-                if (keyChance = 13)
+                if (keyChance == 13)
                 {
                     blueKey = true;
                     printf("You found a Blue Key!\n I wonder what it's for....?");
@@ -341,7 +341,7 @@ void rooms(globalVariables& globeVar)
             if (blueKey == false)
             {
                 keyChance = 1 + rand() % 25;
-                if (keyChance = 13)
+                if (keyChance == 13)
                 {
                     blueKey = true;
                     printf("You found a Blue Key!\n I wonder what it's for....?");
@@ -380,7 +380,7 @@ void rooms(globalVariables& globeVar)
             if (blueKey == false)
             {
                 keyChance = 1 + rand() % 25;
-                if (keyChance = 13)
+                if (keyChance == 13)
                 {
                     blueKey = true;
                     printf("You found a Blue Key!\n I wonder what it's for....?");
@@ -414,7 +414,7 @@ void rooms(globalVariables& globeVar)
             if (blueKey == false)
             {
                 keyChance = 1 + rand() % 25;
-                if (keyChance = 13)
+                if (keyChance == 13)
                 {
                     blueKey = true;
                     printf("You found a Blue Key!\n I wonder what it's for....?");
@@ -454,7 +454,7 @@ void rooms(globalVariables& globeVar)
             if (blueKey == false)
             {
                 keyChance = 1 + rand() % 25;
-                if (keyChance = 13)
+                if (keyChance == 13)
                 {
                     blueKey = true;
                     printf("You found a Blue Key!\n I wonder what it's for....?");
@@ -498,7 +498,7 @@ void rooms(globalVariables& globeVar)
             if (blueKey == false)
             {
                 keyChance = 1 + rand() % 25;
-                if (keyChance = 13)
+                if (keyChance == 13)
                 {
                     blueKey = true;
                     printf("You found a Blue Key!\n I wonder what it's for....?");
@@ -542,7 +542,7 @@ void rooms(globalVariables& globeVar)
             if (blueKey == false)
             {
                 keyChance = 1 + rand() % 25;
-                if (keyChance = 13)
+                if (keyChance == 13)
                 {
                     blueKey = true;
                     printf("You found a Blue Key!\n I wonder what it's for....?");
@@ -586,7 +586,7 @@ void rooms(globalVariables& globeVar)
             if (blueKey == false)
             {
                 keyChance = 1 + rand() % 25;
-                if (keyChance = 13)
+                if (keyChance == 13)
                 {
                     blueKey = true;
                     printf("You found a Blue Key!\n I wonder what it's for....?");
@@ -625,7 +625,7 @@ void rooms(globalVariables& globeVar)
             if (blueKey == false)
             {
                 keyChance = 1 + rand() % 25;
-                if (keyChance = 13)
+                if (keyChance == 13)
                 {
                     blueKey = true;
                     printf("You found a Blue Key!\n I wonder what it's for....?");
@@ -664,7 +664,7 @@ void rooms(globalVariables& globeVar)
             if (blueKey == false)
             {
                 keyChance = 1 + rand() % 25;
-                if (keyChance = 13)
+                if (keyChance == 13)
                 {
                     blueKey = true;
                     printf("You found a Blue Key!\n I wonder what it's for....?");
@@ -708,7 +708,7 @@ void rooms(globalVariables& globeVar)
             if (blueKey == false)
             {
                 keyChance = 1 + rand() % 25;
-                if (keyChance = 13)
+                if (keyChance == 13)
                 {
                     blueKey = true;
                     printf("You found a Blue Key!\n I wonder what it's for....?");
@@ -752,7 +752,7 @@ void rooms(globalVariables& globeVar)
             if (blueKey == false)
             {
                 keyChance = 1 + rand() % 25;
-                if (keyChance = 13)
+                if (keyChance == 13)
                 {
                     blueKey = true;
                     printf("You found a Blue Key!\n I wonder what it's for....?");
@@ -796,7 +796,7 @@ void rooms(globalVariables& globeVar)
             if (blueKey == false)
             {
                 keyChance = 1 + rand() % 25;
-                if (keyChance = 13)
+                if (keyChance == 13)
                 {
                     blueKey = true;
                     printf("You found a Blue Key!\n I wonder what it's for....?");
@@ -835,7 +835,7 @@ void rooms(globalVariables& globeVar)
             if (blueKey == false)
             {
                 keyChance = 1 + rand() % 25;
-                if (keyChance = 13)
+                if (keyChance == 13)
                 {
                     blueKey = true;
                     printf("You found a Blue Key!\n I wonder what it's for....?");
@@ -873,7 +873,7 @@ void rooms(globalVariables& globeVar)
             if (blueKey == false)
             {
                 keyChance = 1 + rand() % 25;
-                if (keyChance = 13)
+                if (keyChance == 13)
                 {
                     blueKey = true;
                     printf("You found a Blue Key!\n I wonder what it's for....?");
@@ -917,7 +917,7 @@ void rooms(globalVariables& globeVar)
             if (blueKey == false)
             {
                 keyChance = 1 + rand() % 25;
-                if (keyChance = 13)
+                if (keyChance == 13)
                 {
                     blueKey = true;
                     printf("You found a Blue Key!\n I wonder what it's for....?");
@@ -961,7 +961,7 @@ void rooms(globalVariables& globeVar)
             if (blueKey == false)
             {
                 keyChance = 1 + rand() % 25;
-                if (keyChance = 13)
+                if (keyChance == 13)
                 {
                     blueKey = true;
                     printf("You found a Blue Key!\n I wonder what it's for....?");
@@ -1005,7 +1005,7 @@ void rooms(globalVariables& globeVar)
             if (blueKey == false)
             {
                 keyChance = 1 + rand() % 25;
-                if (keyChance = 13)
+                if (keyChance == 13)
                 {
                     blueKey = true;
                     printf("You found a Blue Key!\n I wonder what it's for....?");
@@ -1024,6 +1024,7 @@ void rooms(globalVariables& globeVar)
             else if (choice == "s" && blueKey == false)
             {
                 printf("you try to open the door, but it's locked...");
+                currentRoom.coordinates.y + 1;
             }
             else if (choice == "w")
             {
@@ -1048,7 +1049,7 @@ void rooms(globalVariables& globeVar)
             if (blueKey == false)
             {
                 keyChance = 1 + rand() % 25;
-                if (keyChance = 13)
+                if (keyChance == 13)
                 {
                     blueKey = true;
                     printf("You found a Blue Key!\n I wonder what it's for....?");
@@ -1083,7 +1084,7 @@ void rooms(globalVariables& globeVar)
             if (blueKey == false)
             {
                 keyChance = 1 + rand() % 25;
-                if (keyChance = 13)
+                if (keyChance == 13)
                 {
                     blueKey = true;
                     printf("You found a Blue Key!\n I wonder what it's for....?");
@@ -1122,7 +1123,7 @@ void rooms(globalVariables& globeVar)
             if (blueKey == false)
             {
                 keyChance = 1 + rand() % 25;
-                if (keyChance = 13)
+                if (keyChance == 13)
                 {
                     blueKey = true;
                     printf("You found a Blue Key!\n I wonder what it's for....?");
@@ -1161,12 +1162,13 @@ void rooms(globalVariables& globeVar)
             if (blueKey == false)
             {
                 keyChance = 1 + rand() % 25;
-                if (keyChance = 13)
+                if (keyChance == 13)
                 {
                     blueKey = true;
                     printf("You found a Blue Key!\n I wonder what it's for....?");
                     _getch();
                 }
+                
             }
             system("CLS");
             printf("you have a door to your left, a door above you and a door to your right\n\n do you go right(d), left(a) or up(w)?. Use WASD to input your answer\n");
@@ -1180,6 +1182,7 @@ void rooms(globalVariables& globeVar)
             else if (choice == "d" && blueKey == false)
             {
                 printf("you try to open the door, but it's locked...");
+                currentRoom.coordinates.x - 1;
             }
             else if (choice == "w")
             {
@@ -1206,9 +1209,9 @@ void rooms(globalVariables& globeVar)
 
 
 
-        printf("you made it to room 25\nhowever, you just remembered that there is an even better toaster with twice as many slots to toast bread!\n but... it's on the ther side of the house\n\n");
+        printf("you made it to room 25\nhowever, you just remembered that there is an even better toaster \nwith twice as many slots to toast bread!\n but... it's on the ther side of the house\n\n");
         _getch();
-        printf("you could either be satisfied with the toaster you have now, or you could make the voyage over to the other side...");
+        printf("you could either be satisfied with the toaster you have now, or you could make the voyage over to the other side...\n");
         printf("so, what will you pick?\n will you 'stay' or will you 'go'\n\ntype your answer below:\n");
         cin >> choice;
         if (choice == "stay")
