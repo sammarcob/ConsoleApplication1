@@ -1008,7 +1008,7 @@ void rooms(globalVariables& globeVar)
                 if (keyChance == 13)
                 {
                     blueKey = true;
-                    printf("You found a Blue Key!\n I wonder what it's for....?");
+                    printf("You found a Blue Key!\n I wonder what it's for....?");// NOT WORK AHHH
                     _getch();
                 }
             }
