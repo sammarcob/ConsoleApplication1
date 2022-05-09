@@ -1024,7 +1024,7 @@ void rooms(globalVariables& globeVar)
             else if (choice == "s" && blueKey == false)
             {
                 printf("you try to open the door, but it's locked...");
-                currentRoom.coordinates.y + 1;
+                //currentRoom.coordinates.y + 1;
             }
             else if (choice == "w")
             {
@@ -1182,7 +1182,7 @@ void rooms(globalVariables& globeVar)
             else if (choice == "d" && blueKey == false)
             {
                 printf("you try to open the door, but it's locked...");
-                currentRoom.coordinates.x - 1;
+                //currentRoom.coordinates.x - 1;
             }
             else if (choice == "w")
             {
