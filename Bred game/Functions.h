@@ -207,8 +207,8 @@ void rooms(globalVariables& globeVar)
     };
 
     room currentRoom;
-    currentRoom.coordinates.x = 1;
-    currentRoom.coordinates.y = 5;
+    currentRoom.coordinates.x = 5;
+    currentRoom.coordinates.y = 3;
     string choice;
     system("CLS");
     while (true)
@@ -789,6 +789,7 @@ void rooms(globalVariables& globeVar)
             //15
             system("CLS");
             printf("you walk into the room...\n");
+            printf("15");
             Sleep(50);
             //enemies(r, enemylist);
             _getch();
@@ -998,6 +999,7 @@ void rooms(globalVariables& globeVar)
             //20
             system("CLS");
             printf("you walk into the room...\n");
+            printf("20");
             Sleep(50);
             //enemies(r, enemylist);
             _getch();
@@ -1024,6 +1026,8 @@ void rooms(globalVariables& globeVar)
             else if (choice == "s" && blueKey == false)
             {
                 printf("you try to open the door, but it's locked...");
+
+                continue;
                 //currentRoom.coordinates.y + 1;
             }
             else if (choice == "w")
@@ -1181,7 +1185,9 @@ void rooms(globalVariables& globeVar)
             }
             else if (choice == "d" && blueKey == false)
             {
-                printf("you try to open the door, but it's locked...");
+                printf("you try to open the door, but it's locked...\n");
+
+                continue;
                 //currentRoom.coordinates.x - 1;
             }
             else if (choice == "w")
@@ -1205,38 +1211,41 @@ void rooms(globalVariables& globeVar)
             printf("you found the toaster!\n");
             _getch();
 
-        }
-
-
-
-        printf("you made it to room 25\nhowever, you just remembered that there is an even better toaster \nwith twice as many slots to toast bread!\n but... it's on the ther side of the house\n\n");
-        _getch();
-        printf("you could either be satisfied with the toaster you have now, or you could make the voyage over to the other side...\n");
-        printf("so, what will you pick?\n will you 'stay' or will you 'go'\n\ntype your answer below:\n");
-        cin >> choice;
-        if (choice == "stay")
-        {
-            printf("are you sure??\n it's a real nice toaster!\n");
-            printf("y     n\n");
+            printf("you made it to room 25\nhowever, you just remembered that there is an even better toaster \nwith twice as many slots to toast bread!\n but... it's on the ther side of the house\n\n");
+            _getch();
+            printf("you could either be satisfied with the toaster you have now, or you could make the voyage over to the other side...\n");
+            printf("so, what will you pick?\n will you 'stay' or will you 'go'\n\ntype your answer below:\n");
             cin >> choice;
-            if (choice == "y")
+            if (choice == "stay")
             {
-                printf("alright then... off you go.\n");
+                printf("are you sure??\n it's a real nice toaster!\n");
+                printf("y     n\n");
+                cin >> choice;
+                if (choice == "y")
+                {
+                    printf("alright then... off you go.\n");
+                    _getch();
+                    globeVar.finish = true;
+                    globeVar.start = false;
+                    //something to end code 
+
+                    break;
+                }
+            }
+            else if (choice == "go")
+            {
+                printf("great choice!. I just know that you'll love that toaster!\n");
                 _getch();
-                globeVar.finish = true;
-                //something to end code 
-                break;
+                globeVar.finish = false;
+                currentRoom.coordinates.x = 1;
+                currentRoom.coordinates.y = 1;
+                continue;
             }
         }
-        else if (choice == "go")
-        {
-            printf("great choice!. I just know that you'll love that toaster!\n");
-            _getch();
-            globeVar.finish = false;
-            currentRoom.coordinates.x = 1;
-            currentRoom.coordinates.y = 1;
-            continue;
-        }
+
+
+
+        
     }
 }
 
