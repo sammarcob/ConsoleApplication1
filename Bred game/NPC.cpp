@@ -66,6 +66,14 @@ string npc::getRanDeathPhrase()
 		return deathPhrases[i];
 	}
 }
+string npc::getRanHurtPhrase()
+{
+	if (deathPhrases.size() > 0)
+	{
+		int i = rand() % deathPhrases.size();
+		return deathPhrases[i];
+	}
+}
 void npc::addPhrase(string newPhrase)
 {
 	phrases.push_back(newPhrase);
@@ -73,4 +81,8 @@ void npc::addPhrase(string newPhrase)
 void npc::addDeathPhrase(string newDeathPhrase)
 {
 	deathPhrases.push_back(newDeathPhrase);
+}
+void npc::addHurtPhrase(string newHurtPhrase)
+{
+	hurtPhrases.push_back(newHurtPhrase);
 }

@@ -1,5 +1,5 @@
 #pragma once
-
+#include"Combat.h"
 #include <stdlib.h> 
 #include <time.h>
 #include <conio.h>
