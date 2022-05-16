@@ -59,7 +59,6 @@ int main()
 
     GameManager(globeVar);
     
-    
 
     return 0;
 }

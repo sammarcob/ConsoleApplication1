@@ -16,8 +16,6 @@ public:
 	string getName();
 	int getHealth();
 	int getDamage();
-	void takeDamage();
-	void giveDamage();
 	string getRanPhrase();
 	string getRanDeathPhrase();
 	string getRanHurtPhrase();
@@ -25,7 +23,6 @@ public:
 	void addDeathPhrase(string newDeathPhrase);
 	void addHurtPhrase(string newHurtPhrase);
 	
-
 private:
 	vector <string> phrases;
 	vector <string> deathPhrases{"gahhhhhh!!!", "noooooo!!!", "you've killed meeee!!!!"};

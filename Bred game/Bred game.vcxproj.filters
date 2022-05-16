@@ -21,8 +21,8 @@
     <ClCompile Include="NPC.cpp">
       <Filter>Header Files</Filter>
     </ClCompile>
-    <ClCompile Include="Combat.cpp">
-      <Filter>Header Files</Filter>
+    <ClCompile Include="player.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -35,7 +35,7 @@
     <ClInclude Include="nd.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Combat.h">
+    <ClInclude Include="player.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

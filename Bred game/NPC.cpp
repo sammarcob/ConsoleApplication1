@@ -41,14 +41,7 @@ int npc::getDamage()
 {
 	return eDamage;
 }
-void npc::takeDamage()
-{
 
-}
-void npc::giveDamage()
-{
-
-}
 string npc::getRanPhrase()
 {
 	if (phrases.size() > 0)
