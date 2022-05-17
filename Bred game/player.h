@@ -3,7 +3,9 @@
 class player
 {
 public:
-	//bruh
+	int damageEnemy();
+	int takeDamage(int enemyDamageTaken);
+
 private:
 
 };
