@@ -3,9 +3,10 @@
 class player
 {
 public:
-	int damageEnemy();
-	int takeDamage(int enemyDamageTaken);
+	int damageEnemy(npc& npcDamaged);
+	int takeDamage(npc& npcDamaged);
 
 private:
-
+	int playerHit;
+	int enemyHit;
 };

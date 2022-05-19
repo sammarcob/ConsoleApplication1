@@ -33,7 +33,7 @@ int main()
 
     npcData nd;
 
-    npc Jelly;
+    /*npc Jelly;
     Jelly.setData("Jelly", 7, 5);
     Jelly.addPhrase("...");
 
@@ -55,7 +55,7 @@ int main()
 
     npc peanutButter;
     peanutButter.setData("Peanut Butter", 20, 0);
-    peanutButter.addPhrase("hello my child.");
+    peanutButter.addPhrase("hello my child.");*/
 
     GameManager(globeVar);
     

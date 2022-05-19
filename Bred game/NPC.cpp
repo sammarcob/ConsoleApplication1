@@ -79,3 +79,7 @@ void npc::addHurtPhrase(string newHurtPhrase)
 {
 	hurtPhrases.push_back(newHurtPhrase);
 }
+int npc::npcDamaged(npc& npcDamaged)
+{
+	//do stuiff
+}

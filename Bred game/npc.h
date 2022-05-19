@@ -22,6 +22,7 @@ public:
 	void addPhrase(string newPhrase);
 	void addDeathPhrase(string newDeathPhrase);
 	void addHurtPhrase(string newHurtPhrase);
+	int npcDamaged(npc& npcDamaged);
 	
 private:
 	vector <string> phrases;

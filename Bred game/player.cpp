@@ -7,11 +7,11 @@ using namespace std;
 #include "nd.h"
 
 
-int player::damageEnemy()
+int player::damageEnemy(npc& npcDamaged)
 {
 	
 }
-int player::takeDamage(int enemyDamageTaken)
+int player::takeDamage(npc& playerDamaged)
 {
 	
 }
