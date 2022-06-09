@@ -9,6 +9,7 @@
 #include <vector>
 #include <iostream>
 #include <math.h>
+#include <fstream>
 using namespace std;
 
 struct globalVariables
@@ -177,6 +178,12 @@ COORD gotoxy(int x, int y)
 
 void rooms(globalVariables& globeVar)
 {
+    ofstream saveFile;
+    string stringScore;
+    int intScore = 0;
+
+    saveFile.open("save.txt");
+
     bool blueKey = false;
     int keyChance;
 
@@ -1204,6 +1211,7 @@ void rooms(globalVariables& globeVar)
         else if (currentRoom.coordinates.x == 5 && currentRoom.coordinates.y == 1)
         {
             //25
+            intScore++;
             system("CLS");
             printf("the door unlocks with a click and swings open!\n");
             _getch();
@@ -1223,6 +1231,8 @@ void rooms(globalVariables& globeVar)
                 cin >> choice;
                 if (choice == "y")
                 {
+                    //intScore = stoi(stringScore);
+                    saveFile << "High Score: " << intScore << "\n";
                     printf("alright then... off you go.\n");
                     _getch();
                     globeVar.finish = true;
@@ -1248,6 +1258,7 @@ void rooms(globalVariables& globeVar)
         
     }
 }
+// when i get to room 25, then restart, i can just go out of bounds and it sends me to room 25
 
 void mainMenu(globalVariables& globeVar)
 {
