@@ -1,5 +1,4 @@
 #pragma once
-
 #include <stdlib.h> 
 #include <time.h>
 #include <conio.h>
@@ -12,11 +11,18 @@
 #include <fstream>
 using namespace std;
 
+#include "npc.h"
+#include "nd.h"
+
+
+
 struct globalVariables
 {
     bool credits = false;
     bool start = false;
     bool finish = false;
+
+    vector <npc> npcs;
 };
 
 
