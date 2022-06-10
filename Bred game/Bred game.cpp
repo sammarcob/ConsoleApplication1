@@ -31,7 +31,7 @@ int main()
     srand((unsigned)time(NULL));
     globalVariables globeVar;
 
-    npcData nd;
+   npcData nd;
 
     npc temp;
 

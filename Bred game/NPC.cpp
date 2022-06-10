@@ -81,5 +81,5 @@ void npc::addHurtPhrase(string newHurtPhrase)
 }
 int npc::npcDamaged(npc& npcDamaged)
 {
-	//do stuiff
+	return 0;
 }

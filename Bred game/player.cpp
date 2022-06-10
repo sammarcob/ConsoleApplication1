@@ -11,9 +11,10 @@ globalVariables globVar;
 
 int player::damageEnemy(npc& npcDamaged)
 {
-	
+	return 0;
 }
 int player::takeDamage(npc& playerDamaged)
 {
-	globVar.npcs
+	/*globVar.npcs*/
+	return 0;
 }
