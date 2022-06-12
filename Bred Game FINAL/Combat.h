@@ -6,7 +6,7 @@ class Combat
 {
 public:
 	Combat(Enemy _enemy);
-	void exicuteCombat(PlayerStats player);
+	void exicuteCombat(PlayerStats& player);
 
 
 

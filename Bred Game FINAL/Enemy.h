@@ -1,15 +1,22 @@
 #pragma once
+#include <string>
 
 class Enemy
 {
 public:
 	Enemy();
+
+	void takeDamage(int damage);
+	int getMove();
+	int doDamage();
+	int relax();
+
+	
+	std::string name;
 	int health;
 	int attackDamage;
-	void takeDamage(int damage);
-	float blockChance;
-	float dodgeChance;
-
+	
+	int stamina = 2;
 
 private:
 

@@ -12,14 +12,19 @@
 using namespace std;
 
 #include "PlayerStats.h"
+#include "Combat.h"
+#include "Enemy.h"
 
 
 void characterBuilder(PlayerStats& player);
 bool mainMenu();
 bool rooms();
+void SaveGame(vector<vector<bool>> roomsVisited, int xCoord, int yCoord);
+bool LoadGame(vector<vector<bool>>& roomsVisited, int& xCoord, int& yCoord);
 
 int main()
 {
+    
     
 
     if (mainMenu())
@@ -119,11 +124,32 @@ bool mainMenu()
 
 bool rooms()
 {
+    vector<Enemy> enemies;
+
+    Enemy Jam;
+    Jam.name = "Jam";
+    Jam.health = 46;
+    Jam.attackDamage = 9;
+    enemies.push_back(Jam);
+
+    Enemy Jelly;
+    Jelly.name == "Jelly";
+    Jelly.health = 25;
+    Jelly.attackDamage = 11;
+    enemies.push_back(Jelly);
+
+    Enemy Vegemite;
+    Vegemite.name = "Vegemite";
+    Vegemite.health = 58;
+    Vegemite.attackDamage = 6;
+    enemies.push_back(Vegemite);
+
+
     PlayerStats player;
     characterBuilder(player);
     
-    int xCoord = 0;
-    int yCoord = 4;
+    int xCoord;
+    int yCoord;
     bool foundRoom25 = false;
     int keyChance = 0;
     bool blueKey = false;
@@ -131,31 +157,37 @@ bool rooms()
 
     vector<vector<bool>> isCleared;
 
-    for (int x = 0;x < 5; x++)
+    if (!LoadGame(isCleared, xCoord, yCoord))
     {
-        vector<bool> temp;
-        for (int y = 0; y < 5; y++)
+        xCoord = 0;
+        yCoord = 4;
+        for (int x = 0; x < 5; x++)
         {
-            temp.push_back(false);
+            vector<bool> temp;
+            for (int y = 0; y < 5; y++)
+            {
+                temp.push_back(false);
+            }
+            isCleared.push_back(temp);
         }
-        isCleared.push_back(temp);
     }
 
     while (!foundRoom25)
     {
-        if (xCoord == 0 && yCoord == 4)
+        if (xCoord == 4 && yCoord == 0)
         {
-            foundRoom25;
+            foundRoom25 = true;
         }
         system("CLS");
-        cout << xCoord << ", " << yCoord; //displays coords
+        //cout << xCoord << ", " << yCoord; //displays coords
         cout << "you walk into the room" << "\n";
         _getch();
         system("CLS");
         
         if (isCleared[xCoord][yCoord] == false)
         {
-        
+            Combat combat = enemies[rand() % enemies.size()];
+            combat.exicuteCombat(player);
         //spawn monster
         //if statement for if player health drops to 0 you exit out of loop
             isCleared[xCoord][yCoord] = true;
@@ -169,7 +201,7 @@ bool rooms()
         // blue key 
         if (blueKey == false)
         {
-            keyChance = 1 + rand() % 2;
+            keyChance = 1 + rand() % 10;
             if (keyChance == 1)
             {
                 blueKey = true;
@@ -216,6 +248,8 @@ bool rooms()
         {
             yCoord++;
         }
+
+        SaveGame(isCleared, xCoord, yCoord);
     }
     return false;
 }
@@ -232,33 +266,15 @@ void characterBuilder(PlayerStats& player)
         _getch();
         system("CLS");
 
-        cout << "1. Butter Knife: Damage(12)   Dodge chance(10%)\n\n2. Spoon: Damage(6)   Dodge chance(45%)\n\n3. Fork: Damage(9)  Dodge chance(30%)\n\n\nType your awnser below, then hit enter:\n";
+        cout << "1. Machette: Damage(84)\n\n2. Spoon: Damage(15)\n\n3. T-54 Soviet Tank: Damage(26000)\n\n\nType your awnser below, then hit enter:\n";
         cin >> choice;
 
-        if (choice == 1)
-        {
-            printf("Oh, the knife!\nGreat choice, but remember, you might have a lot of attacking power, but you don't have a ton of agility!\n");
-            _getch();
-            player.attackDamage = 12;
-            player.dodgeChance = 0.10;
-            choice = 0;
-            break;
-        }
-        else if (choice == 2)
+        
+        if (choice == 1 || choice == 2 || choice == 3)
         {
             printf("Oh, the Spoon!\nGreat choice, but remember, you might have a lot of agility don't have a ton of attacking power!\n");
             _getch();
             player.attackDamage = 6;
-            player.dodgeChance = 0.45;
-            choice = 0;
-            break;
-        }
-        else if (choice == 3)
-        {
-            printf("Oh, the Fork...\nGreat choice... kind of average, but good choice I guess\n");
-            _getch();
-            player.attackDamage = 9;
-            player.dodgeChance = 0.30;
             choice = 0;
             break;
         }
@@ -271,7 +287,6 @@ void characterBuilder(PlayerStats& player)
             printf("gross...");
             _getch();
             player.attackDamage = 1;
-            player.dodgeChance = 1.0;
             choice = 0;
             break;
         }
@@ -283,6 +298,58 @@ void characterBuilder(PlayerStats& player)
             continue;
         }
     }
+    system("CLS");
+    cout << "Before you go, I just want to remind you of your Relax ability. It raises your stamina by 2.\n Can't keep swinging that weapong forever!\n";
+    _getch();
+    system("CLS");
+}
+
+void SaveGame(vector<vector<bool>> roomsVisited, int xCoord, int yCoord)
+{
+    ofstream out("save.txt");
     
-    
+    out << xCoord << '\n' << yCoord << '\n';
+    for (int x = 0; x < roomsVisited.size(); x++)
+    {
+        for (int y = 0; y < roomsVisited.size(); y++)
+        {
+            out << roomsVisited[x][y];
+        }
+        out << '\n';
+    }
+
+    out.close();
+}
+
+bool LoadGame(vector<vector<bool>>& roomsVisited, int& xCoord, int& yCoord)
+{
+    ifstream in;
+    in.open("save.txt");
+
+    if (!in.is_open())
+    {
+        return false;
+    }
+
+    in >> xCoord;
+    in >> yCoord;
+
+    char byte;
+    roomsVisited.clear();
+    in.get(byte);
+    for (int x = 0; x < 5; x++)
+    {
+        vector<bool> temp = vector<bool>();
+        while (in.get(byte))
+        {
+            if (byte != '\n')
+            {
+                temp.push_back((int)byte - 48);
+            }
+            else break;
+        }
+        roomsVisited.push_back(temp);
+    }
+
+    return true;
 }
