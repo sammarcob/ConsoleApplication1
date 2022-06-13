@@ -16,7 +16,7 @@ Combat::Combat(Enemy _enemy)
 void Combat::exicuteCombat(PlayerStats& player)
 {
 	int choice;
-	bool debug = false;
+	bool debug = true;
 
 	cout << "A " << enemy.name << " has appeared!\n"; // output name of random enemy
 
@@ -76,27 +76,37 @@ void Combat::exicuteCombat(PlayerStats& player)
 			cout << "You attack while your enemy is relaxing and the hit lands!\n";
 			enemy.health -= player.doDamage();
 			enemy.relax();
+			_getch();
+			system("CLS");
 		}
 		else if (choice == 2 && enemyMove == 3)
 		{
 			cout << "Nothing happens. You're blocking while they're relaxing. What is happening?\n";
 			enemy.relax();
+			_getch();
+			system("CLS");
 		}
 		else if (choice == 3 && enemyMove == 3)
 		{
 			cout << "You both decide to take some time to relax\n";
 			player.relax();
 			enemy.relax();
+			_getch();
+			system("CLS");
 		}
 		else if (choice == 3 && enemyMove == 1)
 		{
 			cout << "You get hit while relaxing!\n";
 			player.Health -= enemy.doDamage();
+			_getch();
+			system("CLS");
 		}
 		else if (choice == 3 && enemyMove == 2)
 		{
 			cout << "Nothing happens. You're relaxing while they're blocking. What is happening?\n";
 			player.relax();
+			_getch();
+			system("CLS");
 		}
 		
 

@@ -133,7 +133,7 @@ bool rooms()
     enemies.push_back(Jam);
 
     Enemy Jelly;
-    Jelly.name == "Jelly";
+    Jelly.name = "Jelly";
     Jelly.health = 25;
     Jelly.attackDamage = 11;
     enemies.push_back(Jelly);
@@ -195,6 +195,8 @@ bool rooms()
         else
         {
             cout << "The room is empty...\n\nIt looks like you've been here before...";
+            _getch();
+            system("CLS");
         }
         system("CLS");
 
@@ -249,6 +251,15 @@ bool rooms()
             yCoord++;
         }
 
+        if (xCoord == 4 && yCoord == 0)
+        {
+            system("CLS");
+            cout << "the golden gates swing open and you see your toaster\n";
+            _getch();
+            cout << "you've made it now you can toast your bred!";
+            foundRoom25 = true;
+        }
+
         SaveGame(isCleared, xCoord, yCoord);
     }
     return false;
@@ -259,8 +270,15 @@ void characterBuilder(PlayerStats& player)
     
     int choice;
     
+    cout << "Your story begins as a man with no toaster...\n";
+    _getch();
+    cout << "you must fight your way to room 25 and secure the toaster!";
+    _getch();
+    system("CLS");
+
     while (true)
     {
+
         system("CLS");
         cout << "Before you embark you need to choose your spreading utensil!\nChoose carefully!\n\n-Press any key to continue-";
         _getch();
@@ -274,7 +292,7 @@ void characterBuilder(PlayerStats& player)
         {
             printf("Oh, the Spoon!\nGreat choice, but remember, you might have a lot of agility don't have a ton of attacking power!\n");
             _getch();
-            player.attackDamage = 6;
+            player.attackDamage = 15;
             choice = 0;
             break;
         }

@@ -14,15 +14,14 @@ void Enemy::takeDamage(int damage)
 	
 	
 
-	//add block too?
+	
 }
 int Enemy::getMove()
 {
 	int move;
 
-	move = 1 + rand() % 2;
-	//1 = attack
-	//2 = block
+	move = 1 + rand() % 3;
+	
 
 	return move;
 }
