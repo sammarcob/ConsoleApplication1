@@ -12,7 +12,7 @@ Enemy::Enemy()
 void Enemy::takeDamage(int damage)
 {
 	
-	
+	//not needed
 
 	
 }

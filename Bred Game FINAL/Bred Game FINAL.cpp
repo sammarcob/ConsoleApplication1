@@ -179,7 +179,7 @@ bool rooms()
             foundRoom25 = true;
         }
         system("CLS");
-        //cout << xCoord << ", " << yCoord; //displays coords
+        cout << xCoord << ", " << yCoord; //displays coords
         cout << "you walk into the room" << "\n";
         _getch();
         system("CLS");

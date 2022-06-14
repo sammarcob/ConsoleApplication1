@@ -16,7 +16,7 @@ Combat::Combat(Enemy _enemy)
 void Combat::exicuteCombat(PlayerStats& player)
 {
 	int choice;
-	bool debug = true;
+	bool debug = false;
 
 	cout << "A " << enemy.name << " has appeared!\n"; // output name of random enemy
 
