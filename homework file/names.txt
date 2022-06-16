@@ -1,2 +1,0 @@
-name1	1	2	3	word1
-name2	1	2	3	word2

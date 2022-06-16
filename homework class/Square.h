@@ -3,8 +3,15 @@
 
 class Square
 {
+public:
+
 	Square();
 	Square(float length);
-	int getSide();
+	float getSide();
+	void setSide(float length);
+	float getPerimeter();
+	float getArea();
+private:
+	float l;
 
 };
